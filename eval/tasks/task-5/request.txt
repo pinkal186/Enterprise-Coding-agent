@@ -1,0 +1,1 @@
+Fix the sortNumbers function in sort.js so that it sorts numbers in ascending numerical order instead of default string lexicographical order. Run node test.js to verify.

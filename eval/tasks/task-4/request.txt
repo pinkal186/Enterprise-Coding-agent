@@ -1,0 +1,1 @@
+Fix safeGet in get.js so that it safely accesses nested properties using a dot-separated path (e.g. 'a.b.c') without throwing TypeError when an intermediate property is null or undefined, returning defaultValue instead. Run node test.js to verify.

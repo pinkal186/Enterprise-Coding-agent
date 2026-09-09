@@ -1,0 +1,22 @@
+{
+  "task": "TASK-01",
+  "gate": "scaffold",
+  "command": "npm install && npx tsx --version",
+  "started_at": "2026-09-05T14:31:05.899Z",
+  "observed_at": "2026-09-05T14:31:09.554Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "\nup to date, audited 94 packages in 2s\n\n21 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities\ntsx v4.23.13\nnode v22.23.2\r\n",
+  "stderr": "",
+  "revision": {
+    "commit": null,
+    "dirty": null
+  },
+  "source_hash": "1d18bbb2784339922091b0b4dfbabaa63824e3ec68cc44a4bae8783ba9b0410f",
+  "environment": {
+    "node": "v22.23.2",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "hash": "41d0db40e5d38459ed9501c83f18226bedf20a9004c30f8c9f0492b77df9cf75"
+}

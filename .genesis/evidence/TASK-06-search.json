@@ -1,0 +1,22 @@
+{
+  "task": "TASK-06",
+  "gate": "search",
+  "command": "npx vitest run tests/unit/search.test.ts",
+  "started_at": "2026-09-05T15:23:46.443Z",
+  "observed_at": "2026-09-05T15:23:50.995Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "\n\u001b[1m\u001b[46m RUN \u001b[49m\u001b[22m \u001b[36mv3.2.7 \u001b[39m\u001b[90mC:/Pinkal/Learning/Coding agent/Enterprise Coding agent\u001b[39m\n\n \u001b[32m✓\u001b[39m tests/unit/search.test.ts \u001b[2m(\u001b[22m\u001b[2m7 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 181\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m7 passed\u001b[39m\u001b[22m\u001b[90m (7)\u001b[39m\n\u001b[2m   Start at \u001b[22m 20:53:48\n\u001b[2m   Duration \u001b[22m 1.46s\u001b[2m (transform 134ms, setup 0ms, collect 296ms, tests 181ms, environment 0ms, prepare 428ms)\u001b[22m\n\n",
+  "stderr": "",
+  "revision": {
+    "commit": null,
+    "dirty": null
+  },
+  "source_hash": "b70e2c9341ba04b2ae0868728600d7960b3129d54501f0ee8d645f31de4b0e56",
+  "environment": {
+    "node": "v22.23.2",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "hash": "d50a82f4ec440c7ba6e5a10f92a9d127e2fb323c1e012d69ea9e9ba667b4010a"
+}

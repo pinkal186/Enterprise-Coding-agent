@@ -1,0 +1,7 @@
+{
+  "id": "task-1",
+  "name": "pagination-off-by-one",
+  "category": "bug_fix",
+  "verificationCommand": "node test.js",
+  "successCriteria": "All pagination test assertions pass with exit code 0"
+}

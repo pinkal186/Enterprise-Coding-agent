@@ -1,0 +1,1 @@
+Fix the slugify function in slugify.js so that it converts text to lowercase and replaces spaces with hyphens (-) instead of underscores. Run node test.js to verify.

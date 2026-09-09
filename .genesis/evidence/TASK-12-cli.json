@@ -1,0 +1,22 @@
+{
+  "task": "TASK-12",
+  "gate": "cli",
+  "command": "npx tsx src/cli/main.ts --help",
+  "started_at": "2026-09-06T09:49:11.526Z",
+  "observed_at": "2026-09-06T09:49:13.485Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "\nEnterprise Coding Agent — Autonomous Engineering Loop (Iteration 1)\n\nUsage:\n  npx tsx src/cli/main.ts \"<task_description>\" [options]\n\nOptions:\n  --workspace, -w <dir>   Path to the workspace root directory (default: current working directory)\n  --model, -m <model>     Gemini model identifier (default: gemini-2.5-flash)\n  --help, -h              Show this help message\n\nEnvironment Variables:\n  GEMINI_API_KEY          Required API key for Google Gemini API\n\n",
+  "stderr": "",
+  "revision": {
+    "commit": null,
+    "dirty": null
+  },
+  "source_hash": "ba91ed2e724ab8dfdba6459166b2d5913e20a6f36bba336c6fb053349106faaa",
+  "environment": {
+    "node": "v22.23.2",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "hash": "373c7028afd411c62d3eabb8c26dd2590e16a25e117ca8be99b2076372ec6edf"
+}

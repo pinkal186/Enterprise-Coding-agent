@@ -1,0 +1,1 @@
+Implement the truncate function in truncate.js. If str length is less than or equal to maxLength, return str. Otherwise return str.slice(0, maxLength) + suffix (defaulting to '...'). Run node test.js to verify.

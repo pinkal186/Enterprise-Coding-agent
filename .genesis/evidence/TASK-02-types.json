@@ -1,0 +1,22 @@
+{
+  "task": "TASK-02",
+  "gate": "types",
+  "command": "npx vitest run tests/unit/llm-types.test.ts",
+  "started_at": "2026-09-05T14:41:28.130Z",
+  "observed_at": "2026-09-05T14:41:32.008Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "\n\u001b[1m\u001b[46m RUN \u001b[49m\u001b[22m \u001b[36mv3.2.7 \u001b[39m\u001b[90mC:/Pinkal/Learning/Coding agent/Enterprise Coding agent\u001b[39m\n\n \u001b[32m✓\u001b[39m tests/unit/llm-types.test.ts \u001b[2m(\u001b[22m\u001b[2m16 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 25\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m16 passed\u001b[39m\u001b[22m\u001b[90m (16)\u001b[39m\n\u001b[2m   Start at \u001b[22m 20:11:30\n\u001b[2m   Duration \u001b[22m 963ms\u001b[2m (transform 78ms, setup 0ms, collect 112ms, tests 25ms, environment 0ms, prepare 310ms)\u001b[22m\n\n",
+  "stderr": "",
+  "revision": {
+    "commit": null,
+    "dirty": null
+  },
+  "source_hash": "e352146ceeeba353304abd018bcdac70676c2e92312a70a38529d0a8088700fc",
+  "environment": {
+    "node": "v22.23.2",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "hash": "2c148be04474a55e7a7d2089ff729061409ebd1c130bd6a2bbacce99d8eeaa73"
+}

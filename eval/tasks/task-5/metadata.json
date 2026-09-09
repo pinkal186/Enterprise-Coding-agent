@@ -1,0 +1,7 @@
+{
+  "id": "task-5",
+  "name": "numeric-array-sort",
+  "category": "bug_fix",
+  "verificationCommand": "node test.js",
+  "successCriteria": "Numbers sorted numerically in ascending order with exit code 0"
+}

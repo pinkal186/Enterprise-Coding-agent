@@ -1,0 +1,7 @@
+{
+  "id": "task-4",
+  "name": "safe-nested-property-getter",
+  "category": "refactoring",
+  "verificationCommand": "node test.js",
+  "successCriteria": "SafeGet handles existing and non-existent deep paths without throwing TypeError"
+}

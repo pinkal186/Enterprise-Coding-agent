@@ -1,0 +1,27 @@
+# Engineering Agent — .gitignore
+
+# Environment / secrets — NEVER commit real API keys
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+
+# Node modules
+node_modules/
+
+# Agent run logs (may contain sensitive context)
+*.jsonl
+agent-run.log
+agent-run-*.log
+
+# OS / editor artefacts
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/settings.json
+
+# Vitest cache
+.vitest/
+coverage/

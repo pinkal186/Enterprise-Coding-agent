@@ -1,0 +1,1 @@
+Fix the off-by-one bug in paginate.js where page 1 starts from index 1 instead of 0. Run node test.js to verify.

@@ -1,0 +1,7 @@
+{
+  "id": "task-2",
+  "name": "url-slugify-hyphens",
+  "category": "bug_fix",
+  "verificationCommand": "node test.js",
+  "successCriteria": "Slugify tests pass with lowercased, hyphenated slugs and exit code 0"
+}

@@ -1,0 +1,906 @@
+{
+  "schema_version": 2,
+  "project": {
+    "name": "Enterprise Coding agent",
+    "mode": "init",
+    "profile": "prototype",
+    "objective": "Build the minimum working, provider-agnostic Engineering Agent described in the attached System Design Document and Iteration 1 Technical Implementation Plan",
+    "constraints": [],
+    "non_goals": [],
+    "trust_boundary": "local repository",
+    "created_at": "2026-09-05T13:13:57.807Z",
+    "updated_at": "2026-09-06T11:59:33.185Z"
+  },
+  "policy": {
+    "ponytail": "full",
+    "autonomy": "human-in-the-loop",
+    "learned_rule_promotion": "human-required",
+    "cleanup": "propose-only",
+    "traces": {
+      "storage": "local",
+      "commit_raw": false,
+      "redact_secrets": true
+    }
+  },
+  "lifecycle": {
+    "phase": "verify",
+    "status": "ready",
+    "active_task": null,
+    "blocker": null,
+    "next_action": "Review completed work and choose the next bounded outcome."
+  },
+  "commands": {},
+  "workflow": {
+    "type": "new-product",
+    "started_at": "2026-09-05T13:13:57.809Z",
+    "spec_check": {
+      "at": "2026-09-05T13:53:23.833Z",
+      "source_hash": "0bc6e72a734db6ad2fc1f740d2218e1fc1346f4b2be7d727af541f2a61d4a7cc",
+      "requirements": [
+        "AC-1",
+        "AC-10",
+        "AC-2",
+        "AC-3",
+        "AC-4",
+        "AC-5",
+        "AC-6",
+        "AC-7",
+        "AC-8",
+        "AC-9",
+        "FR-1",
+        "FR-10",
+        "FR-11",
+        "FR-12",
+        "FR-13",
+        "FR-2",
+        "FR-3",
+        "FR-4",
+        "FR-5",
+        "FR-6",
+        "FR-7",
+        "FR-8",
+        "FR-9",
+        "NFR-1",
+        "NFR-2",
+        "NFR-3",
+        "NFR-4",
+        "NFR-5"
+      ]
+    },
+    "plan_check": {
+      "at": "2026-09-05T14:00:20.668Z",
+      "source_hash": "e5cd58970699493f48917d99686f073ce12c208b184f107ce3c27ace2bcb3de7"
+    },
+    "plan_approval": {
+      "human": "Pinkal",
+      "reason": "Iteration 1 task boundaries and proof reviewed",
+      "at": "2026-09-05T14:17:17.623Z",
+      "source_hash": "e5cd58970699493f48917d99686f073ce12c208b184f107ce3c27ace2bcb3de7"
+    }
+  },
+  "artifacts": [
+    {
+      "id": "SPEC-1",
+      "type": "specification",
+      "path": "SPEC.md",
+      "status": "approved",
+      "requirements": [
+        "AC-1",
+        "AC-10",
+        "AC-2",
+        "AC-3",
+        "AC-4",
+        "AC-5",
+        "AC-6",
+        "AC-7",
+        "AC-8",
+        "AC-9",
+        "FR-1",
+        "FR-10",
+        "FR-11",
+        "FR-12",
+        "FR-13",
+        "FR-2",
+        "FR-3",
+        "FR-4",
+        "FR-5",
+        "FR-6",
+        "FR-7",
+        "FR-8",
+        "FR-9",
+        "NFR-1",
+        "NFR-2",
+        "NFR-3",
+        "NFR-4",
+        "NFR-5"
+      ],
+      "source_hash": "0bc6e72a734db6ad2fc1f740d2218e1fc1346f4b2be7d727af541f2a61d4a7cc",
+      "approval": {
+        "human": "Pinkal",
+        "reason": "Engineering Agent Iteration 1 specification reviewed",
+        "at": "2026-09-05T13:53:38.091Z",
+        "source_hash": "0bc6e72a734db6ad2fc1f740d2218e1fc1346f4b2be7d727af541f2a61d4a7cc"
+      }
+    }
+  ],
+  "assumptions": [],
+  "invariants": [
+    {
+      "id": "INVARIANT-7e79919c",
+      "text": "All file operations (read, search, edit, write) and command execution paths must strictly validate that targets reside within the configured workspace directory. Paths outside the workspace must be rejected.",
+      "source": "Engineering Agent — System Design Document §11",
+      "recorded_at": "2026-09-05T13:14:55.443Z"
+    },
+    {
+      "id": "INVARIANT-cd74c5ed",
+      "text": "The agent must never declare a coding task successful solely because the LLM produced a confident text response. Completion requires explicit verification (e.g., running tests/builds) or clear reporting of unverified status.",
+      "source": "Engineering Agent — System Design Document §9",
+      "recorded_at": "2026-09-05T13:14:55.610Z"
+    },
+    {
+      "id": "INVARIANT-72ddae88",
+      "text": "The agent loop must enforce a hard iteration cap (default 20) and detect repeated identical failing actions to prevent runaway execution or infinite thrashing loops.",
+      "source": "Engineering Agent — Iteration 1 Technical Implementation Plan §16, §17",
+      "recorded_at": "2026-09-05T13:14:55.784Z"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DECISION-6bafb546",
+      "title": "Provider-Agnostic LLM Abstraction",
+      "text": "The Agent Loop must communicate with LLMs strictly through an internal provider-independent LLM interface. Direct SDK imports (e.g., Gemini) are confined entirely to their respective adapter modules.",
+      "status": "accepted",
+      "source": "Engineering Agent — Iteration 1 Technical Implementation Plan §4",
+      "recorded_at": "2026-09-05T13:14:55.025Z"
+    },
+    {
+      "id": "DECISION-7a8c0b9f",
+      "title": "Zero External Agent Frameworks",
+      "text": "Do not introduce LangChain, LlamaIndex, AutoGen, CrewAI, or other agent frameworks. The agent runtime, loop, state, tools, context, and provider adapters must be built directly using TypeScript/Node.js to ensure deep mechanical understanding.",
+      "status": "accepted",
+      "source": "Engineering Agent — Iteration 1 Technical Implementation Plan §3",
+      "recorded_at": "2026-09-05T13:14:55.262Z"
+    },
+    {
+      "id": "DECISION-0afb640c",
+      "title": "Default Gemini Model: gemini-2.5-flash",
+      "text": "The default Gemini model for Iteration 1 is gemini-2.5-flash via the @google/genai SDK. Configured via GEMINI_MODEL environment variable.",
+      "status": "accepted",
+      "source": "Human answer: Pinkal, 2026-09-05",
+      "recorded_at": "2026-09-05T13:52:33.202Z"
+    },
+    {
+      "id": "DECISION-f4dc31e7",
+      "title": "Edit Tool: Both replace and write operations",
+      "text": "The file editing tool (src/tools/edit-file.ts) supports two operations in a single tool: (a) replace — exact deterministic substring replacement with single-match validation, and (b) write — create or overwrite entire file content.",
+      "status": "accepted",
+      "source": "Human answer: Pinkal, 2026-09-05",
+      "recorded_at": "2026-09-05T13:52:49.401Z"
+    },
+    {
+      "id": "DECISION-5938fbd0",
+      "title": "Search Tool: Pure Node.js recursive directory walker",
+      "text": "The search tool (src/tools/search.ts) implements a pure TypeScript/Node.js recursive directory traversal with regex/substring matching. No external binaries (ripgrep, grep, findstr) are required. This ensures 100% cross-platform compatibility on Windows, Linux, and macOS.",
+      "status": "accepted",
+      "source": "Human answer: Pinkal, 2026-09-05",
+      "recorded_at": "2026-09-05T13:53:04.274Z"
+    },
+    {
+      "id": "DECISION-ed75c99a",
+      "title": "Command Safety: Deny-by-default for non-allowlisted commands",
+      "text": "In non-interactive runs, any command not in the explicit allowlist (npm test, npm run test, npm run build, npm run lint, node ...) is immediately denied with a structured error message returned to the agent loop. No interactive confirmation prompts.",
+      "status": "accepted",
+      "source": "Human answer: Pinkal, 2026-09-05",
+      "recorded_at": "2026-09-05T13:53:14.766Z"
+    },
+    {
+      "id": "DECISION-f111a490",
+      "title": "Project files at repo root, not subdirectory",
+      "text": "All TypeScript project files (package.json, tsconfig.json, src/, tests/, eval/) live at the Genesis repo root. This is required because genesis gate runs commands from the repo root directory. A separate engineering-agent/ subdirectory would cause all gate commands to fail.",
+      "status": "accepted",
+      "source": "Discovered during TASK-01 gate execution, 2026-09-05",
+      "recorded_at": "2026-09-05T14:30:33.861Z"
+    }
+  ],
+  "knowledge": [
+    {
+      "id": "KNOWLEDGE-ec240f64",
+      "title": "Iteration 1 Boundary & Non-Goals",
+      "text": "Iteration 1 MVP is strictly limited to CLI, Agent Runtime, Agent Loop, Gemini Adapter, 4 Core Tools (Read, Search, Edit/Write, Run Command), basic context with limits, structured event logging, unit tests, integration test fixture, and 5 evaluation tasks. Excludes RAG, vector DBs, sub-agents, memory, git automation, and web UI.",
+      "source": "Engineering Agent — Iteration 1 Technical Implementation Plan §31",
+      "tags": [],
+      "recorded_at": "2026-09-05T13:14:55.957Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "SPEC-1",
+      "outcome": "Produce an approved, implementation-ready product specification",
+      "state": "done",
+      "risk": "medium",
+      "owner": null,
+      "scope": [
+        "SPEC.md"
+      ],
+      "dependencies": [],
+      "requirements": [],
+      "gates": [
+        {
+          "id": "independent-review",
+          "command": "",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "human": "Pinkal",
+            "reason": "Engineering Agent Iteration 1 specification reviewed",
+            "source_hash": "e5287e08e7309edd26c1e5870fe9ee91c65465eede36bedaa8130181e4a55e9c",
+            "observed_at": "2026-09-05T13:53:38.091Z"
+          }
+        }
+      ],
+      "next_action": "Interview the human, record durable context, and replace every placeholder in SPEC.md.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:13:57.809Z",
+      "updated_at": "2026-09-05T13:53:38.091Z"
+    },
+    {
+      "id": "TASK-01",
+      "outcome": "package.json, tsconfig.json, .env.example, .gitignore, and IMPLEMENTATION_PROGRESS.md exist; npm install succeeds; npx tsx --version runs",
+      "state": "done",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-1",
+        "FR-13",
+        "NFR-3"
+      ],
+      "gates": [
+        {
+          "id": "scaffold",
+          "command": "npm install && npx tsx --version",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-01-scaffold.json",
+            "source_hash": "1d18bbb2784339922091b0b4dfbabaa63824e3ec68cc44a4bae8783ba9b0410f",
+            "hash": "41d0db40e5d38459ed9501c83f18226bedf20a9004c30f8c9f0492b77df9cf75",
+            "observed_at": "2026-09-05T14:31:09.554Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:56:03.753Z",
+      "updated_at": "2026-09-05T14:31:31.199Z"
+    },
+    {
+      "id": "TASK-02",
+      "outcome": "src/llm/types.ts and src/llm/provider.ts define Message, ToolCall, ToolResult, LLMResponse, ProviderError, and the LLMProvider interface. No Gemini SDK imported anywhere in these files.",
+      "state": "done",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-2",
+        "NFR-1",
+        "NFR-3"
+      ],
+      "gates": [
+        {
+          "id": "types",
+          "command": "npx vitest run tests/unit/llm-types.test.ts",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-02-types.json",
+            "source_hash": "e352146ceeeba353304abd018bcdac70676c2e92312a70a38529d0a8088700fc",
+            "hash": "2c148be04474a55e7a7d2089ff729061409ebd1c130bd6a2bbacce99d8eeaa73",
+            "observed_at": "2026-09-05T14:41:32.008Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:56:28.693Z",
+      "updated_at": "2026-09-05T14:41:49.732Z"
+    },
+    {
+      "id": "TASK-03",
+      "outcome": "src/llm/gemini.ts translates to/from Gemini API; handles text responses, tool calls, usage metadata, and error normalization. @google/genai import confined entirely to this file. Unit tests pass with mocked SDK.",
+      "state": "done",
+      "risk": "medium",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-3",
+        "FR-2",
+        "NFR-1",
+        "AC-2"
+      ],
+      "gates": [
+        {
+          "id": "gemini-adapter",
+          "command": "npx vitest run tests/unit/gemini-adapter.test.ts",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-03-gemini-adapter.json",
+            "source_hash": "02027eb5541ee5c134d46a24091c4931cc9e187f1e42a8af429985228afb89fd",
+            "hash": "871e2dc62cd6a03f49ec5ef5e7c87f36e41bd5b143202337b4e93fc458ebae4c",
+            "observed_at": "2026-09-05T15:13:04.761Z"
+          }
+        },
+        {
+          "id": "independent-review",
+          "command": "",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "human": "Pinkal",
+            "reason": "Gemini provider adapter reviewed and tested",
+            "source_hash": "02027eb5541ee5c134d46a24091c4931cc9e187f1e42a8af429985228afb89fd",
+            "observed_at": "2026-09-05T15:13:47.415Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:56:39.319Z",
+      "updated_at": "2026-09-05T15:13:56.360Z"
+    },
+    {
+      "id": "TASK-04",
+      "outcome": "src/tools/types.ts and src/tools/registry.ts implement register, get, list, and Zod-validated execute. Tool registry unit tests pass.",
+      "state": "done",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-4",
+        "NFR-3"
+      ],
+      "gates": [
+        {
+          "id": "registry",
+          "command": "npx vitest run tests/unit/tool-registry.test.ts",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-04-registry.json",
+            "source_hash": "9ce2fe5f91e3b1dbdd6397b272f96879bc74dab369d1d7aa532cb80ece59a10b",
+            "hash": "8fd7273c3d55f3ad57ec64f1dc464f41e1f6f3680477734ee09941f1e7926f8c",
+            "observed_at": "2026-09-05T15:17:30.558Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:56:53.081Z",
+      "updated_at": "2026-09-05T15:19:14.813Z"
+    },
+    {
+      "id": "TASK-05",
+      "outcome": "src/tools/read-file.ts reads bounded line ranges with truncation notices. src/safety/policy.ts rejects paths outside workspace. All read-file unit tests pass including outside-workspace rejection.",
+      "state": "done",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-6",
+        "NFR-2",
+        "AC-3"
+      ],
+      "gates": [
+        {
+          "id": "read-file",
+          "command": "npx vitest run tests/unit/read-file.test.ts",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-05-read-file.json",
+            "source_hash": "ce13644a0f5ced55e8a63c176399c24336eff8468378bad65a77031517a6130d",
+            "hash": "db42659a2fdb3ebdc1ddd4b11765f79a78219f4551db300633bb1e0e4c2fbcc5",
+            "observed_at": "2026-09-05T15:22:00.759Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:57:06.228Z",
+      "updated_at": "2026-09-05T15:22:15.869Z"
+    },
+    {
+      "id": "TASK-06",
+      "outcome": "src/tools/search.ts implements pure Node.js recursive directory walker with regex/substring matching; enforces workspace boundary; caps output size; clearly truncates results. All search unit tests pass.",
+      "state": "done",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-5",
+        "NFR-2",
+        "NFR-4"
+      ],
+      "gates": [
+        {
+          "id": "search",
+          "command": "npx vitest run tests/unit/search.test.ts",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-06-search.json",
+            "source_hash": "b70e2c9341ba04b2ae0868728600d7960b3129d54501f0ee8d645f31de4b0e56",
+            "hash": "d50a82f4ec440c7ba6e5a10f92a9d127e2fb323c1e012d69ea9e9ba667b4010a",
+            "observed_at": "2026-09-05T15:23:50.995Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:57:24.409Z",
+      "updated_at": "2026-09-05T15:24:01.810Z"
+    },
+    {
+      "id": "TASK-07",
+      "outcome": "src/tools/edit-file.ts supports write (create/overwrite) and replace (exact-match single-occurrence substitution) within workspace. Validates ambiguous matches, rejects paths outside workspace. All edit-file unit tests pass.",
+      "state": "done",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-7",
+        "NFR-2",
+        "AC-3"
+      ],
+      "gates": [
+        {
+          "id": "edit-file",
+          "command": "npx vitest run tests/unit/edit-file.test.ts",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-07-edit-file.json",
+            "source_hash": "61eb37964f5c2b2a32b23f441c6fb64727a17d92e7cb000c31ef36d20ac795b0",
+            "hash": "cc1d4bc5ca6e1f3a78221acc95aadb39f92fe2cae05b6ea24159c8e203078391",
+            "observed_at": "2026-09-05T16:11:02.235Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:57:48.063Z",
+      "updated_at": "2026-09-05T16:14:19.167Z"
+    },
+    {
+      "id": "TASK-08",
+      "outcome": "src/tools/run-command.ts executes allowlisted commands with configurable timeout; captures exit code, stdout, stderr; returns timedOut flag. Non-allowlisted commands receive DENY with structured error. All run-command unit tests pass.",
+      "state": "done",
+      "risk": "medium",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-8",
+        "NFR-2",
+        "AC-4"
+      ],
+      "gates": [
+        {
+          "id": "run-command",
+          "command": "npx vitest run tests/unit/run-command.test.ts",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-08-run-command.json",
+            "source_hash": "a5d958b932be5add42d481847b03a12398f3d8d5b04ecf978467a9fad532f218",
+            "hash": "70d9e3e4dba26691582757dd8408d4fdc472cbdb3b86e5c089f107fb46b9d922",
+            "observed_at": "2026-09-05T16:16:12.140Z"
+          }
+        },
+        {
+          "id": "independent-review",
+          "command": "",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "human": "Pinkal",
+            "reason": "RunCommandTool and command safety policy reviewed and tested",
+            "source_hash": "a5d958b932be5add42d481847b03a12398f3d8d5b04ecf978467a9fad532f218",
+            "observed_at": "2026-09-05T16:16:22.162Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:57:58.148Z",
+      "updated_at": "2026-09-05T16:16:33.467Z"
+    },
+    {
+      "id": "TASK-09",
+      "outcome": "src/context/context.ts assembles context from system prompt, user task, and tool history with output size cap. src/agent/state.ts tracks taskId, userRequest, workspace, messages, iterationCount, modifiedFiles, executedCommands, status. Context unit tests pass.",
+      "state": "done",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-11",
+        "NFR-4"
+      ],
+      "gates": [
+        {
+          "id": "context",
+          "command": "npx vitest run tests/unit/context.test.ts",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-09-context.json",
+            "source_hash": "f13bd7a47776e23eeb0410ae28bb6168928a00c78ce5410eb7a84f6f056c4d71",
+            "hash": "1a4bc583abef322b029c5082d451bdd6af7bf9b40b8d5e2843455d1ca856dcb2",
+            "observed_at": "2026-09-05T16:35:43.312Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:58:16.321Z",
+      "updated_at": "2026-09-06T05:26:42.347Z"
+    },
+    {
+      "id": "TASK-10",
+      "outcome": "src/agent/loop.ts implements the autonomous loop: build context, generate, parse response, dispatch tool with safety check, update context, enforce iteration cap (20), detect repeated identical failing actions, require verification before success. All agent loop unit tests pass including mocked LLM scenarios for tool failure, iteration limit, repeated failure, and verified completion.",
+      "state": "done",
+      "risk": "medium",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-9",
+        "FR-10",
+        "FR-11",
+        "AC-5",
+        "AC-6"
+      ],
+      "gates": [
+        {
+          "id": "agent-loop",
+          "command": "npx vitest run tests/unit/agent-loop.test.ts",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-10-agent-loop.json",
+            "source_hash": "014c695dc348f82a751ebcd9d7a04e2fd9253ad2179260150173a2539f86e790",
+            "hash": "39e9cf5d8dfebbf678d891741513c0afff2588811bc1a046101841b612b225ab",
+            "observed_at": "2026-09-06T09:42:33.330Z"
+          }
+        },
+        {
+          "id": "independent-review",
+          "command": "",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "human": "Pinkal",
+            "reason": "Agent loop and guardrails reviewed",
+            "source_hash": "014c695dc348f82a751ebcd9d7a04e2fd9253ad2179260150173a2539f86e790",
+            "observed_at": "2026-09-06T09:42:45.281Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:58:29.981Z",
+      "updated_at": "2026-09-06T09:42:55.073Z"
+    },
+    {
+      "id": "TASK-11",
+      "outcome": "src/logging/logger.ts writes structured JSON event lines (task_started, llm_request, llm_response, tool_requested, tool_started, tool_completed, tool_failed, verification_started, verification_completed, task_completed, task_failed) to file/stderr. API key values are never present in any log output. Logger unit tests pass.",
+      "state": "done",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-12",
+        "AC-1"
+      ],
+      "gates": [
+        {
+          "id": "logger",
+          "command": "npx vitest run tests/unit/logger.test.ts",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-11-logger.json",
+            "source_hash": "ba91ed2e724ab8dfdba6459166b2d5913e20a6f36bba336c6fb053349106faaa",
+            "hash": "a59639eee2c4a5e5264faf6e4c8bcbfdc8f1d0a4fa81d38e46c5e96f014b1e8b",
+            "observed_at": "2026-09-06T09:44:32.147Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:58:42.704Z",
+      "updated_at": "2026-09-06T09:44:41.601Z"
+    },
+    {
+      "id": "TASK-12",
+      "outcome": "src/cli/main.ts parses task string, --workspace, --model args; wires agent runtime; streams progress arrows to stdout; exits with code 0 on success and 1 on failure. CLI smoke test passes without GEMINI_API_KEY (help flag or dry-run).",
+      "state": "done",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-1",
+        "AC-1"
+      ],
+      "gates": [
+        {
+          "id": "cli",
+          "command": "npx tsx src/cli/main.ts --help",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-12-cli.json",
+            "source_hash": "ba91ed2e724ab8dfdba6459166b2d5913e20a6f36bba336c6fb053349106faaa",
+            "hash": "373c7028afd411c62d3eabb8c26dd2590e16a25e117ca8be99b2076372ec6edf",
+            "observed_at": "2026-09-06T09:49:13.485Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:58:54.793Z",
+      "updated_at": "2026-09-06T09:51:53.183Z"
+    },
+    {
+      "id": "TASK-13",
+      "outcome": "tests/fixtures/test-project/ contains calculator.ts with a deliberate bug, calculator.test.ts that fails before the fix, and package.json. Integration test verifies the agent autonomously searches, reads, edits, and runs npm test to fix the bug. Test passes independently of the agent's self-report.",
+      "state": "done",
+      "risk": "medium",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "AC-8",
+        "FR-9"
+      ],
+      "gates": [
+        {
+          "id": "integration",
+          "command": "npx vitest run tests/integration/agent-integration.test.ts",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-13-integration.json",
+            "source_hash": "add8e513273b00d8b6aabb55c7924e9253b51d2a6f5d5ae357ec475181c85f81",
+            "hash": "f8ebc7b087ca04246fd071af48ee969b53d1253a6089bc3df355808e239b0ec8",
+            "observed_at": "2026-09-06T09:54:20.285Z"
+          }
+        },
+        {
+          "id": "independent-review",
+          "command": "",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "human": "Pinkal",
+            "reason": "End-to-end integration test and calculator fixture verified",
+            "source_hash": "add8e513273b00d8b6aabb55c7924e9253b51d2a6f5d5ae357ec475181c85f81",
+            "observed_at": "2026-09-06T09:54:30.863Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:59:06.992Z",
+      "updated_at": "2026-09-06T09:54:41.403Z"
+    },
+    {
+      "id": "TASK-14",
+      "outcome": "eval/tasks/task-{1..5}/ each contains fixture repo, request.txt, expected verification command, success criteria, and a logged result JSON. Each task is independently run and verified. Failure categories are recorded for any unsuccessful runs.",
+      "state": "done",
+      "risk": "medium",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "AC-9",
+        "FR-13"
+      ],
+      "gates": [
+        {
+          "id": "eval",
+          "command": "node eval/run.mjs --task 1",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-14-eval.json",
+            "source_hash": "74682a72ce3cb1ecb18852b75a90126feec3ef56852efab03a8edb6b14a6fcc0",
+            "hash": "d4e448fb45ea12419012717cd110f3e7572a342305b774e28b5f73d1b32569ae",
+            "observed_at": "2026-09-06T11:31:25.256Z"
+          }
+        },
+        {
+          "id": "independent-review",
+          "command": "",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "human": "Pinkal",
+            "reason": "Evaluation suite task-1 to task-5 verified",
+            "source_hash": "74682a72ce3cb1ecb18852b75a90126feec3ef56852efab03a8edb6b14a6fcc0",
+            "observed_at": "2026-09-06T11:41:53.992Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T13:59:32.413Z",
+      "updated_at": "2026-09-06T11:42:08.018Z"
+    },
+    {
+      "id": "TASK-15",
+      "outcome": "All unit and integration tests pass. IMPLEMENTATION_PROGRESS.md shows every item checked. No API keys appear in any committed file or log. genesis index and genesis checkpoint succeed cleanly.",
+      "state": "done",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "AC-7",
+        "AC-10",
+        "NFR-1",
+        "NFR-5"
+      ],
+      "gates": [
+        {
+          "id": "all-tests",
+          "command": "npx vitest run",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-15-all-tests.json",
+            "source_hash": "5d2a17f6a6d50105452142127f84d833c605d1af5710454cfd8f7e5f60d5b8f4",
+            "hash": "13e60fddbecfcfb8c048389075c2724d1238f379629e89bbe57509242068485e",
+            "observed_at": "2026-09-06T11:44:18.149Z"
+          }
+        },
+        {
+          "id": "checkpoint",
+          "command": "genesis checkpoint .",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/TASK-15-checkpoint.json",
+            "source_hash": "5d2a17f6a6d50105452142127f84d833c605d1af5710454cfd8f7e5f60d5b8f4",
+            "hash": "049d65e45f68812abc52fb5b3976ccb6922b0f701f33a4fda88fe692551767fd",
+            "observed_at": "2026-09-06T11:44:19.095Z"
+          }
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-05T14:00:00.421Z",
+      "updated_at": "2026-09-06T11:47:05.898Z"
+    }
+  ],
+  "learning_proposals": [],
+  "cleanup_proposals": [],
+  "controls": [
+    {
+      "id": "ca72ca65-e7a3-4bbd-861c-9da9b84d2099",
+      "at": "2026-09-05T15:13:47.415Z",
+      "action": "approve",
+      "task": "TASK-03",
+      "human": "Pinkal",
+      "reason": "Gemini provider adapter reviewed and tested",
+      "revision": null
+    },
+    {
+      "id": "4ebeb0ce-bfa0-4bb1-a9b8-4aedf3a274bb",
+      "at": "2026-09-05T16:16:22.162Z",
+      "action": "approve",
+      "task": "TASK-08",
+      "human": "Pinkal",
+      "reason": "RunCommandTool and command safety policy reviewed and tested",
+      "revision": null
+    },
+    {
+      "id": "ec9547ba-bdb9-49d2-baec-f192b67ca7fb",
+      "at": "2026-09-06T09:42:45.281Z",
+      "action": "approve",
+      "task": "TASK-10",
+      "human": "Pinkal",
+      "reason": "Agent loop and guardrails reviewed",
+      "revision": null
+    },
+    {
+      "id": "296d4b47-ab7b-4aac-8790-481c7024557b",
+      "at": "2026-09-06T09:54:30.863Z",
+      "action": "approve",
+      "task": "TASK-13",
+      "human": "Pinkal",
+      "reason": "End-to-end integration test and calculator fixture verified",
+      "revision": null
+    },
+    {
+      "id": "4d865953-0bca-4f4d-9bfa-97b30474d83d",
+      "at": "2026-09-06T11:41:53.992Z",
+      "action": "approve",
+      "task": "TASK-14",
+      "human": "Pinkal",
+      "reason": "Evaluation suite task-1 to task-5 verified",
+      "revision": null
+    }
+  ],
+  "discovery": null,
+  "checkpoint": {
+    "at": "2026-09-06T11:59:31.287Z",
+    "revision": {
+      "commit": null,
+      "dirty": null,
+      "source_hash": "0f00c4a22b723202af332acf4a5466e3133f943aa6af85bedb95b8a2dd0bc6ab"
+    },
+    "active_task": null,
+    "next_action": "Review completed work and choose the next bounded outcome."
+  },
+  "legacy": null
+}

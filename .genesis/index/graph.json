@@ -1,0 +1,4406 @@
+{
+  "schemaVersion": 1,
+  "project": "Enterprise Coding agent",
+  "revision": null,
+  "sourceHash": "c3ead3bbf16b76a46c791a03811297056756c67ee65e92bbdac0d024b2e3c6d1",
+  "provenance": {
+    "tool": "genesis-graphizer",
+    "method": "static-analysis",
+    "confidenceScale": "0..1"
+  },
+  "nodes": [
+    {
+      "id": "file:eval/run.mjs",
+      "type": "file",
+      "label": "eval/run.mjs",
+      "path": "eval/run.mjs",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "eval/run.mjs"
+      },
+      "contentHash": "5c96f78a8f973c8c59c76697b602570f07d0641e7acea2708c7a959fdbf0e84d"
+    },
+    {
+      "id": "file:eval/runner.ts",
+      "type": "file",
+      "label": "eval/runner.ts",
+      "path": "eval/runner.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "feb53b112f8d4b2daf8ff4623564e02a274f5a9280915db6f651a5cf43416ea9"
+    },
+    {
+      "id": "file:eval/tasks/task-1/paginate.js",
+      "type": "file",
+      "label": "eval/tasks/task-1/paginate.js",
+      "path": "eval/tasks/task-1/paginate.js",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "eval/tasks/task-1/paginate.js"
+      },
+      "contentHash": "cddaca7e3d56752953ba3e67b1753a5a94add2728e0403c83080987db4f599a8"
+    },
+    {
+      "id": "file:eval/tasks/task-1/test.js",
+      "type": "file",
+      "label": "eval/tasks/task-1/test.js",
+      "path": "eval/tasks/task-1/test.js",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "eval/tasks/task-1/test.js"
+      },
+      "contentHash": "2011afef161e6a74135db5c990327c506d6f123fd848658a455af278b8ea4053"
+    },
+    {
+      "id": "file:eval/tasks/task-2/slugify.js",
+      "type": "file",
+      "label": "eval/tasks/task-2/slugify.js",
+      "path": "eval/tasks/task-2/slugify.js",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "eval/tasks/task-2/slugify.js"
+      },
+      "contentHash": "a3fbcbf8f5a564ad63283efcb7c92d5672d49a40ca548c3b1d12626da3622699"
+    },
+    {
+      "id": "file:eval/tasks/task-2/test.js",
+      "type": "file",
+      "label": "eval/tasks/task-2/test.js",
+      "path": "eval/tasks/task-2/test.js",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "eval/tasks/task-2/test.js"
+      },
+      "contentHash": "9887ef902286b2b0bc474c3c4573f94e21d4d884651c0b5f78f37bd63e6f6b96"
+    },
+    {
+      "id": "file:eval/tasks/task-3/test.js",
+      "type": "file",
+      "label": "eval/tasks/task-3/test.js",
+      "path": "eval/tasks/task-3/test.js",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "eval/tasks/task-3/test.js"
+      },
+      "contentHash": "057ba435f3d7ea775beda8c20a09caaea3a2dcc105ca79118b50f9726a29d6f8"
+    },
+    {
+      "id": "file:eval/tasks/task-3/truncate.js",
+      "type": "file",
+      "label": "eval/tasks/task-3/truncate.js",
+      "path": "eval/tasks/task-3/truncate.js",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "eval/tasks/task-3/truncate.js"
+      },
+      "contentHash": "cd0403353d77ddabb0885fd0dc3346c9e72dd34226b148b63f71d83ffc7f424e"
+    },
+    {
+      "id": "file:eval/tasks/task-4/get.js",
+      "type": "file",
+      "label": "eval/tasks/task-4/get.js",
+      "path": "eval/tasks/task-4/get.js",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "eval/tasks/task-4/get.js"
+      },
+      "contentHash": "47e7ca1af20295eec978cad1e0f732995a57c86e374a3fa3f90061c370081ecd"
+    },
+    {
+      "id": "file:eval/tasks/task-4/test.js",
+      "type": "file",
+      "label": "eval/tasks/task-4/test.js",
+      "path": "eval/tasks/task-4/test.js",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "eval/tasks/task-4/test.js"
+      },
+      "contentHash": "cc30a2203a28873350d1b600cbbac976d8575f4260da2e86365e7e0f889c74a6"
+    },
+    {
+      "id": "file:eval/tasks/task-5/sort.js",
+      "type": "file",
+      "label": "eval/tasks/task-5/sort.js",
+      "path": "eval/tasks/task-5/sort.js",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "eval/tasks/task-5/sort.js"
+      },
+      "contentHash": "960c8b1e30c19c392deac5912549aa70c0096111583a774d34cb26e51217bff3"
+    },
+    {
+      "id": "file:eval/tasks/task-5/test.js",
+      "type": "file",
+      "label": "eval/tasks/task-5/test.js",
+      "path": "eval/tasks/task-5/test.js",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "eval/tasks/task-5/test.js"
+      },
+      "contentHash": "c3e67601d41a87f251cab3a9a04f21ef134086673a251db3f2829ad1606733f0"
+    },
+    {
+      "id": "file:examples/demo.ts",
+      "type": "file",
+      "label": "examples/demo.ts",
+      "path": "examples/demo.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "examples/demo.ts"
+      },
+      "contentHash": "0a6116b0f2d82a449a1f19d8dc68c6747746af93ec4099a25758ac25651ac24b"
+    },
+    {
+      "id": "file:src/agent/loop.ts",
+      "type": "file",
+      "label": "src/agent/loop.ts",
+      "path": "src/agent/loop.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/agent/loop.ts"
+      },
+      "contentHash": "ce676db09444d043f8b210d83a0951463f0fde45a2e0d7f8fb07f0f97d44c644"
+    },
+    {
+      "id": "file:src/agent/state.ts",
+      "type": "file",
+      "label": "src/agent/state.ts",
+      "path": "src/agent/state.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/agent/state.ts"
+      },
+      "contentHash": "939dc0d8bd0b2f64bd44505192691d580280ba2faee30d5ea5dbf4fbe923709e"
+    },
+    {
+      "id": "file:src/cli/main.ts",
+      "type": "file",
+      "label": "src/cli/main.ts",
+      "path": "src/cli/main.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/cli/main.ts"
+      },
+      "contentHash": "a9a69d908e34a8daa08c16f5de2ef36f1e25e515507cbe10ad1eb6cda3a2aedf"
+    },
+    {
+      "id": "file:src/cli/runner.ts",
+      "type": "file",
+      "label": "src/cli/runner.ts",
+      "path": "src/cli/runner.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "adc348e9f1048c43712b1a153241f2e1788bee4b76a71472e3e45d113e4fc6f6"
+    },
+    {
+      "id": "file:src/context/context.ts",
+      "type": "file",
+      "label": "src/context/context.ts",
+      "path": "src/context/context.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/context/context.ts"
+      },
+      "contentHash": "fbd07f97cba24c4f0bbe4f744cf059475ef85d614f56ce645543d70b4f02effd"
+    },
+    {
+      "id": "file:src/llm/gemini.ts",
+      "type": "file",
+      "label": "src/llm/gemini.ts",
+      "path": "src/llm/gemini.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/llm/gemini.ts"
+      },
+      "contentHash": "2fa2ddd1654e5f3499982b53e26f60783fe782e3d3d9336b663c0ce5b22b6af6"
+    },
+    {
+      "id": "file:src/llm/provider.ts",
+      "type": "file",
+      "label": "src/llm/provider.ts",
+      "path": "src/llm/provider.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/llm/provider.ts"
+      },
+      "contentHash": "7e2199acc2a0dc958d0c3157f1e552cb1640107ef42542151b92f56b33994fea"
+    },
+    {
+      "id": "file:src/llm/types.ts",
+      "type": "file",
+      "label": "src/llm/types.ts",
+      "path": "src/llm/types.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/llm/types.ts"
+      },
+      "contentHash": "db881e9145e3c3a453f3588a7806a67f8d97691e22154476b570a35e5d7ddcb0"
+    },
+    {
+      "id": "file:src/logging/logger.ts",
+      "type": "file",
+      "label": "src/logging/logger.ts",
+      "path": "src/logging/logger.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/logging/logger.ts"
+      },
+      "contentHash": "ca98cd8558fb6427c1415dfe0188bec6994ab18eb0e343c1430ee0196181fc7a"
+    },
+    {
+      "id": "file:src/safety/policy.ts",
+      "type": "file",
+      "label": "src/safety/policy.ts",
+      "path": "src/safety/policy.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/safety/policy.ts"
+      },
+      "contentHash": "5d5141f317efe64b55303ad63a50152eaadef2f4e22e6c0c726857ce16610177"
+    },
+    {
+      "id": "file:src/tools/edit-file.ts",
+      "type": "file",
+      "label": "src/tools/edit-file.ts",
+      "path": "src/tools/edit-file.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/tools/edit-file.ts"
+      },
+      "contentHash": "c6cf1a3838d80ffa7c2cde3f6823d6fc6a885761a24be1bb55097524ed52f72d"
+    },
+    {
+      "id": "file:src/tools/read-file.ts",
+      "type": "file",
+      "label": "src/tools/read-file.ts",
+      "path": "src/tools/read-file.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/tools/read-file.ts"
+      },
+      "contentHash": "5eaed328e3eacfe4e166d25f1dfad6aa6e54490d45e8a54dfe525ea9adf6fbbc"
+    },
+    {
+      "id": "file:src/tools/registry.ts",
+      "type": "file",
+      "label": "src/tools/registry.ts",
+      "path": "src/tools/registry.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/tools/registry.ts"
+      },
+      "contentHash": "b019d2e7afe2e08e80241da1593d661e25cd8516144fbd1f4b236b01899e75b6"
+    },
+    {
+      "id": "file:src/tools/run-command.ts",
+      "type": "file",
+      "label": "src/tools/run-command.ts",
+      "path": "src/tools/run-command.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/tools/run-command.ts"
+      },
+      "contentHash": "681fcfce2f6ddb77eef3c9f86cc3c729a9361cb954ce371b074606f42fec0a64"
+    },
+    {
+      "id": "file:src/tools/search.ts",
+      "type": "file",
+      "label": "src/tools/search.ts",
+      "path": "src/tools/search.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/tools/search.ts"
+      },
+      "contentHash": "41b57aabcb693e2c74beabc8810b5bf38ab1fee2e5c3d81ce411941d5317ff93"
+    },
+    {
+      "id": "file:src/tools/types.ts",
+      "type": "file",
+      "label": "src/tools/types.ts",
+      "path": "src/tools/types.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "src/tools/types.ts"
+      },
+      "contentHash": "4289be83c42d3087ce16f426d95893f4c3fcdc42e5d081c5517b4dc79bcbfb46"
+    },
+    {
+      "id": "file:tests/fixtures/test-project/calculator.js",
+      "type": "file",
+      "label": "tests/fixtures/test-project/calculator.js",
+      "path": "tests/fixtures/test-project/calculator.js",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/fixtures/test-project/calculator.js"
+      },
+      "contentHash": "885f31d1dd55ccb65bb770d916c47d925091475ab4a73d384414de49898a1cfe"
+    },
+    {
+      "id": "file:tests/fixtures/test-project/calculator.test.js",
+      "type": "file",
+      "label": "tests/fixtures/test-project/calculator.test.js",
+      "path": "tests/fixtures/test-project/calculator.test.js",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/fixtures/test-project/calculator.test.js"
+      },
+      "contentHash": "46a0413138357ab490b9090fc45495a77afd70c2304ad75f288558a302855479"
+    },
+    {
+      "id": "file:tests/integration/agent-integration.test.ts",
+      "type": "file",
+      "label": "tests/integration/agent-integration.test.ts",
+      "path": "tests/integration/agent-integration.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/integration/agent-integration.test.ts"
+      },
+      "contentHash": "345088c91fd2c7bc34947d3a5afdd12174374d9aeda0c5e1549bedcaa99a09dd"
+    },
+    {
+      "id": "file:tests/integration/eval-runner.test.ts",
+      "type": "file",
+      "label": "tests/integration/eval-runner.test.ts",
+      "path": "tests/integration/eval-runner.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "eacb7a25c78ef69f924db8ddaa809f4e2bad7832a38013a6d296d452e1377ac8"
+    },
+    {
+      "id": "file:tests/unit/agent-loop.test.ts",
+      "type": "file",
+      "label": "tests/unit/agent-loop.test.ts",
+      "path": "tests/unit/agent-loop.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/unit/agent-loop.test.ts"
+      },
+      "contentHash": "70136f4a46d21932bedcb66c11e3b796cf4c64dc4fb322fe1502243eef39fd44"
+    },
+    {
+      "id": "file:tests/unit/cli.test.ts",
+      "type": "file",
+      "label": "tests/unit/cli.test.ts",
+      "path": "tests/unit/cli.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/unit/cli.test.ts"
+      },
+      "contentHash": "b11d7bb9a5eb263ae6fc77c64c52add31e21f4b419108a6a71b6634781539429"
+    },
+    {
+      "id": "file:tests/unit/context.test.ts",
+      "type": "file",
+      "label": "tests/unit/context.test.ts",
+      "path": "tests/unit/context.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/unit/context.test.ts"
+      },
+      "contentHash": "4f1e0bf48ddf098e3d2c1d2e775dd48ee66d35b9770b29b8ece104340b5a4f7d"
+    },
+    {
+      "id": "file:tests/unit/edit-file.test.ts",
+      "type": "file",
+      "label": "tests/unit/edit-file.test.ts",
+      "path": "tests/unit/edit-file.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/unit/edit-file.test.ts"
+      },
+      "contentHash": "4d8a1afce4c51dc7b1f3daf4c32218bf02d39ff7f7ee0440fe5de9b5e40857a3"
+    },
+    {
+      "id": "file:tests/unit/gemini-adapter.test.ts",
+      "type": "file",
+      "label": "tests/unit/gemini-adapter.test.ts",
+      "path": "tests/unit/gemini-adapter.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/unit/gemini-adapter.test.ts"
+      },
+      "contentHash": "efe437ad16312d4988eae7d4fb2b86bc5ecb166118d0e1dfd227c7d44f33a149"
+    },
+    {
+      "id": "file:tests/unit/llm-types.test.ts",
+      "type": "file",
+      "label": "tests/unit/llm-types.test.ts",
+      "path": "tests/unit/llm-types.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/unit/llm-types.test.ts"
+      },
+      "contentHash": "648a2fdac52d49249c6de4e0440ce62165cfb1a993c5446a44b9ea99d3980a64"
+    },
+    {
+      "id": "file:tests/unit/logger.test.ts",
+      "type": "file",
+      "label": "tests/unit/logger.test.ts",
+      "path": "tests/unit/logger.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/unit/logger.test.ts"
+      },
+      "contentHash": "e34a6b4e2160be127c22385199f5d309c1dcc0320ac5fa5443893d723b7317e0"
+    },
+    {
+      "id": "file:tests/unit/read-file.test.ts",
+      "type": "file",
+      "label": "tests/unit/read-file.test.ts",
+      "path": "tests/unit/read-file.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/unit/read-file.test.ts"
+      },
+      "contentHash": "4cf4d28e4e4949d21818250b97ad21bd775b6fb0d65d04b659ea5f4f66ba7c1f"
+    },
+    {
+      "id": "file:tests/unit/run-command.test.ts",
+      "type": "file",
+      "label": "tests/unit/run-command.test.ts",
+      "path": "tests/unit/run-command.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/unit/run-command.test.ts"
+      },
+      "contentHash": "655470ed1b1c621f1fccebc3b3b2657060d596e7f8d005c6d1cd7d50f6755cbd"
+    },
+    {
+      "id": "file:tests/unit/search.test.ts",
+      "type": "file",
+      "label": "tests/unit/search.test.ts",
+      "path": "tests/unit/search.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/unit/search.test.ts"
+      },
+      "contentHash": "d4e547ca70116cab90474f37f7c908ae656996d3920b329f71f9ccfa9ed32851"
+    },
+    {
+      "id": "file:tests/unit/tool-registry.test.ts",
+      "type": "file",
+      "label": "tests/unit/tool-registry.test.ts",
+      "path": "tests/unit/tool-registry.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "tests/unit/tool-registry.test.ts"
+      },
+      "contentHash": "58cd5e7c66a60bf3e26d9dfa15b0738e4952618782055507e4f9c240c8387cb1"
+    },
+    {
+      "id": "file:vitest.config.ts",
+      "type": "file",
+      "label": "vitest.config.ts",
+      "path": "vitest.config.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "provenance": {
+        "extractor": "filesystem",
+        "source": "vitest.config.ts"
+      },
+      "contentHash": "f9ebe275891a8a152d942ecf87323d09545517c480af7fe2d50fe809681c0367"
+    },
+    {
+      "id": "package:npm:@google/genai",
+      "type": "package",
+      "label": "@google/genai",
+      "ecosystem": "npm",
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "import",
+        "source": "src/llm/gemini.ts"
+      },
+      "contentHash": "ec5d40ee90edf08aae2605b2aeb1ac31002eeb2ee25cd199b6f1fc81c9bd2254"
+    },
+    {
+      "id": "package:npm:vitest",
+      "type": "package",
+      "label": "vitest",
+      "ecosystem": "npm",
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "import",
+        "source": "vitest.config.ts"
+      },
+      "contentHash": "70ffaa147e323acefdbeceb958c431f027b3b1973fa9de1cc318b49c22e0f7f1"
+    },
+    {
+      "id": "package:npm:zod",
+      "type": "package",
+      "label": "zod",
+      "ecosystem": "npm",
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "import",
+        "source": "tests/unit/tool-registry.test.ts"
+      },
+      "contentHash": "6c2ce044747b711f23b58dd1532c08ec73eb6333bd1a1352687c968b770654a1"
+    },
+    {
+      "id": "runtime:javascript:assert",
+      "type": "runtime",
+      "label": "assert",
+      "language": "javascript",
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "standard-library",
+        "source": "tests/fixtures/test-project/calculator.test.js"
+      },
+      "contentHash": "0d6f8ae8d65e0d19074ed44cdad5dba87962922ff54d8addaf83434512e5f030"
+    },
+    {
+      "id": "runtime:javascript:child_process",
+      "type": "runtime",
+      "label": "child_process",
+      "language": "javascript",
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "standard-library",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "6e1742450f7f56b80f1004a8a04675b38781504a842956d2dc868e1ff82f444c"
+    },
+    {
+      "id": "runtime:javascript:fs",
+      "type": "runtime",
+      "label": "fs",
+      "language": "javascript",
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "standard-library",
+        "source": "tests/unit/search.test.ts"
+      },
+      "contentHash": "ce2a049758b0dbddfa6a0d8494e0984d628f657a4f878a68363051b6a88a7a66"
+    },
+    {
+      "id": "runtime:javascript:os",
+      "type": "runtime",
+      "label": "os",
+      "language": "javascript",
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "standard-library",
+        "source": "tests/unit/search.test.ts"
+      },
+      "contentHash": "e1ee9770965255b5fb95a16d76225c6a777834d75aff4e3f658fded143df319b"
+    },
+    {
+      "id": "runtime:javascript:path",
+      "type": "runtime",
+      "label": "path",
+      "language": "javascript",
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "standard-library",
+        "source": "tests/unit/search.test.ts"
+      },
+      "contentHash": "8e9e99a892940fe6824c66f1743a5359c95f727c8518cd02475056bed12dbba5"
+    },
+    {
+      "id": "symbol:eval/runner.ts#function:main",
+      "type": "symbol",
+      "kind": "function",
+      "name": "main",
+      "label": "main",
+      "path": "eval/runner.ts",
+      "line": 268,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "f583c61a40c09d3bfca9b3e6ef3e28a4f4dfaced58f9b895d0d76c0d77a8dd4c"
+    },
+    {
+      "id": "symbol:eval/runner.ts#function:runTask",
+      "type": "symbol",
+      "kind": "function",
+      "name": "runTask",
+      "label": "runTask",
+      "path": "eval/runner.ts",
+      "line": 194,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "5e2261164c73ba0864f62343e75e71d35ce2a3e50595b312aaef2af11b946d36"
+    },
+    {
+      "id": "symbol:eval/tasks/task-1/paginate.js#function:paginate",
+      "type": "symbol",
+      "kind": "function",
+      "name": "paginate",
+      "label": "paginate",
+      "path": "eval/tasks/task-1/paginate.js",
+      "line": 1,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "eval/tasks/task-1/paginate.js"
+      },
+      "contentHash": "e87521ff9ecd1637306e18a4dc8206230348a77859f08b82ac7f35b2b2cb4e81"
+    },
+    {
+      "id": "symbol:eval/tasks/task-2/slugify.js#function:slugify",
+      "type": "symbol",
+      "kind": "function",
+      "name": "slugify",
+      "label": "slugify",
+      "path": "eval/tasks/task-2/slugify.js",
+      "line": 1,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "eval/tasks/task-2/slugify.js"
+      },
+      "contentHash": "a0f03ae974d53e8336d94dcf7f7e43029dc670f04868b63af07529a776839b38"
+    },
+    {
+      "id": "symbol:eval/tasks/task-3/truncate.js#function:truncate",
+      "type": "symbol",
+      "kind": "function",
+      "name": "truncate",
+      "label": "truncate",
+      "path": "eval/tasks/task-3/truncate.js",
+      "line": 1,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "eval/tasks/task-3/truncate.js"
+      },
+      "contentHash": "bec65ba5bc785757cac586b10dc648b8b07c580fba64eb4fca2bd559e762a318"
+    },
+    {
+      "id": "symbol:eval/tasks/task-4/get.js#function:safeGet",
+      "type": "symbol",
+      "kind": "function",
+      "name": "safeGet",
+      "label": "safeGet",
+      "path": "eval/tasks/task-4/get.js",
+      "line": 1,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "eval/tasks/task-4/get.js"
+      },
+      "contentHash": "17e28e0d3725b74ffb9f01514ded3ba30418842ec5a9bc64967f41774f548289"
+    },
+    {
+      "id": "symbol:eval/tasks/task-5/sort.js#function:sortNumbers",
+      "type": "symbol",
+      "kind": "function",
+      "name": "sortNumbers",
+      "label": "sortNumbers",
+      "path": "eval/tasks/task-5/sort.js",
+      "line": 1,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "eval/tasks/task-5/sort.js"
+      },
+      "contentHash": "641df80962029f50e25c4836755021e3aef0b334be75af81c99554d663837f2d"
+    },
+    {
+      "id": "symbol:examples/demo.ts#function:runCodingAgent",
+      "type": "symbol",
+      "kind": "function",
+      "name": "runCodingAgent",
+      "label": "runCodingAgent",
+      "path": "examples/demo.ts",
+      "line": 18,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "examples/demo.ts"
+      },
+      "contentHash": "018a58740b1481267737f707c018c6cf20adb5208743f04cd4daa2374f0b99bd"
+    },
+    {
+      "id": "symbol:src/agent/loop.ts#class:AgentLoop",
+      "type": "symbol",
+      "kind": "class",
+      "name": "AgentLoop",
+      "label": "AgentLoop",
+      "path": "src/agent/loop.ts",
+      "line": 46,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/agent/loop.ts"
+      },
+      "contentHash": "cec7923e4ed541901c1bfc1ff57adf7af0e1bd1284ef608418cf2e370b697341"
+    },
+    {
+      "id": "symbol:src/agent/loop.ts#variable:DEFAULT_MAX_CONSECUTIVE_FAILURES",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "DEFAULT_MAX_CONSECUTIVE_FAILURES",
+      "label": "DEFAULT_MAX_CONSECUTIVE_FAILURES",
+      "path": "src/agent/loop.ts",
+      "line": 15,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/agent/loop.ts"
+      },
+      "contentHash": "4304c6b2ae70c0d0a3ab7d9eab5221542e4356ce41bea255d3b45aaa61f5daae"
+    },
+    {
+      "id": "symbol:src/agent/loop.ts#variable:DEFAULT_MAX_ITERATIONS",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "DEFAULT_MAX_ITERATIONS",
+      "label": "DEFAULT_MAX_ITERATIONS",
+      "path": "src/agent/loop.ts",
+      "line": 13,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/agent/loop.ts"
+      },
+      "contentHash": "bcb6fef026b7316114df364769fa9f567b87dda1371278a5f873bebe29cf4f10"
+    },
+    {
+      "id": "symbol:src/agent/state.ts#class:TaskState",
+      "type": "symbol",
+      "kind": "class",
+      "name": "TaskState",
+      "label": "TaskState",
+      "path": "src/agent/state.ts",
+      "line": 24,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/agent/state.ts"
+      },
+      "contentHash": "b28b3b72d409d4897dc2b5f52979280d9ff6bdee0af5bfdb697e6b6b88fadd3d"
+    },
+    {
+      "id": "symbol:src/cli/main.ts#function:main",
+      "type": "symbol",
+      "kind": "function",
+      "name": "main",
+      "label": "main",
+      "path": "src/cli/main.ts",
+      "line": 8,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/cli/main.ts"
+      },
+      "contentHash": "f583c61a40c09d3bfca9b3e6ef3e28a4f4dfaced58f9b895d0d76c0d77a8dd4c"
+    },
+    {
+      "id": "symbol:src/cli/runner.ts#function:formatEventMessage",
+      "type": "symbol",
+      "kind": "function",
+      "name": "formatEventMessage",
+      "label": "formatEventMessage",
+      "path": "src/cli/runner.ts",
+      "line": 55,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "aafe9e5ae0419f89ef08608383119e377cc7a2ecc27aee87aaa34e03b7e74c50"
+    },
+    {
+      "id": "symbol:src/cli/runner.ts#function:parseCliArgs",
+      "type": "symbol",
+      "kind": "function",
+      "name": "parseCliArgs",
+      "label": "parseCliArgs",
+      "path": "src/cli/runner.ts",
+      "line": 23,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "84f5c365e084bf29ce2b89aed23b3f164aa5dfb641490f11118ce53dd7db8958"
+    },
+    {
+      "id": "symbol:src/cli/runner.ts#function:runCli",
+      "type": "symbol",
+      "kind": "function",
+      "name": "runCli",
+      "label": "runCli",
+      "path": "src/cli/runner.ts",
+      "line": 82,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "c05d7aaee38122c63eded3ba925b66da5695f544b06f6b6377fd908cab029da3"
+    },
+    {
+      "id": "symbol:src/context/context.ts#class:ContextManager",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ContextManager",
+      "label": "ContextManager",
+      "path": "src/context/context.ts",
+      "line": 24,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/context/context.ts"
+      },
+      "contentHash": "c913c46facde7c7910363532ca4636721516b3d1d7e9f75435bb76991cfd2d0e"
+    },
+    {
+      "id": "symbol:src/context/context.ts#variable:DEFAULT_SYSTEM_PROMPT",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "DEFAULT_SYSTEM_PROMPT",
+      "label": "DEFAULT_SYSTEM_PROMPT",
+      "path": "src/context/context.ts",
+      "line": 7,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/context/context.ts"
+      },
+      "contentHash": "3f173f560acee482cbe29f7aecbdfe8f7890c9ebe8e3aaf871e90e065bd9fed9"
+    },
+    {
+      "id": "symbol:src/context/context.ts#variable:MAX_MESSAGE_CONTENT_BYTES",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "MAX_MESSAGE_CONTENT_BYTES",
+      "label": "MAX_MESSAGE_CONTENT_BYTES",
+      "path": "src/context/context.ts",
+      "line": 17,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/context/context.ts"
+      },
+      "contentHash": "c0ab83c94e711f980c72848eccdac4ddc1076c38fd38622528942a5f413c7225"
+    },
+    {
+      "id": "symbol:src/llm/gemini.ts#class:GeminiProvider",
+      "type": "symbol",
+      "kind": "class",
+      "name": "GeminiProvider",
+      "label": "GeminiProvider",
+      "path": "src/llm/gemini.ts",
+      "line": 32,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/llm/gemini.ts"
+      },
+      "contentHash": "44ed09fdac438599c853ed66f0fed53899d0f124ad83d3980f8c4239cd32f5fd"
+    },
+    {
+      "id": "symbol:src/llm/gemini.ts#variable:DEFAULT_GEMINI_MODEL",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "DEFAULT_GEMINI_MODEL",
+      "label": "DEFAULT_GEMINI_MODEL",
+      "path": "src/llm/gemini.ts",
+      "line": 22,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/llm/gemini.ts"
+      },
+      "contentHash": "01e6ea9df50d179097f2d3c46dc540df72838828b0f7934551d5477e8dc1ab9e"
+    },
+    {
+      "id": "symbol:src/llm/types.ts#class:ProviderError",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ProviderError",
+      "label": "ProviderError",
+      "path": "src/llm/types.ts",
+      "line": 111,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/llm/types.ts"
+      },
+      "contentHash": "110a7cb6c9117cc20bf72a88e6a67c6ffd7b4d80c79b3e8db647eda5051f8f74"
+    },
+    {
+      "id": "symbol:src/logging/logger.ts#class:StructuredLogger",
+      "type": "symbol",
+      "kind": "class",
+      "name": "StructuredLogger",
+      "label": "StructuredLogger",
+      "path": "src/logging/logger.ts",
+      "line": 38,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/logging/logger.ts"
+      },
+      "contentHash": "f93ef0bb2df6e225083640134b7a8733360f8ca3c76534fe1951d6eca1742851"
+    },
+    {
+      "id": "symbol:src/safety/policy.ts#class:SafetyPolicy",
+      "type": "symbol",
+      "kind": "class",
+      "name": "SafetyPolicy",
+      "label": "SafetyPolicy",
+      "path": "src/safety/policy.ts",
+      "line": 13,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/safety/policy.ts"
+      },
+      "contentHash": "f6a1b711a3887a1d671f24c530f5edb72e0f95431024da97dddcb32aef1058b8"
+    },
+    {
+      "id": "symbol:src/tools/edit-file.ts#class:EditFileTool",
+      "type": "symbol",
+      "kind": "class",
+      "name": "EditFileTool",
+      "label": "EditFileTool",
+      "path": "src/tools/edit-file.ts",
+      "line": 23,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/edit-file.ts"
+      },
+      "contentHash": "c7c5f16375db26445f29923123f935c103a262711ed252e3ebad6a1097220646"
+    },
+    {
+      "id": "symbol:src/tools/edit-file.ts#variable:EditFileInputSchema",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "EditFileInputSchema",
+      "label": "EditFileInputSchema",
+      "path": "src/tools/edit-file.ts",
+      "line": 13,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/edit-file.ts"
+      },
+      "contentHash": "d1318c92dfd3e4fef02c089bd8b9e3114e2d8520cedbda1502cf412787894100"
+    },
+    {
+      "id": "symbol:src/tools/read-file.ts#class:ReadFileTool",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ReadFileTool",
+      "label": "ReadFileTool",
+      "path": "src/tools/read-file.ts",
+      "line": 22,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/read-file.ts"
+      },
+      "contentHash": "385799ec6e2119e9bb910af2a655a71e41c78f70691949742beefce24752c877"
+    },
+    {
+      "id": "symbol:src/tools/read-file.ts#variable:DEFAULT_MAX_READ_BYTES",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "DEFAULT_MAX_READ_BYTES",
+      "label": "DEFAULT_MAX_READ_BYTES",
+      "path": "src/tools/read-file.ts",
+      "line": 20,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/read-file.ts"
+      },
+      "contentHash": "8d1102b22ece29fc3b6bb50d4cb42807ead386619c9109c6784e51f562463c31"
+    },
+    {
+      "id": "symbol:src/tools/read-file.ts#variable:ReadFileInputSchema",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "ReadFileInputSchema",
+      "label": "ReadFileInputSchema",
+      "path": "src/tools/read-file.ts",
+      "line": 11,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/read-file.ts"
+      },
+      "contentHash": "8570f9d4d614bdbef784da32d7a0f0dccfbf43d1e4120ce618acb269a7f28f92"
+    },
+    {
+      "id": "symbol:src/tools/registry.ts#class:ToolRegistry",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ToolRegistry",
+      "label": "ToolRegistry",
+      "path": "src/tools/registry.ts",
+      "line": 8,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/registry.ts"
+      },
+      "contentHash": "5c1709c986c447c289cdc85dd3ad3b96b1cc49642b8858a04cc001e151abdb17"
+    },
+    {
+      "id": "symbol:src/tools/run-command.ts#class:RunCommandTool",
+      "type": "symbol",
+      "kind": "class",
+      "name": "RunCommandTool",
+      "label": "RunCommandTool",
+      "path": "src/tools/run-command.ts",
+      "line": 22,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/run-command.ts"
+      },
+      "contentHash": "d96a99e2c97233ee021cae64572c1d76301c5d8197ca63ccf5108a0659881fc8"
+    },
+    {
+      "id": "symbol:src/tools/run-command.ts#variable:DEFAULT_MAX_COMMAND_OUTPUT_BYTES",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "DEFAULT_MAX_COMMAND_OUTPUT_BYTES",
+      "label": "DEFAULT_MAX_COMMAND_OUTPUT_BYTES",
+      "path": "src/tools/run-command.ts",
+      "line": 20,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/run-command.ts"
+      },
+      "contentHash": "ddb74f759ec7398269c9c266d1d1196e4ae668485062412a8f68c02a6e98978a"
+    },
+    {
+      "id": "symbol:src/tools/run-command.ts#variable:RunCommandInputSchema",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "RunCommandInputSchema",
+      "label": "RunCommandInputSchema",
+      "path": "src/tools/run-command.ts",
+      "line": 12,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/run-command.ts"
+      },
+      "contentHash": "80df93dfca52b30df9975a368af59da268e0c2c7a92540e880e053c3dc5eccd3"
+    },
+    {
+      "id": "symbol:src/tools/search.ts#class:SearchTool",
+      "type": "symbol",
+      "kind": "class",
+      "name": "SearchTool",
+      "label": "SearchTool",
+      "path": "src/tools/search.ts",
+      "line": 37,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/search.ts"
+      },
+      "contentHash": "2fc7bda446b625c8c47a9c3d00412f3c97e32f9ac534dce4fc2c6cfac9c904e0"
+    },
+    {
+      "id": "symbol:src/tools/search.ts#variable:DEFAULT_MAX_SEARCH_BYTES",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "DEFAULT_MAX_SEARCH_BYTES",
+      "label": "DEFAULT_MAX_SEARCH_BYTES",
+      "path": "src/tools/search.ts",
+      "line": 24,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/search.ts"
+      },
+      "contentHash": "90b73be153299f1dc46cdca5bfc41222437026ad94d52f93ddbe3786f5a39711"
+    },
+    {
+      "id": "symbol:src/tools/search.ts#variable:SearchInputSchema",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "SearchInputSchema",
+      "label": "SearchInputSchema",
+      "path": "src/tools/search.ts",
+      "line": 13,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/search.ts"
+      },
+      "contentHash": "e9d090132deb76b4529be165a7fb13b23421ff673cd3575933d04242d50149fd"
+    },
+    {
+      "id": "symbol:tests/fixtures/test-project/calculator.js#function:add",
+      "type": "symbol",
+      "kind": "function",
+      "name": "add",
+      "label": "add",
+      "path": "tests/fixtures/test-project/calculator.js",
+      "line": 3,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "tests/fixtures/test-project/calculator.js"
+      },
+      "contentHash": "48f1defefba7e7db81dfc1f0912dccd81bc9d3acbefbc6b35c9e229117d86b30"
+    },
+    {
+      "id": "symbol:tests/fixtures/test-project/calculator.js#function:multiply",
+      "type": "symbol",
+      "kind": "function",
+      "name": "multiply",
+      "label": "multiply",
+      "path": "tests/fixtures/test-project/calculator.js",
+      "line": 8,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "tests/fixtures/test-project/calculator.js"
+      },
+      "contentHash": "42f06515a079113f588e2cd3e258db1627699194081e216303b6623eb125fc01"
+    },
+    {
+      "id": "symbol:tests/integration/eval-runner.test.ts#function:createToolRegistry",
+      "type": "symbol",
+      "kind": "function",
+      "name": "createToolRegistry",
+      "label": "createToolRegistry",
+      "path": "tests/integration/eval-runner.test.ts",
+      "line": 48,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "b00283d167a56285bdd7051a9f51967ca82d060e8a1cf79ec293ca60206e56f0"
+    },
+    {
+      "id": "symbol:tests/integration/eval-runner.test.ts#function:setupWorkspace",
+      "type": "symbol",
+      "kind": "function",
+      "name": "setupWorkspace",
+      "label": "setupWorkspace",
+      "path": "tests/integration/eval-runner.test.ts",
+      "line": 36,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "11d29221bee6f6505c60ebdf717e39a589823c1a6a2bb6c0dcddcc2f514abdb4"
+    },
+    {
+      "id": "symbol:tests/unit/gemini-adapter.test.ts#function:walk",
+      "type": "symbol",
+      "kind": "function",
+      "name": "walk",
+      "label": "walk",
+      "path": "tests/unit/gemini-adapter.test.ts",
+      "line": 25,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "tests/unit/gemini-adapter.test.ts"
+      },
+      "contentHash": "58281a6079b2bb4768c902a9086ee7b4d5c70311ea967bd089a77333385f3e3f"
+    }
+  ],
+  "edges": [
+    {
+      "id": "defines:file:eval/runner.ts->symbol:eval/runner.ts#function:main:",
+      "type": "defines",
+      "source": "file:eval/runner.ts",
+      "target": "symbol:eval/runner.ts#function:main",
+      "line": 268,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "19d79d2d1eea9c28c4c5b1c93a1790e5bed8572063cc4abe00660c5f4f8b1caa"
+    },
+    {
+      "id": "defines:file:eval/runner.ts->symbol:eval/runner.ts#function:runTask:",
+      "type": "defines",
+      "source": "file:eval/runner.ts",
+      "target": "symbol:eval/runner.ts#function:runTask",
+      "line": 194,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "6447049056dcd87670d2f8defb628e62a0a3449388b47d11a11bcdca7169c372"
+    },
+    {
+      "id": "defines:file:eval/tasks/task-1/paginate.js->symbol:eval/tasks/task-1/paginate.js#function:paginate:",
+      "type": "defines",
+      "source": "file:eval/tasks/task-1/paginate.js",
+      "target": "symbol:eval/tasks/task-1/paginate.js#function:paginate",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "eval/tasks/task-1/paginate.js"
+      },
+      "contentHash": "f420da1ccecd80e629924d926fcc625565e97ea45b7977d18d6e62d3baa11ec7"
+    },
+    {
+      "id": "defines:file:eval/tasks/task-2/slugify.js->symbol:eval/tasks/task-2/slugify.js#function:slugify:",
+      "type": "defines",
+      "source": "file:eval/tasks/task-2/slugify.js",
+      "target": "symbol:eval/tasks/task-2/slugify.js#function:slugify",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "eval/tasks/task-2/slugify.js"
+      },
+      "contentHash": "067f60c21b506bb34fa3e0f46f92fe1e77ca7d2e8991e0cc93935abdd4eec44f"
+    },
+    {
+      "id": "defines:file:eval/tasks/task-3/truncate.js->symbol:eval/tasks/task-3/truncate.js#function:truncate:",
+      "type": "defines",
+      "source": "file:eval/tasks/task-3/truncate.js",
+      "target": "symbol:eval/tasks/task-3/truncate.js#function:truncate",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "eval/tasks/task-3/truncate.js"
+      },
+      "contentHash": "8234f1833cd89ac93e5c823ad68616da61a7a621447522a01aa5c34ddfb92196"
+    },
+    {
+      "id": "defines:file:eval/tasks/task-4/get.js->symbol:eval/tasks/task-4/get.js#function:safeGet:",
+      "type": "defines",
+      "source": "file:eval/tasks/task-4/get.js",
+      "target": "symbol:eval/tasks/task-4/get.js#function:safeGet",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "eval/tasks/task-4/get.js"
+      },
+      "contentHash": "875767f90248e6b35f60ace41a723dffc6a9b4ab23c6fd4664c1908822309e4c"
+    },
+    {
+      "id": "defines:file:eval/tasks/task-5/sort.js->symbol:eval/tasks/task-5/sort.js#function:sortNumbers:",
+      "type": "defines",
+      "source": "file:eval/tasks/task-5/sort.js",
+      "target": "symbol:eval/tasks/task-5/sort.js#function:sortNumbers",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "eval/tasks/task-5/sort.js"
+      },
+      "contentHash": "2a012f53be2ea9c7e8785b24b2121521482c36b8ea51db5ce2ec429441d7b1cd"
+    },
+    {
+      "id": "defines:file:examples/demo.ts->symbol:examples/demo.ts#function:runCodingAgent:",
+      "type": "defines",
+      "source": "file:examples/demo.ts",
+      "target": "symbol:examples/demo.ts#function:runCodingAgent",
+      "line": 18,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "examples/demo.ts"
+      },
+      "contentHash": "9024a5ad459e5dc2df16dcf0b5c4c52caa64068d8c7f20c30f6bf6888036cc7b"
+    },
+    {
+      "id": "defines:file:src/agent/loop.ts->symbol:src/agent/loop.ts#class:AgentLoop:",
+      "type": "defines",
+      "source": "file:src/agent/loop.ts",
+      "target": "symbol:src/agent/loop.ts#class:AgentLoop",
+      "line": 46,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/agent/loop.ts"
+      },
+      "contentHash": "0687a0b04815230fdc94408024f1801ea0fc7540700303170d0af8b0a4c56352"
+    },
+    {
+      "id": "defines:file:src/agent/loop.ts->symbol:src/agent/loop.ts#variable:DEFAULT_MAX_CONSECUTIVE_FAILURES:",
+      "type": "defines",
+      "source": "file:src/agent/loop.ts",
+      "target": "symbol:src/agent/loop.ts#variable:DEFAULT_MAX_CONSECUTIVE_FAILURES",
+      "line": 15,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/agent/loop.ts"
+      },
+      "contentHash": "9b37f0612eaaedd7d4320c413a3e2d7ffd2668377062322332c2a13a1131cc29"
+    },
+    {
+      "id": "defines:file:src/agent/loop.ts->symbol:src/agent/loop.ts#variable:DEFAULT_MAX_ITERATIONS:",
+      "type": "defines",
+      "source": "file:src/agent/loop.ts",
+      "target": "symbol:src/agent/loop.ts#variable:DEFAULT_MAX_ITERATIONS",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/agent/loop.ts"
+      },
+      "contentHash": "6b78f72d97235b22ce8de877232256a5618d7891ec5491ab8bf38c7ff2cb519e"
+    },
+    {
+      "id": "defines:file:src/agent/state.ts->symbol:src/agent/state.ts#class:TaskState:",
+      "type": "defines",
+      "source": "file:src/agent/state.ts",
+      "target": "symbol:src/agent/state.ts#class:TaskState",
+      "line": 24,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/agent/state.ts"
+      },
+      "contentHash": "6166ba363f3c2e7667069a994e306b185b1108c04575342c86ba9c6451d57e04"
+    },
+    {
+      "id": "defines:file:src/cli/main.ts->symbol:src/cli/main.ts#function:main:",
+      "type": "defines",
+      "source": "file:src/cli/main.ts",
+      "target": "symbol:src/cli/main.ts#function:main",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/cli/main.ts"
+      },
+      "contentHash": "1282238bf66092d909b680d1b28b0c772d36834d914ee337cf002965a72fcdc8"
+    },
+    {
+      "id": "defines:file:src/cli/runner.ts->symbol:src/cli/runner.ts#function:formatEventMessage:",
+      "type": "defines",
+      "source": "file:src/cli/runner.ts",
+      "target": "symbol:src/cli/runner.ts#function:formatEventMessage",
+      "line": 55,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "85a614bdb877a8538b91f1beb2a9180d2f30ea1244964aee00eb850b668cd895"
+    },
+    {
+      "id": "defines:file:src/cli/runner.ts->symbol:src/cli/runner.ts#function:parseCliArgs:",
+      "type": "defines",
+      "source": "file:src/cli/runner.ts",
+      "target": "symbol:src/cli/runner.ts#function:parseCliArgs",
+      "line": 23,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "c1f6f095102482eec4382a19633057a7afc80cdab0d68a16e7dd2a7f87184445"
+    },
+    {
+      "id": "defines:file:src/cli/runner.ts->symbol:src/cli/runner.ts#function:runCli:",
+      "type": "defines",
+      "source": "file:src/cli/runner.ts",
+      "target": "symbol:src/cli/runner.ts#function:runCli",
+      "line": 82,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "9d1616759df9da13ce088deaf10f4ddfc3e6e460f1fc0aca4ea24196b0cb4a08"
+    },
+    {
+      "id": "defines:file:src/context/context.ts->symbol:src/context/context.ts#class:ContextManager:",
+      "type": "defines",
+      "source": "file:src/context/context.ts",
+      "target": "symbol:src/context/context.ts#class:ContextManager",
+      "line": 24,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/context/context.ts"
+      },
+      "contentHash": "3ed16ec3b5b2ef79ce89479a0cd9f1249584f96969a67e39aa4c348ce0b1264f"
+    },
+    {
+      "id": "defines:file:src/context/context.ts->symbol:src/context/context.ts#variable:DEFAULT_SYSTEM_PROMPT:",
+      "type": "defines",
+      "source": "file:src/context/context.ts",
+      "target": "symbol:src/context/context.ts#variable:DEFAULT_SYSTEM_PROMPT",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/context/context.ts"
+      },
+      "contentHash": "d7f3e85e540219c9c648344e0933f7495fbaa524b36d7572c171e504c4e81677"
+    },
+    {
+      "id": "defines:file:src/context/context.ts->symbol:src/context/context.ts#variable:MAX_MESSAGE_CONTENT_BYTES:",
+      "type": "defines",
+      "source": "file:src/context/context.ts",
+      "target": "symbol:src/context/context.ts#variable:MAX_MESSAGE_CONTENT_BYTES",
+      "line": 17,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/context/context.ts"
+      },
+      "contentHash": "6a38000d696e3e848a6ca7e06b4a1668d3f78d90e05f4c1547d7977703b02e81"
+    },
+    {
+      "id": "defines:file:src/llm/gemini.ts->symbol:src/llm/gemini.ts#class:GeminiProvider:",
+      "type": "defines",
+      "source": "file:src/llm/gemini.ts",
+      "target": "symbol:src/llm/gemini.ts#class:GeminiProvider",
+      "line": 32,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/llm/gemini.ts"
+      },
+      "contentHash": "9b9fcf2b017450a1ebe6aed462fcbb1fdf3e7da55ba5b1e4184498873270f4a8"
+    },
+    {
+      "id": "defines:file:src/llm/gemini.ts->symbol:src/llm/gemini.ts#variable:DEFAULT_GEMINI_MODEL:",
+      "type": "defines",
+      "source": "file:src/llm/gemini.ts",
+      "target": "symbol:src/llm/gemini.ts#variable:DEFAULT_GEMINI_MODEL",
+      "line": 22,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/llm/gemini.ts"
+      },
+      "contentHash": "817abaebb32132688c12561e66bc5dafc0efe51b7f91580a50bba77187c08b96"
+    },
+    {
+      "id": "defines:file:src/llm/types.ts->symbol:src/llm/types.ts#class:ProviderError:",
+      "type": "defines",
+      "source": "file:src/llm/types.ts",
+      "target": "symbol:src/llm/types.ts#class:ProviderError",
+      "line": 111,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/llm/types.ts"
+      },
+      "contentHash": "70d285b9f7918dd5864d8df883d22aa687dec8ff8713d6920ff4863b0641bb79"
+    },
+    {
+      "id": "defines:file:src/logging/logger.ts->symbol:src/logging/logger.ts#class:StructuredLogger:",
+      "type": "defines",
+      "source": "file:src/logging/logger.ts",
+      "target": "symbol:src/logging/logger.ts#class:StructuredLogger",
+      "line": 38,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/logging/logger.ts"
+      },
+      "contentHash": "ff853566bc34b2ad05e46c7d8a7899917955a8ecebfd27381869efac0efbdab8"
+    },
+    {
+      "id": "defines:file:src/safety/policy.ts->symbol:src/safety/policy.ts#class:SafetyPolicy:",
+      "type": "defines",
+      "source": "file:src/safety/policy.ts",
+      "target": "symbol:src/safety/policy.ts#class:SafetyPolicy",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/safety/policy.ts"
+      },
+      "contentHash": "b730f1947249a77bd204d4fd6a3accc7785d1a53d40932473d8b368467d2ba54"
+    },
+    {
+      "id": "defines:file:src/tools/edit-file.ts->symbol:src/tools/edit-file.ts#class:EditFileTool:",
+      "type": "defines",
+      "source": "file:src/tools/edit-file.ts",
+      "target": "symbol:src/tools/edit-file.ts#class:EditFileTool",
+      "line": 23,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/edit-file.ts"
+      },
+      "contentHash": "0f7522218275c61b0c2ed0f157ac4e51850718044e4ab82dcdd4006fb3014657"
+    },
+    {
+      "id": "defines:file:src/tools/edit-file.ts->symbol:src/tools/edit-file.ts#variable:EditFileInputSchema:",
+      "type": "defines",
+      "source": "file:src/tools/edit-file.ts",
+      "target": "symbol:src/tools/edit-file.ts#variable:EditFileInputSchema",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/edit-file.ts"
+      },
+      "contentHash": "ba268c0e03303f4e839ad53348217090c448c071dc7e977d2e766774277eecd8"
+    },
+    {
+      "id": "defines:file:src/tools/read-file.ts->symbol:src/tools/read-file.ts#class:ReadFileTool:",
+      "type": "defines",
+      "source": "file:src/tools/read-file.ts",
+      "target": "symbol:src/tools/read-file.ts#class:ReadFileTool",
+      "line": 22,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/read-file.ts"
+      },
+      "contentHash": "8aac0b4c4198aebd7c09b2f352178bf66c3499412b8624a1ca1203102abc7643"
+    },
+    {
+      "id": "defines:file:src/tools/read-file.ts->symbol:src/tools/read-file.ts#variable:DEFAULT_MAX_READ_BYTES:",
+      "type": "defines",
+      "source": "file:src/tools/read-file.ts",
+      "target": "symbol:src/tools/read-file.ts#variable:DEFAULT_MAX_READ_BYTES",
+      "line": 20,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/read-file.ts"
+      },
+      "contentHash": "293800547131d2ed07b0eb6185021b2853c8b76987ad041b67d7778349d73ee8"
+    },
+    {
+      "id": "defines:file:src/tools/read-file.ts->symbol:src/tools/read-file.ts#variable:ReadFileInputSchema:",
+      "type": "defines",
+      "source": "file:src/tools/read-file.ts",
+      "target": "symbol:src/tools/read-file.ts#variable:ReadFileInputSchema",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/read-file.ts"
+      },
+      "contentHash": "f20327d697001cb70c52ff4faacad96cb863dd14d96ea67bc30cf39b1788e915"
+    },
+    {
+      "id": "defines:file:src/tools/registry.ts->symbol:src/tools/registry.ts#class:ToolRegistry:",
+      "type": "defines",
+      "source": "file:src/tools/registry.ts",
+      "target": "symbol:src/tools/registry.ts#class:ToolRegistry",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/registry.ts"
+      },
+      "contentHash": "369d8aaa5d4253e1e50862fae7d7b847edf0c3b440051995c3448a5a2a5b5dd3"
+    },
+    {
+      "id": "defines:file:src/tools/run-command.ts->symbol:src/tools/run-command.ts#class:RunCommandTool:",
+      "type": "defines",
+      "source": "file:src/tools/run-command.ts",
+      "target": "symbol:src/tools/run-command.ts#class:RunCommandTool",
+      "line": 22,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/run-command.ts"
+      },
+      "contentHash": "da8849284670ce4ae03d77500df8fb9006ffd45324cfd5d0dc1de144f70cc117"
+    },
+    {
+      "id": "defines:file:src/tools/run-command.ts->symbol:src/tools/run-command.ts#variable:DEFAULT_MAX_COMMAND_OUTPUT_BYTES:",
+      "type": "defines",
+      "source": "file:src/tools/run-command.ts",
+      "target": "symbol:src/tools/run-command.ts#variable:DEFAULT_MAX_COMMAND_OUTPUT_BYTES",
+      "line": 20,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/run-command.ts"
+      },
+      "contentHash": "3f93e9ad0383a577d4955f8257c6ffb6fd67cfdcb4e19f88e9c9495c804feebf"
+    },
+    {
+      "id": "defines:file:src/tools/run-command.ts->symbol:src/tools/run-command.ts#variable:RunCommandInputSchema:",
+      "type": "defines",
+      "source": "file:src/tools/run-command.ts",
+      "target": "symbol:src/tools/run-command.ts#variable:RunCommandInputSchema",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/run-command.ts"
+      },
+      "contentHash": "f84c842f8868a49423b3802bd3b4d6a16cd90c93ac8d01335b1c7669676fecf7"
+    },
+    {
+      "id": "defines:file:src/tools/search.ts->symbol:src/tools/search.ts#class:SearchTool:",
+      "type": "defines",
+      "source": "file:src/tools/search.ts",
+      "target": "symbol:src/tools/search.ts#class:SearchTool",
+      "line": 37,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/search.ts"
+      },
+      "contentHash": "4b514683dd7b145a4a1a533f5a760fd6cc22e3f73068cd4741eb493459d5100a"
+    },
+    {
+      "id": "defines:file:src/tools/search.ts->symbol:src/tools/search.ts#variable:DEFAULT_MAX_SEARCH_BYTES:",
+      "type": "defines",
+      "source": "file:src/tools/search.ts",
+      "target": "symbol:src/tools/search.ts#variable:DEFAULT_MAX_SEARCH_BYTES",
+      "line": 24,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/search.ts"
+      },
+      "contentHash": "8b08007af32f00705c568b278e77ee3b143fc233d4af1710588afeedcaa51c45"
+    },
+    {
+      "id": "defines:file:src/tools/search.ts->symbol:src/tools/search.ts#variable:SearchInputSchema:",
+      "type": "defines",
+      "source": "file:src/tools/search.ts",
+      "target": "symbol:src/tools/search.ts#variable:SearchInputSchema",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "src/tools/search.ts"
+      },
+      "contentHash": "2b4281a4b78d72cd6256d55006b106eff4f1e7b71d2e201ce777ee012b3cff7e"
+    },
+    {
+      "id": "defines:file:tests/fixtures/test-project/calculator.js->symbol:tests/fixtures/test-project/calculator.js#function:add:",
+      "type": "defines",
+      "source": "file:tests/fixtures/test-project/calculator.js",
+      "target": "symbol:tests/fixtures/test-project/calculator.js#function:add",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "tests/fixtures/test-project/calculator.js"
+      },
+      "contentHash": "25e0009f9dc744e7b1c93aa86fd25568f5e9272e0ce0f9c28e760d7b6e467cf1"
+    },
+    {
+      "id": "defines:file:tests/fixtures/test-project/calculator.js->symbol:tests/fixtures/test-project/calculator.js#function:multiply:",
+      "type": "defines",
+      "source": "file:tests/fixtures/test-project/calculator.js",
+      "target": "symbol:tests/fixtures/test-project/calculator.js#function:multiply",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "tests/fixtures/test-project/calculator.js"
+      },
+      "contentHash": "aae7363f2c39cff45f945115537a03e9872bcb9c9e31ba03f2ee025756944db9"
+    },
+    {
+      "id": "defines:file:tests/integration/eval-runner.test.ts->symbol:tests/integration/eval-runner.test.ts#function:createToolRegistry:",
+      "type": "defines",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "symbol:tests/integration/eval-runner.test.ts#function:createToolRegistry",
+      "line": 48,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "e88eee73d0b6d7ef2ccc299133802ebd2d0c78da0309fcc3020e95090084aec1"
+    },
+    {
+      "id": "defines:file:tests/integration/eval-runner.test.ts->symbol:tests/integration/eval-runner.test.ts#function:setupWorkspace:",
+      "type": "defines",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "symbol:tests/integration/eval-runner.test.ts#function:setupWorkspace",
+      "line": 36,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "bfd2c8163b0d916fa75ef85a328e6650a66104c03896b050d56910f1cf33e784"
+    },
+    {
+      "id": "defines:file:tests/unit/gemini-adapter.test.ts->symbol:tests/unit/gemini-adapter.test.ts#function:walk:",
+      "type": "defines",
+      "source": "file:tests/unit/gemini-adapter.test.ts",
+      "target": "symbol:tests/unit/gemini-adapter.test.ts#function:walk",
+      "line": 25,
+      "resolved": true,
+      "confidence": 0.8,
+      "provenance": {
+        "extractor": "conservative-js-symbols",
+        "source": "tests/unit/gemini-adapter.test.ts"
+      },
+      "contentHash": "3ad1d4b3e45523829243ea1004be79fdadfcf725d24b3d59fe8e1f5707ca6e2a"
+    },
+    {
+      "id": "imports:file:eval/run.mjs->runtime:javascript:child_process:child_process",
+      "type": "imports",
+      "source": "file:eval/run.mjs",
+      "target": "runtime:javascript:child_process",
+      "specifier": "child_process",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/run.mjs"
+      },
+      "contentHash": "b204de7f1063b95c01fa585d5969d7d8e51b6133a5f11b4218a00043b6544944"
+    },
+    {
+      "id": "imports:file:eval/runner.ts->file:src/agent/loop.ts:../src/agent/loop.js",
+      "type": "imports",
+      "source": "file:eval/runner.ts",
+      "target": "file:src/agent/loop.ts",
+      "specifier": "../src/agent/loop.js",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "047a1bf1b612d5423bcf4c1e381c03a3b88ab6a8930fb5621310e9fcbc0e3e82"
+    },
+    {
+      "id": "imports:file:eval/runner.ts->file:src/llm/provider.ts:../src/llm/provider.js",
+      "type": "imports",
+      "source": "file:eval/runner.ts",
+      "target": "file:src/llm/provider.ts",
+      "specifier": "../src/llm/provider.js",
+      "line": 18,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "3ffbf7b4fb3ffe58f1c1bf251fe696cb78a00b8a6183bf77a6b504bb6392ffce"
+    },
+    {
+      "id": "imports:file:eval/runner.ts->file:src/llm/types.ts:../src/llm/types.js",
+      "type": "imports",
+      "source": "file:eval/runner.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../src/llm/types.js",
+      "line": 17,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "7c9faaf8c8b7f7fb5f96a1acf2c09d5652a123d4b85d7ffc0b07177bd8a12ade"
+    },
+    {
+      "id": "imports:file:eval/runner.ts->file:src/tools/edit-file.ts:../src/tools/edit-file.js",
+      "type": "imports",
+      "source": "file:eval/runner.ts",
+      "target": "file:src/tools/edit-file.ts",
+      "specifier": "../src/tools/edit-file.js",
+      "line": 15,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "97184a597806c6d8c6881f7bd032e7bafb0638c31fb738ad997da8aaa0fe5232"
+    },
+    {
+      "id": "imports:file:eval/runner.ts->file:src/tools/read-file.ts:../src/tools/read-file.js",
+      "type": "imports",
+      "source": "file:eval/runner.ts",
+      "target": "file:src/tools/read-file.ts",
+      "specifier": "../src/tools/read-file.js",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "d59691ea286b02f9c36dc668b7389bf5e5dc5bdc0090273fe9b669147635a67a"
+    },
+    {
+      "id": "imports:file:eval/runner.ts->file:src/tools/registry.ts:../src/tools/registry.js",
+      "type": "imports",
+      "source": "file:eval/runner.ts",
+      "target": "file:src/tools/registry.ts",
+      "specifier": "../src/tools/registry.js",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "dce5f7edc83cb7ebcb040cfc69fa2fc18bf4349d43e4bfeae6c24bc0d7595dd1"
+    },
+    {
+      "id": "imports:file:eval/runner.ts->file:src/tools/run-command.ts:../src/tools/run-command.js",
+      "type": "imports",
+      "source": "file:eval/runner.ts",
+      "target": "file:src/tools/run-command.ts",
+      "specifier": "../src/tools/run-command.js",
+      "line": 16,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "cff2fbc6ab04173b9e0e2eb094695316a7444e0bbc9d49b040af9bfac8dd79b0"
+    },
+    {
+      "id": "imports:file:eval/runner.ts->file:src/tools/search.ts:../src/tools/search.js",
+      "type": "imports",
+      "source": "file:eval/runner.ts",
+      "target": "file:src/tools/search.ts",
+      "specifier": "../src/tools/search.js",
+      "line": 14,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "559c5b2172655524b8b332cfaaf38040727d2196d90da65102b3db33d9bf0c31"
+    },
+    {
+      "id": "imports:file:eval/runner.ts->runtime:javascript:child_process:child_process",
+      "type": "imports",
+      "source": "file:eval/runner.ts",
+      "target": "runtime:javascript:child_process",
+      "specifier": "child_process",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "175f9ce718c1fac5d904883fda8965a2a9764187aa945fca9edd26f43a013135"
+    },
+    {
+      "id": "imports:file:eval/runner.ts->runtime:javascript:fs:fs/promises",
+      "type": "imports",
+      "source": "file:eval/runner.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs/promises",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "c08ee470e71a972b1853dbd54d2183000fbe594585ae85c0cb472a1cd5b72566"
+    },
+    {
+      "id": "imports:file:eval/runner.ts->runtime:javascript:os:os",
+      "type": "imports",
+      "source": "file:eval/runner.ts",
+      "target": "runtime:javascript:os",
+      "specifier": "os",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "8aebc5e3fcd9f7c9d16d9276eeee12a83ef42de86926c5d0dc2ad311666db473"
+    },
+    {
+      "id": "imports:file:eval/runner.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:eval/runner.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/runner.ts"
+      },
+      "contentHash": "5894566e5d8f1114d6766625ab1a53cdbcd7b07b76539215320fb77d38da79cc"
+    },
+    {
+      "id": "imports:file:eval/tasks/task-1/test.js->file:eval/tasks/task-1/paginate.js:./paginate.js",
+      "type": "imports",
+      "source": "file:eval/tasks/task-1/test.js",
+      "target": "file:eval/tasks/task-1/paginate.js",
+      "specifier": "./paginate.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/tasks/task-1/test.js"
+      },
+      "contentHash": "1dfa5e316d5527e69d48b1274f9b8157b708e80aea880fd9c571fd31e711e2a6"
+    },
+    {
+      "id": "imports:file:eval/tasks/task-1/test.js->runtime:javascript:assert:assert",
+      "type": "imports",
+      "source": "file:eval/tasks/task-1/test.js",
+      "target": "runtime:javascript:assert",
+      "specifier": "assert",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/tasks/task-1/test.js"
+      },
+      "contentHash": "7999ff955b3f02a604bd250ea81a5e201d224df3de3e833b8a7f15534d8d920b"
+    },
+    {
+      "id": "imports:file:eval/tasks/task-2/test.js->file:eval/tasks/task-2/slugify.js:./slugify.js",
+      "type": "imports",
+      "source": "file:eval/tasks/task-2/test.js",
+      "target": "file:eval/tasks/task-2/slugify.js",
+      "specifier": "./slugify.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/tasks/task-2/test.js"
+      },
+      "contentHash": "806043a9cc0ff317a3d58e1ccd0d2d8f2c03127d719ab0278ff62d4f75dd08ea"
+    },
+    {
+      "id": "imports:file:eval/tasks/task-2/test.js->runtime:javascript:assert:assert",
+      "type": "imports",
+      "source": "file:eval/tasks/task-2/test.js",
+      "target": "runtime:javascript:assert",
+      "specifier": "assert",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/tasks/task-2/test.js"
+      },
+      "contentHash": "be1699a823bff96089878cdb23cc60d21648c80a80086151804c2b9edc908cf3"
+    },
+    {
+      "id": "imports:file:eval/tasks/task-3/test.js->file:eval/tasks/task-3/truncate.js:./truncate.js",
+      "type": "imports",
+      "source": "file:eval/tasks/task-3/test.js",
+      "target": "file:eval/tasks/task-3/truncate.js",
+      "specifier": "./truncate.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/tasks/task-3/test.js"
+      },
+      "contentHash": "2ad9ad1522da69c84bdd047728800b9f9a4a668c7962312e123bde3d3abbe7c4"
+    },
+    {
+      "id": "imports:file:eval/tasks/task-3/test.js->runtime:javascript:assert:assert",
+      "type": "imports",
+      "source": "file:eval/tasks/task-3/test.js",
+      "target": "runtime:javascript:assert",
+      "specifier": "assert",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/tasks/task-3/test.js"
+      },
+      "contentHash": "03fe5bf2bb494d0a88cd0313f1b733f1b1b90ae2ee5aab71a5cf64c9b637a367"
+    },
+    {
+      "id": "imports:file:eval/tasks/task-4/test.js->file:eval/tasks/task-4/get.js:./get.js",
+      "type": "imports",
+      "source": "file:eval/tasks/task-4/test.js",
+      "target": "file:eval/tasks/task-4/get.js",
+      "specifier": "./get.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/tasks/task-4/test.js"
+      },
+      "contentHash": "817b42e4c0c310e0d1edf99ce221d3a41d0fd82669d3fda8414c6fe2318217cd"
+    },
+    {
+      "id": "imports:file:eval/tasks/task-4/test.js->runtime:javascript:assert:assert",
+      "type": "imports",
+      "source": "file:eval/tasks/task-4/test.js",
+      "target": "runtime:javascript:assert",
+      "specifier": "assert",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/tasks/task-4/test.js"
+      },
+      "contentHash": "6591548ebe6ffb27dedade76a02c7b3fbcbbc0ff71fab12a9efccf8ee436d85b"
+    },
+    {
+      "id": "imports:file:eval/tasks/task-5/test.js->file:eval/tasks/task-5/sort.js:./sort.js",
+      "type": "imports",
+      "source": "file:eval/tasks/task-5/test.js",
+      "target": "file:eval/tasks/task-5/sort.js",
+      "specifier": "./sort.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/tasks/task-5/test.js"
+      },
+      "contentHash": "4f014a333b5f047e069ad31641509b9d1ec4cb4fb08476f6eef79ffcb5885ba3"
+    },
+    {
+      "id": "imports:file:eval/tasks/task-5/test.js->runtime:javascript:assert:assert",
+      "type": "imports",
+      "source": "file:eval/tasks/task-5/test.js",
+      "target": "runtime:javascript:assert",
+      "specifier": "assert",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "eval/tasks/task-5/test.js"
+      },
+      "contentHash": "1613388a008652f7a6915e8639b6da9549a0c6a995624891a61943c2e31e46b9"
+    },
+    {
+      "id": "imports:file:examples/demo.ts->file:src/agent/loop.ts:../src/agent/loop.js",
+      "type": "imports",
+      "source": "file:examples/demo.ts",
+      "target": "file:src/agent/loop.ts",
+      "specifier": "../src/agent/loop.js",
+      "line": 18,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "examples/demo.ts"
+      },
+      "contentHash": "7a323285847e0c1c1722b00bd0a5458f768bbff7b9ff8a6261062f8d38761942"
+    },
+    {
+      "id": "imports:file:examples/demo.ts->file:src/llm/gemini.ts:../src/llm/gemini.js",
+      "type": "imports",
+      "source": "file:examples/demo.ts",
+      "target": "file:src/llm/gemini.ts",
+      "specifier": "../src/llm/gemini.js",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "examples/demo.ts"
+      },
+      "contentHash": "434a41cb1e7f99aaa1b565e00b9302acfdef50fc612c2221d40dd30bf822f9e5"
+    },
+    {
+      "id": "imports:file:examples/demo.ts->file:src/tools/edit-file.ts:../src/tools/edit-file.js",
+      "type": "imports",
+      "source": "file:examples/demo.ts",
+      "target": "file:src/tools/edit-file.ts",
+      "specifier": "../src/tools/edit-file.js",
+      "line": 16,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "examples/demo.ts"
+      },
+      "contentHash": "95537e4cbd1343613732bf160f96e41a8688c30f8a380b32f0adebce6e16e220"
+    },
+    {
+      "id": "imports:file:examples/demo.ts->file:src/tools/read-file.ts:../src/tools/read-file.js",
+      "type": "imports",
+      "source": "file:examples/demo.ts",
+      "target": "file:src/tools/read-file.ts",
+      "specifier": "../src/tools/read-file.js",
+      "line": 14,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "examples/demo.ts"
+      },
+      "contentHash": "3edc1feba95a23ffde0d2f17e74976fe9aaf9965697d64417c6b9e99d59aceae"
+    },
+    {
+      "id": "imports:file:examples/demo.ts->file:src/tools/registry.ts:../src/tools/registry.js",
+      "type": "imports",
+      "source": "file:examples/demo.ts",
+      "target": "file:src/tools/registry.ts",
+      "specifier": "../src/tools/registry.js",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "examples/demo.ts"
+      },
+      "contentHash": "3e002dfbe1a221e70961370fc92d62f947ffe110bb4f5b871a681a1b1b87bde8"
+    },
+    {
+      "id": "imports:file:examples/demo.ts->file:src/tools/run-command.ts:../src/tools/run-command.js",
+      "type": "imports",
+      "source": "file:examples/demo.ts",
+      "target": "file:src/tools/run-command.ts",
+      "specifier": "../src/tools/run-command.js",
+      "line": 17,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "examples/demo.ts"
+      },
+      "contentHash": "62092f836873be7b4eab6defd5cc5f5a5b688e4200e8dd26b93a0e110aadaaf2"
+    },
+    {
+      "id": "imports:file:examples/demo.ts->file:src/tools/search.ts:../src/tools/search.js",
+      "type": "imports",
+      "source": "file:examples/demo.ts",
+      "target": "file:src/tools/search.ts",
+      "specifier": "../src/tools/search.js",
+      "line": 15,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "examples/demo.ts"
+      },
+      "contentHash": "6a5925f6a3e4a1fea498de0bc0146d3700170e9064b35144434f42049bd96e37"
+    },
+    {
+      "id": "imports:file:examples/demo.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:examples/demo.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "examples/demo.ts"
+      },
+      "contentHash": "de4f062084e93e577095520dd0855e8110d10ab986c8bbfba6df0a41c12eca1d"
+    },
+    {
+      "id": "imports:file:src/agent/loop.ts->file:src/agent/state.ts:./state.js",
+      "type": "imports",
+      "source": "file:src/agent/loop.ts",
+      "target": "file:src/agent/state.ts",
+      "specifier": "./state.js",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/agent/loop.ts"
+      },
+      "contentHash": "71828c35090787ec478e50547d2aa656bc2fb912440b50fd4fe1e0d79a84835e"
+    },
+    {
+      "id": "imports:file:src/agent/loop.ts->file:src/context/context.ts:../context/context.js",
+      "type": "imports",
+      "source": "file:src/agent/loop.ts",
+      "target": "file:src/context/context.ts",
+      "specifier": "../context/context.js",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/agent/loop.ts"
+      },
+      "contentHash": "b02809b576413c6bece356fe016bab9479c50dc9559d9faef704411cf2e963ae"
+    },
+    {
+      "id": "imports:file:src/agent/loop.ts->file:src/llm/provider.ts:../llm/provider.js",
+      "type": "imports",
+      "source": "file:src/agent/loop.ts",
+      "target": "file:src/llm/provider.ts",
+      "specifier": "../llm/provider.js",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/agent/loop.ts"
+      },
+      "contentHash": "5ffdd4d4aff8ac5690ce2efb308661aa5275c9fcc3b3b12d0efd46078d6440b0"
+    },
+    {
+      "id": "imports:file:src/agent/loop.ts->file:src/tools/registry.ts:../tools/registry.js",
+      "type": "imports",
+      "source": "file:src/agent/loop.ts",
+      "target": "file:src/tools/registry.ts",
+      "specifier": "../tools/registry.js",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/agent/loop.ts"
+      },
+      "contentHash": "f60e8326060ce0e30cb70d8336c5d0e1560c4c9ac721dc823879f89a576af319"
+    },
+    {
+      "id": "imports:file:src/agent/loop.ts->file:src/tools/types.ts:../tools/types.js",
+      "type": "imports",
+      "source": "file:src/agent/loop.ts",
+      "target": "file:src/tools/types.ts",
+      "specifier": "../tools/types.js",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/agent/loop.ts"
+      },
+      "contentHash": "d367ab46f0aa393ea3453e680d04b6ce7ad7d7fd2754a1fcafd2936520a154ff"
+    },
+    {
+      "id": "imports:file:src/agent/state.ts->file:src/llm/types.ts:../llm/types.js",
+      "type": "imports",
+      "source": "file:src/agent/state.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../llm/types.js",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/agent/state.ts"
+      },
+      "contentHash": "a37ff2196114966b349d7477af3e000b9449c5718c1a24d9001153b41a90d4f1"
+    },
+    {
+      "id": "imports:file:src/cli/main.ts->file:src/cli/runner.ts:./runner.js",
+      "type": "imports",
+      "source": "file:src/cli/main.ts",
+      "target": "file:src/cli/runner.ts",
+      "specifier": "./runner.js",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/cli/main.ts"
+      },
+      "contentHash": "a447ac41719c83522a01d3912536e8ae0b2a2bb77174a10873482e9a6dbde6c2"
+    },
+    {
+      "id": "imports:file:src/cli/runner.ts->file:src/agent/loop.ts:../agent/loop.js",
+      "type": "imports",
+      "source": "file:src/cli/runner.ts",
+      "target": "file:src/agent/loop.ts",
+      "specifier": "../agent/loop.js",
+      "line": 15,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "16fbba9299581ff0852c40ecdbb0f489c08c07c96a79522cc30158f6f3593d48"
+    },
+    {
+      "id": "imports:file:src/cli/runner.ts->file:src/agent/state.ts:../agent/state.js",
+      "type": "imports",
+      "source": "file:src/cli/runner.ts",
+      "target": "file:src/agent/state.ts",
+      "specifier": "../agent/state.js",
+      "line": 16,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "5801385878dfe8827fd47b5041a671341d2e1155cfe372ebd7db65a1599b89c8"
+    },
+    {
+      "id": "imports:file:src/cli/runner.ts->file:src/llm/gemini.ts:../llm/gemini.js",
+      "type": "imports",
+      "source": "file:src/cli/runner.ts",
+      "target": "file:src/llm/gemini.ts",
+      "specifier": "../llm/gemini.js",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "7f9152b5e272a0440378d71e1438c9c4b5d5a22450aee0b7ee62da11d38ce00a"
+    },
+    {
+      "id": "imports:file:src/cli/runner.ts->file:src/tools/edit-file.ts:../tools/edit-file.js",
+      "type": "imports",
+      "source": "file:src/cli/runner.ts",
+      "target": "file:src/tools/edit-file.ts",
+      "specifier": "../tools/edit-file.js",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "4b8371298e47cdf95327246d944579218b6394d2ff6e51104395185350f71cc6"
+    },
+    {
+      "id": "imports:file:src/cli/runner.ts->file:src/tools/read-file.ts:../tools/read-file.js",
+      "type": "imports",
+      "source": "file:src/cli/runner.ts",
+      "target": "file:src/tools/read-file.ts",
+      "specifier": "../tools/read-file.js",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "f444764b372504cd8ec561ede2f62cf1c32e3b44c088c6fd30a5d0643dba5470"
+    },
+    {
+      "id": "imports:file:src/cli/runner.ts->file:src/tools/registry.ts:../tools/registry.js",
+      "type": "imports",
+      "source": "file:src/cli/runner.ts",
+      "target": "file:src/tools/registry.ts",
+      "specifier": "../tools/registry.js",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "9138f1733faf6911f276fd72fb3325209bd253759783709c4d9dc4c5564ccef6"
+    },
+    {
+      "id": "imports:file:src/cli/runner.ts->file:src/tools/run-command.ts:../tools/run-command.js",
+      "type": "imports",
+      "source": "file:src/cli/runner.ts",
+      "target": "file:src/tools/run-command.ts",
+      "specifier": "../tools/run-command.js",
+      "line": 14,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "91da118b921942bb89c94911ba207a7df5d9bec455a28ca4a4946a9604a01a9a"
+    },
+    {
+      "id": "imports:file:src/cli/runner.ts->file:src/tools/search.ts:../tools/search.js",
+      "type": "imports",
+      "source": "file:src/cli/runner.ts",
+      "target": "file:src/tools/search.ts",
+      "specifier": "../tools/search.js",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "7844ce40a7bc98e55075b4f87a7be7d10e939830dc3a87fcded21ec96f1c331e"
+    },
+    {
+      "id": "imports:file:src/cli/runner.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:src/cli/runner.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/cli/runner.ts"
+      },
+      "contentHash": "8094913c6a65aa863c8c80e1ba4df3f1824f3fae3e71de1a01aae2ba6515d176"
+    },
+    {
+      "id": "imports:file:src/context/context.ts->file:src/llm/types.ts:../llm/types.js",
+      "type": "imports",
+      "source": "file:src/context/context.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../llm/types.js",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/context/context.ts"
+      },
+      "contentHash": "7a0478c39cfc3d88bd420b8d1cf8ef217988d7660dc52ee130536461d63aad7c"
+    },
+    {
+      "id": "imports:file:src/llm/gemini.ts->file:src/llm/provider.ts:./provider.js",
+      "type": "imports",
+      "source": "file:src/llm/gemini.ts",
+      "target": "file:src/llm/provider.ts",
+      "specifier": "./provider.js",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/llm/gemini.ts"
+      },
+      "contentHash": "84da008a121733112d30646f79d03583771d94c9be0348b05ae71e0cd7c78d20"
+    },
+    {
+      "id": "imports:file:src/llm/gemini.ts->file:src/llm/types.ts:./types.js",
+      "type": "imports",
+      "source": "file:src/llm/gemini.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "./types.js",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/llm/gemini.ts"
+      },
+      "contentHash": "beb7775ab367a2735c8599d7660628ebc07bbe7a500f0aa971b02c915c7a23fe"
+    },
+    {
+      "id": "imports:file:src/llm/gemini.ts->package:npm:@google/genai:@google/genai",
+      "type": "imports",
+      "source": "file:src/llm/gemini.ts",
+      "target": "package:npm:@google/genai",
+      "specifier": "@google/genai",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/llm/gemini.ts"
+      },
+      "contentHash": "0c8c00aadd92ea7af446321359589680186c7ff508f33a0db7f57ac0ea71c078"
+    },
+    {
+      "id": "imports:file:src/llm/provider.ts->file:src/llm/types.ts:./types.js",
+      "type": "imports",
+      "source": "file:src/llm/provider.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "./types.js",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/llm/provider.ts"
+      },
+      "contentHash": "8c7cacc1ece675c8e5a38b90936d76465bb90d935f5b573e8cd4b540bfb27ef6"
+    },
+    {
+      "id": "imports:file:src/logging/logger.ts->runtime:javascript:fs:fs",
+      "type": "imports",
+      "source": "file:src/logging/logger.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/logging/logger.ts"
+      },
+      "contentHash": "2809c774e418185a7e3abaff5971ca41282fe5ee3da8505ceb2477e125b06b50"
+    },
+    {
+      "id": "imports:file:src/logging/logger.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:src/logging/logger.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/logging/logger.ts"
+      },
+      "contentHash": "dc843f8de60e0648e41df63cfbea5bf3f9caa9bf872ce5536c3bcb0e70d96ffe"
+    },
+    {
+      "id": "imports:file:src/safety/policy.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:src/safety/policy.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/safety/policy.ts"
+      },
+      "contentHash": "1b7ab8f5778be8d11ee7c635328d5d0ab44593b7586cf496b7eae670c824c892"
+    },
+    {
+      "id": "imports:file:src/tools/edit-file.ts->file:src/llm/types.ts:../llm/types.js",
+      "type": "imports",
+      "source": "file:src/tools/edit-file.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../llm/types.js",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/edit-file.ts"
+      },
+      "contentHash": "4a3225a69097b7ca67605530163d89a33e19a2efc756e04ac56b3d99d94e5f78"
+    },
+    {
+      "id": "imports:file:src/tools/edit-file.ts->file:src/safety/policy.ts:../safety/policy.js",
+      "type": "imports",
+      "source": "file:src/tools/edit-file.ts",
+      "target": "file:src/safety/policy.ts",
+      "specifier": "../safety/policy.js",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/edit-file.ts"
+      },
+      "contentHash": "1108f06a984ecd46aa374cdbb35db8f1f3dbd7c7a90af4edd28b4d816c35d9b6"
+    },
+    {
+      "id": "imports:file:src/tools/edit-file.ts->file:src/tools/types.ts:./types.js",
+      "type": "imports",
+      "source": "file:src/tools/edit-file.ts",
+      "target": "file:src/tools/types.ts",
+      "specifier": "./types.js",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/edit-file.ts"
+      },
+      "contentHash": "f4f20b0c00df00501072403f3251f825100655b6584429bd0b7310376e6c5a55"
+    },
+    {
+      "id": "imports:file:src/tools/edit-file.ts->package:npm:zod:zod",
+      "type": "imports",
+      "source": "file:src/tools/edit-file.ts",
+      "target": "package:npm:zod",
+      "specifier": "zod",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/edit-file.ts"
+      },
+      "contentHash": "156bc51ff2d800d9f0bb56354f85211a98dbb0b00ce0bf3537c7c113b2ee28a8"
+    },
+    {
+      "id": "imports:file:src/tools/edit-file.ts->runtime:javascript:fs:fs/promises",
+      "type": "imports",
+      "source": "file:src/tools/edit-file.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs/promises",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/edit-file.ts"
+      },
+      "contentHash": "5cd0c18609b889e0620c621d5e734382134e45175bafdc7f797b062a16973401"
+    },
+    {
+      "id": "imports:file:src/tools/edit-file.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:src/tools/edit-file.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/edit-file.ts"
+      },
+      "contentHash": "fd46ceb5619b2dfe5e6253cb13bd495bb90915cfa21c20810fd461956b0e398d"
+    },
+    {
+      "id": "imports:file:src/tools/read-file.ts->file:src/llm/types.ts:../llm/types.js",
+      "type": "imports",
+      "source": "file:src/tools/read-file.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../llm/types.js",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/read-file.ts"
+      },
+      "contentHash": "ce8bddc0af172719f2f6ee4263d013e059c4c954d5cd6bdebf466362273fa88c"
+    },
+    {
+      "id": "imports:file:src/tools/read-file.ts->file:src/safety/policy.ts:../safety/policy.js",
+      "type": "imports",
+      "source": "file:src/tools/read-file.ts",
+      "target": "file:src/safety/policy.ts",
+      "specifier": "../safety/policy.js",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/read-file.ts"
+      },
+      "contentHash": "f4f0b4fa04dbd90d88e32f3f2bce06654fbd17811bee1505e6f8d8c229adfcc6"
+    },
+    {
+      "id": "imports:file:src/tools/read-file.ts->file:src/tools/types.ts:./types.js",
+      "type": "imports",
+      "source": "file:src/tools/read-file.ts",
+      "target": "file:src/tools/types.ts",
+      "specifier": "./types.js",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/read-file.ts"
+      },
+      "contentHash": "02658e875d185cdd65e720367fcaba4be09132a08dc6353b77f9710a9f023d57"
+    },
+    {
+      "id": "imports:file:src/tools/read-file.ts->package:npm:zod:zod",
+      "type": "imports",
+      "source": "file:src/tools/read-file.ts",
+      "target": "package:npm:zod",
+      "specifier": "zod",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/read-file.ts"
+      },
+      "contentHash": "40b54e2a76dafebac8bd3d1a5ff7991088e0fbbb8482af6c66cdbadf71cf13b6"
+    },
+    {
+      "id": "imports:file:src/tools/read-file.ts->runtime:javascript:fs:fs/promises",
+      "type": "imports",
+      "source": "file:src/tools/read-file.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs/promises",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/read-file.ts"
+      },
+      "contentHash": "1595c34f2d92d51d5c7c9dec9eaecedcc8c7decee49eeceba2387f72db9d9b2a"
+    },
+    {
+      "id": "imports:file:src/tools/registry.ts->file:src/llm/types.ts:../llm/types.js",
+      "type": "imports",
+      "source": "file:src/tools/registry.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../llm/types.js",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/registry.ts"
+      },
+      "contentHash": "1a2fa1c6c5a614d9c2dd03aa5a356d67c466dcdf243e84bb0eb19bcd3bd9d15c"
+    },
+    {
+      "id": "imports:file:src/tools/registry.ts->file:src/tools/types.ts:./types.js",
+      "type": "imports",
+      "source": "file:src/tools/registry.ts",
+      "target": "file:src/tools/types.ts",
+      "specifier": "./types.js",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/registry.ts"
+      },
+      "contentHash": "39f2bfe53063125dfc33867b0cca7eb5289f18b1e31b90754e26579f4bd890fc"
+    },
+    {
+      "id": "imports:file:src/tools/run-command.ts->file:src/llm/types.ts:../llm/types.js",
+      "type": "imports",
+      "source": "file:src/tools/run-command.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../llm/types.js",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/run-command.ts"
+      },
+      "contentHash": "25fcfdd12b5b02ed461e650c5ce34a35ccd26f31b58163e22d99b060c82a369e"
+    },
+    {
+      "id": "imports:file:src/tools/run-command.ts->file:src/safety/policy.ts:../safety/policy.js",
+      "type": "imports",
+      "source": "file:src/tools/run-command.ts",
+      "target": "file:src/safety/policy.ts",
+      "specifier": "../safety/policy.js",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/run-command.ts"
+      },
+      "contentHash": "02357ac762caee0b3d61d7f806b1a27c5ee75c99058709f73234ffefd306050a"
+    },
+    {
+      "id": "imports:file:src/tools/run-command.ts->file:src/tools/types.ts:./types.js",
+      "type": "imports",
+      "source": "file:src/tools/run-command.ts",
+      "target": "file:src/tools/types.ts",
+      "specifier": "./types.js",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/run-command.ts"
+      },
+      "contentHash": "a5b1d2aa1dfb1dbc6905c25b7a5431acf6108510e1690435228cf099ab1c94f0"
+    },
+    {
+      "id": "imports:file:src/tools/run-command.ts->package:npm:zod:zod",
+      "type": "imports",
+      "source": "file:src/tools/run-command.ts",
+      "target": "package:npm:zod",
+      "specifier": "zod",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/run-command.ts"
+      },
+      "contentHash": "32d05d8e7cf4edec1289359cccfbc145637bead32631fba883a7a8dd6ab2775b"
+    },
+    {
+      "id": "imports:file:src/tools/run-command.ts->runtime:javascript:child_process:child_process",
+      "type": "imports",
+      "source": "file:src/tools/run-command.ts",
+      "target": "runtime:javascript:child_process",
+      "specifier": "child_process",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/run-command.ts"
+      },
+      "contentHash": "4d9534561fab42f804647803f9d50ba19b95d7a175b45ec6605fbea7e67476dc"
+    },
+    {
+      "id": "imports:file:src/tools/search.ts->file:src/llm/types.ts:../llm/types.js",
+      "type": "imports",
+      "source": "file:src/tools/search.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../llm/types.js",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/search.ts"
+      },
+      "contentHash": "aafcd63fb5e09dd28a8eb1c59adebeab0f74a1c3141d842ee92b40b7e028d678"
+    },
+    {
+      "id": "imports:file:src/tools/search.ts->file:src/safety/policy.ts:../safety/policy.js",
+      "type": "imports",
+      "source": "file:src/tools/search.ts",
+      "target": "file:src/safety/policy.ts",
+      "specifier": "../safety/policy.js",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/search.ts"
+      },
+      "contentHash": "3591e077215e7b37a5a42750e6ee9fd06ed81db579b851779ab118b5d2a6b952"
+    },
+    {
+      "id": "imports:file:src/tools/search.ts->file:src/tools/types.ts:./types.js",
+      "type": "imports",
+      "source": "file:src/tools/search.ts",
+      "target": "file:src/tools/types.ts",
+      "specifier": "./types.js",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/search.ts"
+      },
+      "contentHash": "a72969a9302d0c89d486f7f293096312d5236e43e46013cd9f58ab0ed4b7ede1"
+    },
+    {
+      "id": "imports:file:src/tools/search.ts->package:npm:zod:zod",
+      "type": "imports",
+      "source": "file:src/tools/search.ts",
+      "target": "package:npm:zod",
+      "specifier": "zod",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/search.ts"
+      },
+      "contentHash": "fc292ea0e30dbe8aefc64d3215f78ed0968cc361b427a0171296c449b01717e6"
+    },
+    {
+      "id": "imports:file:src/tools/search.ts->runtime:javascript:fs:fs/promises",
+      "type": "imports",
+      "source": "file:src/tools/search.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs/promises",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/search.ts"
+      },
+      "contentHash": "52cd91e8071b4c8b06d2964c8516cc2828e777c1d4bc018b3fa51b791a57ff01"
+    },
+    {
+      "id": "imports:file:src/tools/search.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:src/tools/search.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/search.ts"
+      },
+      "contentHash": "86e8d57c2d414c90d488b497a51212f23c8e9f81a513080f124bef55224f617e"
+    },
+    {
+      "id": "imports:file:src/tools/types.ts->file:src/llm/types.ts:../llm/types.js",
+      "type": "imports",
+      "source": "file:src/tools/types.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../llm/types.js",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/types.ts"
+      },
+      "contentHash": "257b0d64122e243ce98be230484416a62cbf16c647635bc369c737222d73667d"
+    },
+    {
+      "id": "imports:file:src/tools/types.ts->package:npm:zod:zod",
+      "type": "imports",
+      "source": "file:src/tools/types.ts",
+      "target": "package:npm:zod",
+      "specifier": "zod",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "src/tools/types.ts"
+      },
+      "contentHash": "f7989f6cfe484827742973780c47d273f4afc449fc350be8860f402b68e95dc3"
+    },
+    {
+      "id": "imports:file:tests/fixtures/test-project/calculator.test.js->file:tests/fixtures/test-project/calculator.js:./calculator.js",
+      "type": "imports",
+      "source": "file:tests/fixtures/test-project/calculator.test.js",
+      "target": "file:tests/fixtures/test-project/calculator.js",
+      "specifier": "./calculator.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/fixtures/test-project/calculator.test.js"
+      },
+      "contentHash": "d1dda659aa827bf79c0595b69af795e37ce35efd40ae3fdd50f0891b37b65250"
+    },
+    {
+      "id": "imports:file:tests/fixtures/test-project/calculator.test.js->runtime:javascript:assert:assert",
+      "type": "imports",
+      "source": "file:tests/fixtures/test-project/calculator.test.js",
+      "target": "runtime:javascript:assert",
+      "specifier": "assert",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/fixtures/test-project/calculator.test.js"
+      },
+      "contentHash": "44cb1981168c62b5ceab8b5316fe084caa72ecb185d14c0751b3ea6192917266"
+    },
+    {
+      "id": "imports:file:tests/integration/agent-integration.test.ts->file:src/agent/loop.ts:../../src/agent/loop.js",
+      "type": "imports",
+      "source": "file:tests/integration/agent-integration.test.ts",
+      "target": "file:src/agent/loop.ts",
+      "specifier": "../../src/agent/loop.js",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/agent-integration.test.ts"
+      },
+      "contentHash": "fe298074c080f9d426263111d87397a4786404135030aa05a7679ad2b3d2e5ae"
+    },
+    {
+      "id": "imports:file:tests/integration/agent-integration.test.ts->file:src/llm/provider.ts:../../src/llm/provider.js",
+      "type": "imports",
+      "source": "file:tests/integration/agent-integration.test.ts",
+      "target": "file:src/llm/provider.ts",
+      "specifier": "../../src/llm/provider.js",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/agent-integration.test.ts"
+      },
+      "contentHash": "a56c1f7c6e9371947aa76d44c7761ee6b055fb74902d4e842e528f3dc76224a1"
+    },
+    {
+      "id": "imports:file:tests/integration/agent-integration.test.ts->file:src/llm/types.ts:../../src/llm/types.js",
+      "type": "imports",
+      "source": "file:tests/integration/agent-integration.test.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../../src/llm/types.js",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/agent-integration.test.ts"
+      },
+      "contentHash": "878514bbd8d716e6d17f1b909c44bbf61565b6a72c382fc43b31d4de6f37f8d3"
+    },
+    {
+      "id": "imports:file:tests/integration/agent-integration.test.ts->file:src/tools/edit-file.ts:../../src/tools/edit-file.js",
+      "type": "imports",
+      "source": "file:tests/integration/agent-integration.test.ts",
+      "target": "file:src/tools/edit-file.ts",
+      "specifier": "../../src/tools/edit-file.js",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/agent-integration.test.ts"
+      },
+      "contentHash": "9913fa18eb5db83d04ac941204ec2cce5de91dc8bc19407b5608cda1a17e424c"
+    },
+    {
+      "id": "imports:file:tests/integration/agent-integration.test.ts->file:src/tools/read-file.ts:../../src/tools/read-file.js",
+      "type": "imports",
+      "source": "file:tests/integration/agent-integration.test.ts",
+      "target": "file:src/tools/read-file.ts",
+      "specifier": "../../src/tools/read-file.js",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/agent-integration.test.ts"
+      },
+      "contentHash": "bbda58479fce7388ab798ad54dab6ef6bddbeb5f907f2763afbd2eae40b1d2d3"
+    },
+    {
+      "id": "imports:file:tests/integration/agent-integration.test.ts->file:src/tools/registry.ts:../../src/tools/registry.js",
+      "type": "imports",
+      "source": "file:tests/integration/agent-integration.test.ts",
+      "target": "file:src/tools/registry.ts",
+      "specifier": "../../src/tools/registry.js",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/agent-integration.test.ts"
+      },
+      "contentHash": "f6c154ec3361ffdb55862565ee0a1023c2119f749e94fcbd5440eb2c128e84a8"
+    },
+    {
+      "id": "imports:file:tests/integration/agent-integration.test.ts->file:src/tools/run-command.ts:../../src/tools/run-command.js",
+      "type": "imports",
+      "source": "file:tests/integration/agent-integration.test.ts",
+      "target": "file:src/tools/run-command.ts",
+      "specifier": "../../src/tools/run-command.js",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/agent-integration.test.ts"
+      },
+      "contentHash": "a1adf20a1deb4962abdf809ae00e94cd325e9ed46fff7f0e34146571e2de216f"
+    },
+    {
+      "id": "imports:file:tests/integration/agent-integration.test.ts->file:src/tools/search.ts:../../src/tools/search.js",
+      "type": "imports",
+      "source": "file:tests/integration/agent-integration.test.ts",
+      "target": "file:src/tools/search.ts",
+      "specifier": "../../src/tools/search.js",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/agent-integration.test.ts"
+      },
+      "contentHash": "474b2f95ef8043352716e8715765fbe5d8125828335c357d4562a71bed8be3a9"
+    },
+    {
+      "id": "imports:file:tests/integration/agent-integration.test.ts->package:npm:vitest:vitest",
+      "type": "imports",
+      "source": "file:tests/integration/agent-integration.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/agent-integration.test.ts"
+      },
+      "contentHash": "5ddb60e1e0d89beec3e9ed456095dcb9a4755d3c703481f0d6f046ea7134af54"
+    },
+    {
+      "id": "imports:file:tests/integration/agent-integration.test.ts->runtime:javascript:child_process:child_process",
+      "type": "imports",
+      "source": "file:tests/integration/agent-integration.test.ts",
+      "target": "runtime:javascript:child_process",
+      "specifier": "child_process",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/agent-integration.test.ts"
+      },
+      "contentHash": "ef5a5a95c2b090c64f3ca81811bdfccd689703511ee55546ee3216440d677cda"
+    },
+    {
+      "id": "imports:file:tests/integration/agent-integration.test.ts->runtime:javascript:fs:fs/promises",
+      "type": "imports",
+      "source": "file:tests/integration/agent-integration.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs/promises",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/agent-integration.test.ts"
+      },
+      "contentHash": "0d4ead827a61f41aa23430648f95b82f337acd012d679d60e345eb2a76c5ff8c"
+    },
+    {
+      "id": "imports:file:tests/integration/agent-integration.test.ts->runtime:javascript:os:os",
+      "type": "imports",
+      "source": "file:tests/integration/agent-integration.test.ts",
+      "target": "runtime:javascript:os",
+      "specifier": "os",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/agent-integration.test.ts"
+      },
+      "contentHash": "79ae06f70b9a2130514cf8bbb9d75a7b57f859ade5851723fe0f99c8c3dc283a"
+    },
+    {
+      "id": "imports:file:tests/integration/agent-integration.test.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:tests/integration/agent-integration.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/agent-integration.test.ts"
+      },
+      "contentHash": "532e282b451e7073776b06cacfb037b850d1d9f757af5f10792100e8fd3acff0"
+    },
+    {
+      "id": "imports:file:tests/integration/eval-runner.test.ts->file:src/agent/loop.ts:../../src/agent/loop.js",
+      "type": "imports",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "file:src/agent/loop.ts",
+      "specifier": "../../src/agent/loop.js",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "dbc2173c854ebea3d11feb024fb6870fd30d2c1c75e048e6e94350e374221f06"
+    },
+    {
+      "id": "imports:file:tests/integration/eval-runner.test.ts->file:src/llm/provider.ts:../../src/llm/provider.js",
+      "type": "imports",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "file:src/llm/provider.ts",
+      "specifier": "../../src/llm/provider.js",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "3d5a8723b2d93199713dfb085ce650b924bd498fdd393beaf2908f4871109e1b"
+    },
+    {
+      "id": "imports:file:tests/integration/eval-runner.test.ts->file:src/llm/types.ts:../../src/llm/types.js",
+      "type": "imports",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../../src/llm/types.js",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "4b67ea38cb8e7ed7fb257069b48b6886e3ffb632090a52f7c542ac246b0b0b1e"
+    },
+    {
+      "id": "imports:file:tests/integration/eval-runner.test.ts->file:src/tools/edit-file.ts:../../src/tools/edit-file.js",
+      "type": "imports",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "file:src/tools/edit-file.ts",
+      "specifier": "../../src/tools/edit-file.js",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "0489bf04b84a53b889b5480e4dc735a6fa9624eb42b43506da0efc90d767b98b"
+    },
+    {
+      "id": "imports:file:tests/integration/eval-runner.test.ts->file:src/tools/read-file.ts:../../src/tools/read-file.js",
+      "type": "imports",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "file:src/tools/read-file.ts",
+      "specifier": "../../src/tools/read-file.js",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "5185c34c4660aff27c0c6ed5d4b676bd2dd100ff59b892bbeff84fa0d0ee0130"
+    },
+    {
+      "id": "imports:file:tests/integration/eval-runner.test.ts->file:src/tools/registry.ts:../../src/tools/registry.js",
+      "type": "imports",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "file:src/tools/registry.ts",
+      "specifier": "../../src/tools/registry.js",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "c923d882fd648db82daa6cbb0d284952e4495dda12006c9fb70f4a571b694f1b"
+    },
+    {
+      "id": "imports:file:tests/integration/eval-runner.test.ts->file:src/tools/run-command.ts:../../src/tools/run-command.js",
+      "type": "imports",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "file:src/tools/run-command.ts",
+      "specifier": "../../src/tools/run-command.js",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "d5076d7dbe727ef111fe19852dc396489f0282d8b0a432034279d8907f98cda5"
+    },
+    {
+      "id": "imports:file:tests/integration/eval-runner.test.ts->file:src/tools/search.ts:../../src/tools/search.js",
+      "type": "imports",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "file:src/tools/search.ts",
+      "specifier": "../../src/tools/search.js",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "7d36d4fd233fc06d48a95d43a4bb029151ad01a1df285247a728317aa87e78af"
+    },
+    {
+      "id": "imports:file:tests/integration/eval-runner.test.ts->package:npm:vitest:vitest",
+      "type": "imports",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "31f0b31ff7e74a7b4392cfcac71fcdc1a4f81ddbafa00f41f472fcb326de00ea"
+    },
+    {
+      "id": "imports:file:tests/integration/eval-runner.test.ts->runtime:javascript:child_process:child_process",
+      "type": "imports",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "runtime:javascript:child_process",
+      "specifier": "child_process",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "ad314c25b1a013843c2d064e81c94770a0a936e8eec87bbde6c6ad902ddfa0b4"
+    },
+    {
+      "id": "imports:file:tests/integration/eval-runner.test.ts->runtime:javascript:fs:fs/promises",
+      "type": "imports",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs/promises",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "678871cf978dad318e83b7c68918e6e0adbe88a525b72ba1abeb1fa45fdf34d9"
+    },
+    {
+      "id": "imports:file:tests/integration/eval-runner.test.ts->runtime:javascript:os:os",
+      "type": "imports",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "runtime:javascript:os",
+      "specifier": "os",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "d4cf49a45c58d852c762392c8a40dac1203f792bb441da271cad52cbe81a9b53"
+    },
+    {
+      "id": "imports:file:tests/integration/eval-runner.test.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:tests/integration/eval-runner.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/integration/eval-runner.test.ts"
+      },
+      "contentHash": "c7fc26a1bbf9a520dff367799c4eba0397d27f089ff95db1bbb0a65a36134788"
+    },
+    {
+      "id": "imports:file:tests/unit/agent-loop.test.ts->file:src/agent/loop.ts:../../src/agent/loop.js",
+      "type": "imports",
+      "source": "file:tests/unit/agent-loop.test.ts",
+      "target": "file:src/agent/loop.ts",
+      "specifier": "../../src/agent/loop.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/agent-loop.test.ts"
+      },
+      "contentHash": "a6e8c5f1c5c0aac32cf4f24aee057f87b968c35021d75e210c09ea32aa1dc635"
+    },
+    {
+      "id": "imports:file:tests/unit/agent-loop.test.ts->file:src/llm/provider.ts:../../src/llm/provider.js",
+      "type": "imports",
+      "source": "file:tests/unit/agent-loop.test.ts",
+      "target": "file:src/llm/provider.ts",
+      "specifier": "../../src/llm/provider.js",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/agent-loop.test.ts"
+      },
+      "contentHash": "fd910bbd20f6fe7d705cbf0f0a647b3f57cf9a8e23a90e9797a0632d0b07d29e"
+    },
+    {
+      "id": "imports:file:tests/unit/agent-loop.test.ts->file:src/llm/types.ts:../../src/llm/types.js",
+      "type": "imports",
+      "source": "file:tests/unit/agent-loop.test.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../../src/llm/types.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/agent-loop.test.ts"
+      },
+      "contentHash": "f52c47370bb9a3c69be2113be738e35f38c2b3769cfb18869bb9be4cfdca2e59"
+    },
+    {
+      "id": "imports:file:tests/unit/agent-loop.test.ts->file:src/tools/registry.ts:../../src/tools/registry.js",
+      "type": "imports",
+      "source": "file:tests/unit/agent-loop.test.ts",
+      "target": "file:src/tools/registry.ts",
+      "specifier": "../../src/tools/registry.js",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/agent-loop.test.ts"
+      },
+      "contentHash": "c320f462098be2002f351bce74e19931917ac9619861f2e4f08c9a83e1424054"
+    },
+    {
+      "id": "imports:file:tests/unit/agent-loop.test.ts->file:src/tools/types.ts:../../src/tools/types.js",
+      "type": "imports",
+      "source": "file:tests/unit/agent-loop.test.ts",
+      "target": "file:src/tools/types.ts",
+      "specifier": "../../src/tools/types.js",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/agent-loop.test.ts"
+      },
+      "contentHash": "a1ad395542102be7d10bc426c1591066615234269b8c1d50a05ea401d075bb2c"
+    },
+    {
+      "id": "imports:file:tests/unit/agent-loop.test.ts->package:npm:vitest:vitest",
+      "type": "imports",
+      "source": "file:tests/unit/agent-loop.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/agent-loop.test.ts"
+      },
+      "contentHash": "718bee21e122b024166ec056bc2e9aa73c7cd45be7389c3c8ba54183eebeb372"
+    },
+    {
+      "id": "imports:file:tests/unit/agent-loop.test.ts->package:npm:zod:zod",
+      "type": "imports",
+      "source": "file:tests/unit/agent-loop.test.ts",
+      "target": "package:npm:zod",
+      "specifier": "zod",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/agent-loop.test.ts"
+      },
+      "contentHash": "7b2ed4523af3e224d56f634f2c271979dd80cf421325ec070c72f99af0409b6d"
+    },
+    {
+      "id": "imports:file:tests/unit/cli.test.ts->file:src/cli/runner.ts:../../src/cli/runner.js",
+      "type": "imports",
+      "source": "file:tests/unit/cli.test.ts",
+      "target": "file:src/cli/runner.ts",
+      "specifier": "../../src/cli/runner.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/cli.test.ts"
+      },
+      "contentHash": "f7a88b7903cf24ae0d83aba0a3e73ec4480c1cd057173ab015c252e29e26ae76"
+    },
+    {
+      "id": "imports:file:tests/unit/cli.test.ts->package:npm:vitest:vitest",
+      "type": "imports",
+      "source": "file:tests/unit/cli.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/cli.test.ts"
+      },
+      "contentHash": "1d0b2da6cbb94f5118cb9753ff72f7ba58d202d83e0e1b6ae1c28a8ac23d1995"
+    },
+    {
+      "id": "imports:file:tests/unit/cli.test.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:tests/unit/cli.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/cli.test.ts"
+      },
+      "contentHash": "ddc1a03337b3d1bad4e1b1cafdd5d16ef55f014efa20c959daee6ed4cab202c4"
+    },
+    {
+      "id": "imports:file:tests/unit/context.test.ts->file:src/agent/state.ts:../../src/agent/state.js",
+      "type": "imports",
+      "source": "file:tests/unit/context.test.ts",
+      "target": "file:src/agent/state.ts",
+      "specifier": "../../src/agent/state.js",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/context.test.ts"
+      },
+      "contentHash": "bac6e4edeeba9be0b5f6f166f649b3ff05ecfb592bdc4f2129e02261890788be"
+    },
+    {
+      "id": "imports:file:tests/unit/context.test.ts->file:src/context/context.ts:../../src/context/context.js",
+      "type": "imports",
+      "source": "file:tests/unit/context.test.ts",
+      "target": "file:src/context/context.ts",
+      "specifier": "../../src/context/context.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/context.test.ts"
+      },
+      "contentHash": "f6b74ce562e1ccb7c0aa07e822d9762041b5264a5fbd1b9c35d34366fe5bc210"
+    },
+    {
+      "id": "imports:file:tests/unit/context.test.ts->file:src/llm/types.ts:../../src/llm/types.js",
+      "type": "imports",
+      "source": "file:tests/unit/context.test.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../../src/llm/types.js",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/context.test.ts"
+      },
+      "contentHash": "c13dce5831990e4476f0ef99df0ff716dde90f7c38d8790449af95943a697dc3"
+    },
+    {
+      "id": "imports:file:tests/unit/context.test.ts->package:npm:vitest:vitest",
+      "type": "imports",
+      "source": "file:tests/unit/context.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/context.test.ts"
+      },
+      "contentHash": "12ad7eada445704051e7f5df85b319b2466b83cac08b3f47b7e013bda75c8c87"
+    },
+    {
+      "id": "imports:file:tests/unit/edit-file.test.ts->file:src/tools/edit-file.ts:../../src/tools/edit-file.js",
+      "type": "imports",
+      "source": "file:tests/unit/edit-file.test.ts",
+      "target": "file:src/tools/edit-file.ts",
+      "specifier": "../../src/tools/edit-file.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/edit-file.test.ts"
+      },
+      "contentHash": "a458f90d7ac2ea07a6dfd413363065415a54985e9497afb11930b2d6f91a60b3"
+    },
+    {
+      "id": "imports:file:tests/unit/edit-file.test.ts->file:src/tools/types.ts:../../src/tools/types.js",
+      "type": "imports",
+      "source": "file:tests/unit/edit-file.test.ts",
+      "target": "file:src/tools/types.ts",
+      "specifier": "../../src/tools/types.js",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/edit-file.test.ts"
+      },
+      "contentHash": "df924ae1537b9f267e057fb63603ac569e5df37741c5c1fb238fb5c80b8a944e"
+    },
+    {
+      "id": "imports:file:tests/unit/edit-file.test.ts->package:npm:vitest:vitest",
+      "type": "imports",
+      "source": "file:tests/unit/edit-file.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/edit-file.test.ts"
+      },
+      "contentHash": "fb8dd78e02dab7a833b9c33b08834dcb16259a5a3c1ec2d3603644a92ab11b0a"
+    },
+    {
+      "id": "imports:file:tests/unit/edit-file.test.ts->runtime:javascript:fs:fs/promises",
+      "type": "imports",
+      "source": "file:tests/unit/edit-file.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs/promises",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/edit-file.test.ts"
+      },
+      "contentHash": "20699713213520724d4f9817d440b2a58815d1fc0eafd09721856a6446a2690e"
+    },
+    {
+      "id": "imports:file:tests/unit/edit-file.test.ts->runtime:javascript:os:os",
+      "type": "imports",
+      "source": "file:tests/unit/edit-file.test.ts",
+      "target": "runtime:javascript:os",
+      "specifier": "os",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/edit-file.test.ts"
+      },
+      "contentHash": "cd5a7047f924b00aff6e9c37dfd7c895281abb868a5161b6068cb8b9fa896f52"
+    },
+    {
+      "id": "imports:file:tests/unit/edit-file.test.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:tests/unit/edit-file.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/edit-file.test.ts"
+      },
+      "contentHash": "dd9c866759b8fd3a4a5e018a6d07d95b4093a4cd4b616208a45d7371d230204a"
+    },
+    {
+      "id": "imports:file:tests/unit/gemini-adapter.test.ts->file:src/llm/gemini.ts:../../src/llm/gemini.js",
+      "type": "imports",
+      "source": "file:tests/unit/gemini-adapter.test.ts",
+      "target": "file:src/llm/gemini.ts",
+      "specifier": "../../src/llm/gemini.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/gemini-adapter.test.ts"
+      },
+      "contentHash": "af40ecbc3629c5a10d3dfcd1efa6c0966b5cb92be8edd8779a6d5463d46d482e"
+    },
+    {
+      "id": "imports:file:tests/unit/gemini-adapter.test.ts->file:src/llm/types.ts:../../src/llm/types.js",
+      "type": "imports",
+      "source": "file:tests/unit/gemini-adapter.test.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../../src/llm/types.js",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/gemini-adapter.test.ts"
+      },
+      "contentHash": "6a41522403b839876c12aae70e811c36af2a8f7e550fd076b813d192c468cb1b"
+    },
+    {
+      "id": "imports:file:tests/unit/gemini-adapter.test.ts->package:npm:vitest:vitest",
+      "type": "imports",
+      "source": "file:tests/unit/gemini-adapter.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/gemini-adapter.test.ts"
+      },
+      "contentHash": "85fc3276ae428113e2226032f680dbd615a3abf30c20a7d59f53be0299b5d473"
+    },
+    {
+      "id": "imports:file:tests/unit/gemini-adapter.test.ts->runtime:javascript:fs:fs",
+      "type": "imports",
+      "source": "file:tests/unit/gemini-adapter.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/gemini-adapter.test.ts"
+      },
+      "contentHash": "d33f076eed1ec3400c876f77ff970a87d477b96b3faf0bfe060e59c43cee0f44"
+    },
+    {
+      "id": "imports:file:tests/unit/gemini-adapter.test.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:tests/unit/gemini-adapter.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/gemini-adapter.test.ts"
+      },
+      "contentHash": "d169b14015248f0cf1d26a5be103416bcc5e23a31ec82992ca375c6b81cdba15"
+    },
+    {
+      "id": "imports:file:tests/unit/llm-types.test.ts->file:src/llm/provider.ts:../../src/llm/provider.js",
+      "type": "imports",
+      "source": "file:tests/unit/llm-types.test.ts",
+      "target": "file:src/llm/provider.ts",
+      "specifier": "../../src/llm/provider.js",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/llm-types.test.ts"
+      },
+      "contentHash": "0261e119e25117c735a9a3ad385ec083274e7572e1204a862f8a1f4926421420"
+    },
+    {
+      "id": "imports:file:tests/unit/llm-types.test.ts->file:src/llm/types.ts:../../src/llm/types.js",
+      "type": "imports",
+      "source": "file:tests/unit/llm-types.test.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../../src/llm/types.js",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/llm-types.test.ts"
+      },
+      "contentHash": "cbb9174a55db951292275db1b8de4d50d1ce17ec3e34fa0098ea08c866fcd0a5"
+    },
+    {
+      "id": "imports:file:tests/unit/llm-types.test.ts->package:npm:vitest:vitest",
+      "type": "imports",
+      "source": "file:tests/unit/llm-types.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/llm-types.test.ts"
+      },
+      "contentHash": "7946cb2727e3beca50ca0dc43f5386a11108844644c9d8d6c0fc6ad6a90e6c9a"
+    },
+    {
+      "id": "imports:file:tests/unit/logger.test.ts->file:src/logging/logger.ts:../../src/logging/logger.js",
+      "type": "imports",
+      "source": "file:tests/unit/logger.test.ts",
+      "target": "file:src/logging/logger.ts",
+      "specifier": "../../src/logging/logger.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/logger.test.ts"
+      },
+      "contentHash": "2632cb79058ab368eedf3009518e48da3cd2067dbe0648e6c60ea7fee81f77dd"
+    },
+    {
+      "id": "imports:file:tests/unit/logger.test.ts->package:npm:vitest:vitest",
+      "type": "imports",
+      "source": "file:tests/unit/logger.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/logger.test.ts"
+      },
+      "contentHash": "77253b733a8244b6f09f21bddaa5a8c7bd1d5560ed6b50eb06f7ef52cb7c4af9"
+    },
+    {
+      "id": "imports:file:tests/unit/logger.test.ts->runtime:javascript:fs:fs",
+      "type": "imports",
+      "source": "file:tests/unit/logger.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/logger.test.ts"
+      },
+      "contentHash": "98510703abc712c6c2b43fdecd9cd04fd0420865ff482b22e519be7e47a2dbc3"
+    },
+    {
+      "id": "imports:file:tests/unit/logger.test.ts->runtime:javascript:os:os",
+      "type": "imports",
+      "source": "file:tests/unit/logger.test.ts",
+      "target": "runtime:javascript:os",
+      "specifier": "os",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/logger.test.ts"
+      },
+      "contentHash": "d80d527775830c9edd8a7fb7b21a957153cb378e2133358b18cbfd6fc78187c4"
+    },
+    {
+      "id": "imports:file:tests/unit/logger.test.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:tests/unit/logger.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/logger.test.ts"
+      },
+      "contentHash": "1446398be9514591d73f1b01c6fab313eaf0ddfcb5fc5c41e2a48d9959934e5c"
+    },
+    {
+      "id": "imports:file:tests/unit/read-file.test.ts->file:src/safety/policy.ts:../../src/safety/policy.js",
+      "type": "imports",
+      "source": "file:tests/unit/read-file.test.ts",
+      "target": "file:src/safety/policy.ts",
+      "specifier": "../../src/safety/policy.js",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/read-file.test.ts"
+      },
+      "contentHash": "3871ba169130c1c9215d2a2f1e35fc0b754129e64c1aa5bdf72e71982d9bdc8a"
+    },
+    {
+      "id": "imports:file:tests/unit/read-file.test.ts->file:src/tools/read-file.ts:../../src/tools/read-file.js",
+      "type": "imports",
+      "source": "file:tests/unit/read-file.test.ts",
+      "target": "file:src/tools/read-file.ts",
+      "specifier": "../../src/tools/read-file.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/read-file.test.ts"
+      },
+      "contentHash": "2c5b6861ee10ab290a6c377cdf01b8acd925afb1228ec77eaa8e7c97c94e253e"
+    },
+    {
+      "id": "imports:file:tests/unit/read-file.test.ts->file:src/tools/types.ts:../../src/tools/types.js",
+      "type": "imports",
+      "source": "file:tests/unit/read-file.test.ts",
+      "target": "file:src/tools/types.ts",
+      "specifier": "../../src/tools/types.js",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/read-file.test.ts"
+      },
+      "contentHash": "7a87a34a3b7bc97ab06c91c59625e1473a96c4eb3f664592a45c6b2995d29643"
+    },
+    {
+      "id": "imports:file:tests/unit/read-file.test.ts->package:npm:vitest:vitest",
+      "type": "imports",
+      "source": "file:tests/unit/read-file.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/read-file.test.ts"
+      },
+      "contentHash": "e2f30c8efe840d7b6a9e7560f6b46a0c9ee6782daee402a5801a7001ad1a2ff1"
+    },
+    {
+      "id": "imports:file:tests/unit/read-file.test.ts->runtime:javascript:fs:fs/promises",
+      "type": "imports",
+      "source": "file:tests/unit/read-file.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs/promises",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/read-file.test.ts"
+      },
+      "contentHash": "0fb3e59cba8d61a09d670e480a2d7ff2bc951603e2d8dd8dee2ec9fb40dd07b0"
+    },
+    {
+      "id": "imports:file:tests/unit/read-file.test.ts->runtime:javascript:os:os",
+      "type": "imports",
+      "source": "file:tests/unit/read-file.test.ts",
+      "target": "runtime:javascript:os",
+      "specifier": "os",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/read-file.test.ts"
+      },
+      "contentHash": "664d4fb4c0e1a2cd0e5bbeacfceb7d890b80b30535c7582fee374b52e1f9672b"
+    },
+    {
+      "id": "imports:file:tests/unit/read-file.test.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:tests/unit/read-file.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/read-file.test.ts"
+      },
+      "contentHash": "5697ebd38a44970e03773f59c86486fa0218c2f9b47391c60463a003abc6b945"
+    },
+    {
+      "id": "imports:file:tests/unit/run-command.test.ts->file:src/safety/policy.ts:../../src/safety/policy.js",
+      "type": "imports",
+      "source": "file:tests/unit/run-command.test.ts",
+      "target": "file:src/safety/policy.ts",
+      "specifier": "../../src/safety/policy.js",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/run-command.test.ts"
+      },
+      "contentHash": "9c93f2aa4d4228d5be8b4be397b881748279e03d83b5eb6a093dfe8636dd4bd2"
+    },
+    {
+      "id": "imports:file:tests/unit/run-command.test.ts->file:src/tools/run-command.ts:../../src/tools/run-command.js",
+      "type": "imports",
+      "source": "file:tests/unit/run-command.test.ts",
+      "target": "file:src/tools/run-command.ts",
+      "specifier": "../../src/tools/run-command.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/run-command.test.ts"
+      },
+      "contentHash": "9690a141887ff907dfea66b472ee522b455b915fffa3be7f85ca1de8db1c798e"
+    },
+    {
+      "id": "imports:file:tests/unit/run-command.test.ts->file:src/tools/types.ts:../../src/tools/types.js",
+      "type": "imports",
+      "source": "file:tests/unit/run-command.test.ts",
+      "target": "file:src/tools/types.ts",
+      "specifier": "../../src/tools/types.js",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/run-command.test.ts"
+      },
+      "contentHash": "e3299fbe2db0ade658e59247f4bd2aaf8734bfc1389cd640217c47a69bd56250"
+    },
+    {
+      "id": "imports:file:tests/unit/run-command.test.ts->package:npm:vitest:vitest",
+      "type": "imports",
+      "source": "file:tests/unit/run-command.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/run-command.test.ts"
+      },
+      "contentHash": "38f7d7dad22d2df7715c0030821b014255394d981471d654d8bc4e683013ebfd"
+    },
+    {
+      "id": "imports:file:tests/unit/run-command.test.ts->runtime:javascript:fs:fs/promises",
+      "type": "imports",
+      "source": "file:tests/unit/run-command.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs/promises",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/run-command.test.ts"
+      },
+      "contentHash": "6ab68fa953dc7b8b38eadd555bb99f838f7c63d4f1e31829b3892f07100abcf7"
+    },
+    {
+      "id": "imports:file:tests/unit/run-command.test.ts->runtime:javascript:os:os",
+      "type": "imports",
+      "source": "file:tests/unit/run-command.test.ts",
+      "target": "runtime:javascript:os",
+      "specifier": "os",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/run-command.test.ts"
+      },
+      "contentHash": "93be98f0c19a50f77b6983858ffd7f61188a0e1df684c82a1c8991dd5f2f7b1d"
+    },
+    {
+      "id": "imports:file:tests/unit/run-command.test.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:tests/unit/run-command.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/run-command.test.ts"
+      },
+      "contentHash": "e36ea68d660fe99f087c1027488ad4bc6ababd211d2f44b1051818d25131e380"
+    },
+    {
+      "id": "imports:file:tests/unit/search.test.ts->file:src/tools/search.ts:../../src/tools/search.js",
+      "type": "imports",
+      "source": "file:tests/unit/search.test.ts",
+      "target": "file:src/tools/search.ts",
+      "specifier": "../../src/tools/search.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/search.test.ts"
+      },
+      "contentHash": "25e61ef3e2a19418471945e7725752e4efc528b2a2fa383c1376ab367dfebd8a"
+    },
+    {
+      "id": "imports:file:tests/unit/search.test.ts->file:src/tools/types.ts:../../src/tools/types.js",
+      "type": "imports",
+      "source": "file:tests/unit/search.test.ts",
+      "target": "file:src/tools/types.ts",
+      "specifier": "../../src/tools/types.js",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/search.test.ts"
+      },
+      "contentHash": "bd84c72973f9f8b667b7d8caec42089073274ddf9382bfeb0135e49770d1b449"
+    },
+    {
+      "id": "imports:file:tests/unit/search.test.ts->package:npm:vitest:vitest",
+      "type": "imports",
+      "source": "file:tests/unit/search.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/search.test.ts"
+      },
+      "contentHash": "6817267a0986b28feb4612ec94ea87b6502c4d2783ae149facc75c7586c2190b"
+    },
+    {
+      "id": "imports:file:tests/unit/search.test.ts->runtime:javascript:fs:fs/promises",
+      "type": "imports",
+      "source": "file:tests/unit/search.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs/promises",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/search.test.ts"
+      },
+      "contentHash": "d78260d15f19397d41328242552e59ac2d1e3b8b71e23afd57621c372d6588a0"
+    },
+    {
+      "id": "imports:file:tests/unit/search.test.ts->runtime:javascript:os:os",
+      "type": "imports",
+      "source": "file:tests/unit/search.test.ts",
+      "target": "runtime:javascript:os",
+      "specifier": "os",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/search.test.ts"
+      },
+      "contentHash": "c86b9f865fdc790e05030844022f1915a3533c2a722912dd90527ee2e49621a9"
+    },
+    {
+      "id": "imports:file:tests/unit/search.test.ts->runtime:javascript:path:path",
+      "type": "imports",
+      "source": "file:tests/unit/search.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/search.test.ts"
+      },
+      "contentHash": "98fc5f6c4177d904db96d822420b64990fea3414586fa6fd162a572a48b55411"
+    },
+    {
+      "id": "imports:file:tests/unit/tool-registry.test.ts->file:src/llm/types.ts:../../src/llm/types.js",
+      "type": "imports",
+      "source": "file:tests/unit/tool-registry.test.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../../src/llm/types.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/tool-registry.test.ts"
+      },
+      "contentHash": "6c73d36d6f53e447b845d1483714c692c41d1758c0dc3f8ca5c0b7422ac340ae"
+    },
+    {
+      "id": "imports:file:tests/unit/tool-registry.test.ts->file:src/tools/registry.ts:../../src/tools/registry.js",
+      "type": "imports",
+      "source": "file:tests/unit/tool-registry.test.ts",
+      "target": "file:src/tools/registry.ts",
+      "specifier": "../../src/tools/registry.js",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/tool-registry.test.ts"
+      },
+      "contentHash": "ae865391d9573858008daf005e414f831ad620f020c12a29548933f8babedffb"
+    },
+    {
+      "id": "imports:file:tests/unit/tool-registry.test.ts->file:src/tools/types.ts:../../src/tools/types.js",
+      "type": "imports",
+      "source": "file:tests/unit/tool-registry.test.ts",
+      "target": "file:src/tools/types.ts",
+      "specifier": "../../src/tools/types.js",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/tool-registry.test.ts"
+      },
+      "contentHash": "1bba24090caf1218b57fff8d2af3caa0f165f40daf52c908b41930f635dc227f"
+    },
+    {
+      "id": "imports:file:tests/unit/tool-registry.test.ts->package:npm:vitest:vitest",
+      "type": "imports",
+      "source": "file:tests/unit/tool-registry.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/tool-registry.test.ts"
+      },
+      "contentHash": "1f48b3634fbd8a852d996ebe1a2579007210d53743a6efa54e902b0055629686"
+    },
+    {
+      "id": "imports:file:tests/unit/tool-registry.test.ts->package:npm:zod:zod",
+      "type": "imports",
+      "source": "file:tests/unit/tool-registry.test.ts",
+      "target": "package:npm:zod",
+      "specifier": "zod",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "tests/unit/tool-registry.test.ts"
+      },
+      "contentHash": "5acb3427a1544381332385a434b68a114e73a850037a34b174bd9b23bd297f15"
+    },
+    {
+      "id": "imports:file:vitest.config.ts->package:npm:vitest:vitest/config",
+      "type": "imports",
+      "source": "file:vitest.config.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest/config",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "provenance": {
+        "extractor": "javascript-imports",
+        "source": "vitest.config.ts"
+      },
+      "contentHash": "a33e8bee45b77ad41813b4485c4565500cea009cd2abba778ce9976c3ef21c06"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,7 @@
+{
+  "id": "task-3",
+  "name": "truncate-function-implementation",
+  "category": "feature_addition",
+  "verificationCommand": "node test.js",
+  "successCriteria": "Truncate function handles short and long strings with custom or default suffix"
+}
