@@ -1,0 +1,13 @@
+{
+  "task": "TASK-21",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "114bd51f-90f5-4bb4-b90e-75d3b0870ec7",
+  "human": "Pinkal",
+  "reason": "Deterministic compaction verified: Stage 1 8-turn windowing preserves recent interaction, Stage 2 extracts structured facts/files/commands/errors, CompactionEvent recorded, tests pass",
+  "observed_at": "2026-09-26T13:10:00.845Z",
+  "source_hash": "13306058763777284186b3d6c27e546771e5fb217a6edc88708989212ca17a7c",
+  "config_hash": "29f2ef61953569885518e3566b116cff711b0756a6ee7248d59460aab41ba3be",
+  "reviewed_proofs": "764e0d50c22cb5752935227f736ce97675428d29a8aa4f9949745bdad392ee21",
+  "hash": "c73477a126301995882d25d9dfe8b159c2b4f53697732fd2e592fa8d2b9473b8"
+}

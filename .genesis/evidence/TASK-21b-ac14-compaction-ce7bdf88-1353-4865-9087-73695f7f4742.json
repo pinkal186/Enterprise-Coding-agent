@@ -1,0 +1,30 @@
+{
+  "task": "TASK-21b",
+  "gate": "ac14-compaction",
+  "kind": "command",
+  "attempt": "ce7bdf88-1353-4865-9087-73695f7f4742",
+  "command": "npx vitest run tests/unit/context/compactor.test.ts",
+  "started_at": "2026-09-26T17:00:49.083Z",
+  "observed_at": "2026-09-26T17:01:01.953Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "\n\u001b[1m\u001b[46m RUN \u001b[49m\u001b[22m \u001b[36mv3.2.7 \u001b[39m\u001b[90mC:/Pinkal/Learning/Coding agent/Enterprise Coding agent\u001b[39m\n\n \u001b[32m✓\u001b[39m tests/unit/context/compactor.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 6\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 22:30:56\n\u001b[2m   Duration \u001b[22m 977ms\u001b[2m (transform 81ms, setup 0ms, collect 138ms, tests 6ms, environment 0ms, prepare 293ms)\u001b[22m\n\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "7ecad2a28e6850ea12efcdacdcd96faa05ccf950",
+    "dirty": true
+  },
+  "source_hash": "406f1c56b54757cf8e8cc0a29f63cd87df09e105092ff6040c7b66c18e10c6b9",
+  "before_hash": "406f1c56b54757cf8e8cc0a29f63cd87df09e105092ff6040c7b66c18e10c6b9",
+  "config_hash": "4dbc968c34f65f6822b619fba6e1433c78a3130ad2b79cf0186af1c9b33443ed",
+  "environment": {
+    "node": "v22.23.2",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+    "variables": {}
+  },
+  "hash": "e10ed895e98afe73fdb2a725d1ccd73a9414b6464e091e5e496763a86cc0fb4a"
+}

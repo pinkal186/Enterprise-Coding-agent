@@ -1,0 +1,7 @@
+{
+  "id": "task-7",
+  "name": "large-log-parser",
+  "category": "bug_fix",
+  "verificationCommand": "node test.js",
+  "successCriteria": "Parses error occurrences from log files and handles multiline stack traces with exit code 0"
+}

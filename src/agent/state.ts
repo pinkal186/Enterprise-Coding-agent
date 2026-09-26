@@ -1,10 +1,12 @@
 /**
  * Task Execution State Management
  *
- * Tracks the complete runtime state of an autonomous agent task (FR-11).
+ * Tracks the complete runtime state of an autonomous agent task (FR-11, FR-25).
+ * Extended in Iteration 2 with importantFacts and contextStats tracking.
  */
 
 import type { Message, UsageInfo } from "../llm/types.js";
+import type { ContextStats, ImportantFact } from "../context/types.js";
 
 export type TaskStatus = "idle" | "running" | "completed" | "failed";
 
@@ -36,6 +38,17 @@ export class TaskState {
   executedCommands: ExecutedCommandRecord[] = [];
   verificationPassed = false;
   finalAnswer?: string;
+
+  // Context management extensions (FR-25)
+  importantFacts: ImportantFact[] = [];
+  contextStats: ContextStats = {
+    totalItems: 0,
+    estimatedTokens: 0,
+    utilization: 0,
+    truncations: 0,
+    compactions: 0,
+    droppedItems: 0,
+  };
 
   tokenUsage = {
     inputTokens: 0,
@@ -76,6 +89,35 @@ export class TaskState {
     this.tokenUsage.inputTokens += usage.inputTokens || 0;
     this.tokenUsage.outputTokens += usage.outputTokens || 0;
     this.tokenUsage.totalTokens += usage.totalTokens || 0;
+  }
+
+  /**
+   * Adds an important fact to the structured store (FR-25).
+   */
+  addImportantFact(
+    fact: ImportantFact | string,
+    importance: ImportantFact["importance"] = "normal"
+  ): void {
+    if (typeof fact === "string") {
+      this.importantFacts.push({
+        id: `fact_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
+        content: fact,
+        importance,
+        createdAt: Date.now(),
+      });
+    } else {
+      this.importantFacts.push(fact);
+    }
+  }
+
+  /**
+   * Updates context stats summary metrics (FR-25).
+   */
+  updateContextStats(stats: Partial<ContextStats>): void {
+    this.contextStats = {
+      ...this.contextStats,
+      ...stats,
+    };
   }
 
   markVerified(passed: boolean): void {

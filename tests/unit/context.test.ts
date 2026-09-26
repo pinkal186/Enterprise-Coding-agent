@@ -53,6 +53,43 @@ describe("ContextManager & TaskState (TASK-09)", () => {
       expect(state.failureReason).toBe("iteration_limit");
       expect(state.finalAnswer).toBe("Hit max iterations");
     });
+
+    it("tracks important facts and context stats (FR-25)", () => {
+      const state = new TaskState({
+        userRequest: "Investigate calculator multiplication",
+        workspaceRoot: "/workspace",
+      });
+
+      expect(state.importantFacts).toEqual([]);
+      expect(state.contextStats.totalItems).toBe(0);
+
+      // Add fact via string
+      state.addImportantFact("calculator.ts multiply() returns sum instead of product", "critical");
+      expect(state.importantFacts).toHaveLength(1);
+      expect(state.importantFacts[0].content).toContain("returns sum");
+      expect(state.importantFacts[0].importance).toBe("critical");
+
+      // Add fact via object
+      state.addImportantFact({
+        id: "fact-2",
+        content: "Tests expect 2 * 3 = 6",
+        importance: "high",
+      });
+      expect(state.importantFacts).toHaveLength(2);
+
+      // Update context stats
+      state.updateContextStats({
+        totalItems: 14,
+        estimatedTokens: 3500,
+        utilization: 0.12,
+        truncations: 1,
+      });
+
+      expect(state.contextStats.totalItems).toBe(14);
+      expect(state.contextStats.estimatedTokens).toBe(3500);
+      expect(state.contextStats.utilization).toBe(0.12);
+      expect(state.contextStats.truncations).toBe(1);
+    });
   });
 
   describe("ContextManager (NFR-4)", () => {

@@ -1,0 +1,1 @@
+Fix the mergeConfig function in config.js so it deeply merges nested configuration objects instead of doing a shallow Object.assign. Run node test.js to verify.

@@ -20,6 +20,7 @@ export interface ParsedCliArgs {
   workspace: string;
   model: string;
   showHelp: boolean;
+  debugContext: boolean;
 }
 
 export function parseCliArgs(args: string[]): ParsedCliArgs {
@@ -27,12 +28,15 @@ export function parseCliArgs(args: string[]): ParsedCliArgs {
   let workspace = process.cwd();
   let model = DEFAULT_GEMINI_MODEL;
   let showHelp = false;
+  let debugContext = false;
 
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
 
     if (arg === "--help" || arg === "-h") {
       showHelp = true;
+    } else if (arg === "--debug-context") {
+      debugContext = true;
     } else if (arg === "--workspace" || arg === "-w") {
       if (i + 1 < args.length) {
         workspace = path.resolve(args[++i]);
@@ -51,7 +55,76 @@ export function parseCliArgs(args: string[]): ParsedCliArgs {
     workspace,
     model,
     showHelp,
+    debugContext,
   };
+}
+
+export function redactDebugOutput(text: string, sensitiveTokens: string[] = []): string {
+  let cleaned = text;
+  for (const token of sensitiveTokens) {
+    if (token) {
+      cleaned = cleaned.replaceAll(token, "[REDACTED]");
+    }
+  }
+  // Pattern-based API key redaction (e.g. AIzaSy...)
+  cleaned = cleaned.replace(/AIza[0-9A-Za-z-_]{30,50}/g, "[REDACTED]");
+  return cleaned;
+}
+
+export function formatContextDebug(
+  data: Record<string, unknown>,
+  sensitiveTokens: string[] = []
+): string {
+  const lines: string[] = [];
+  lines.push("--- Context Debug ---");
+  lines.push("Context:");
+  const itemCount = Array.isArray(data.items)
+    ? data.items.length
+    : (data.context_items ?? data.contextItems ?? 0);
+  lines.push(`  Items: ${itemCount}`);
+  lines.push(`  Estimated tokens: ${data.estimated_input_tokens ?? data.estimatedTokens ?? 0}`);
+  lines.push(`  Budget: ${data.context_budget ?? data.contextBudget ?? 0}`);
+  const util = Number(data.utilization) || 0;
+  lines.push(`  Utilization: ${(util * 100).toFixed(1)}%`);
+
+  if (data.compaction) {
+    const comp = data.compaction as {
+      tokensBefore?: number;
+      tokensAfter?: number;
+      tokens_before?: number;
+      tokens_after?: number;
+    };
+    const before = comp.tokensBefore ?? comp.tokens_before ?? 0;
+    const after = comp.tokensAfter ?? comp.tokens_after ?? 0;
+    lines.push(`Compaction:`);
+    lines.push(`  Before: ${before} tokens`);
+    lines.push(`  Compacted: ${before - after} tokens`);
+    lines.push(`  After: ${after} tokens`);
+  } else {
+    lines.push("No compaction required.");
+  }
+
+  if (Array.isArray(data.items) && data.items.length > 0) {
+    lines.push("Items:");
+    for (const item of data.items as Array<{
+      importance?: string;
+      description?: string;
+      disposition?: string;
+    }>) {
+      const tag = `[${String(item.importance || "normal").toUpperCase()}]`;
+      const desc = item.description || "item";
+      const disp =
+        item.disposition === "DROPPED"
+          ? " [DROPPED]"
+          : item.disposition === "TRUNCATED"
+          ? " [TRUNCATED]"
+          : "";
+      lines.push(`  ${tag} ${desc}${disp}`);
+    }
+  }
+  lines.push("---------------------");
+
+  return redactDebugOutput(lines.join("\n"), sensitiveTokens);
 }
 
 export function formatEventMessage(event: AgentEvent): string | null {
@@ -76,6 +149,18 @@ export function formatEventMessage(event: AgentEvent): string | null {
       return `[${time}] 🎉 Task completed successfully in ${event.data.iterations} iterations!`;
     case "task_failed":
       return `[${time}] 🛑 Task failed: ${event.data.reason}`;
+    case "context_build_started":
+      return `[${time}] 📦 Context build started (Iteration ${event.data.iteration})`;
+    case "context_build_completed":
+      return `[${time}] 📦 Context build completed: ${event.data.estimatedTokens ?? event.data.estimated_input_tokens} tokens (${((Number(event.data.utilization) || 0) * 100).toFixed(1)}% utilization)`;
+    case "context_compaction_started":
+      return `[${time}] 🗜️ Context compaction started (${event.data.tokensBefore ?? event.data.tokens_before} tokens before)`;
+    case "context_compaction_completed":
+      return `[${time}] 🗜️ Context compaction completed: ${event.data.tokensBefore ?? event.data.tokens_before} -> ${event.data.tokensAfter ?? event.data.tokens_after} tokens`;
+    case "context_item_truncated":
+      return `[${time}] ✂️ Context item truncated: ${event.data.itemId} (${event.data.originalTokenEstimate} -> ${event.data.finalTokenEstimate} tokens)`;
+    case "context_item_dropped":
+      return `[${time}] 🗑️ Context item dropped: ${event.data.itemId} [${String(event.data.importance || "").toUpperCase()}]`;
     default:
       return null;
   }
@@ -90,7 +175,7 @@ export async function runCli(
 
   if (parsed.showHelp || (!parsed.task && args.length === 0)) {
     logger.log(`
-Enterprise Coding Agent — Autonomous Engineering Loop (Iteration 1)
+Enterprise Coding Agent — Autonomous Engineering Loop (Iteration 2)
 
 Usage:
   npx tsx src/cli/main.ts "<task_description>" [options]
@@ -98,6 +183,7 @@ Usage:
 Options:
   --workspace, -w <dir>   Path to the workspace root directory (default: current working directory)
   --model, -m <model>     Gemini model identifier (default: ${DEFAULT_GEMINI_MODEL})
+  --debug-context         Enable debug context output showing per-item priority and disposition
   --help, -h              Show this help message
 
 Environment Variables:
@@ -117,10 +203,13 @@ Environment Variables:
   }
 
   logger.log("==================================================================");
-  logger.log("🚀 Enterprise Coding Agent — Iteration 1 Runtime");
+  logger.log("🚀 Enterprise Coding Agent — Iteration 2 Runtime");
   logger.log(`🎯 Task:      ${parsed.task}`);
   logger.log(`📂 Workspace: ${parsed.workspace}`);
   logger.log(`🤖 Model:     ${parsed.model}`);
+  if (parsed.debugContext) {
+    logger.log(`🔍 Debug:     Context visibility enabled (--debug-context)`);
+  }
   logger.log("==================================================================\n");
 
   // 1. Initialize Tools
@@ -145,6 +234,14 @@ Environment Variables:
     onEvent: (event) => {
       const msg = formatEventMessage(event);
       if (msg) logger.log(msg);
+
+      if (parsed.debugContext && event.type === "context_build_completed") {
+        const debugStr = formatContextDebug(
+          event.data,
+          [env.GEMINI_API_KEY].filter(Boolean) as string[]
+        );
+        logger.log(debugStr);
+      }
     },
   });
 

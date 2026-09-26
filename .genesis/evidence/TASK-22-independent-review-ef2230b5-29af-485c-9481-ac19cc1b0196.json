@@ -1,0 +1,13 @@
+{
+  "task": "TASK-22",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "ef2230b5-29af-485c-9481-ac19cc1b0196",
+  "human": "Pinkal",
+  "reason": "ManagedContextManager coordinates TokenEstimator, ContextPolicy, Truncator, Compactor, and ContextBuilder into single buildManaged entry point; context.ts backward-compatible shim preserved with assemble(); ContextMetricsAggregator tracking implemented; all unit tests pass",
+  "observed_at": "2026-09-26T13:18:20.090Z",
+  "source_hash": "e7c0d57afcee903b4d661f03d08949228686c487fd547fa9d00434a81b32147b",
+  "config_hash": "43ef58cc2aac4a655fa139743aa8e2b081caea258dc8c9744277c9b63379b68d",
+  "reviewed_proofs": "6ebc1d3f5b77dfa01df73195180de3c69aff6763a822546a3477d6e413ae30ab",
+  "hash": "48927c75e9a6f69c972d4c2ee27a9154c6f21f2d7bfefa48e1d32b7c51764f52"
+}

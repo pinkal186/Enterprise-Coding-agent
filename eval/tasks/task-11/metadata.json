@@ -1,0 +1,7 @@
+{
+  "id": "task-11",
+  "name": "event-emitter-once",
+  "category": "bug_fix",
+  "verificationCommand": "node test.js",
+  "successCriteria": "EventEmitter handles once() removal correctly during emit iteration with exit code 0"
+}

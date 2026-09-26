@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "project": "Enterprise Coding agent",
-  "revision": "7c70e8a825dd5ebeeff76e2a50bcf1ef816670d5",
-  "sourceHash": "c3ead3bbf16b76a46c791a03811297056756c67ee65e92bbdac0d024b2e3c6d1",
+  "revision": "7ecad2a28e6850ea12efcdacdcd96faa05ccf950",
+  "sourceHash": "778c4debea2176f2b1ca828423f94d893b16fdc0d1b2ec643e3b6ed46a91b589",
   "provenance": {
     "tool": "genesis-graphizer",
     "method": "static-analysis",
@@ -17,7 +17,7 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "5c96f78a8f973c8c59c76697b602570f07d0641e7acea2708c7a959fdbf0e84d"
+      "contentHash": "9c8269ab5ad26ea123bf074253d53f9ea07e8259c1abbd8f894853fa361803f0"
     },
     {
       "id": "file:eval/runner.ts",
@@ -27,7 +27,7 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "feb53b112f8d4b2daf8ff4623564e02a274f5a9280915db6f651a5cf43416ea9"
+      "contentHash": "24e0c9331b5b75cb0201eb98233a5a3dc7c8811b648cba631afcde3b68275a9b"
     },
     {
       "id": "file:eval/tasks/task-1/paginate.js",
@@ -48,6 +48,66 @@
       "confidence": 1,
       "extractor": "filesystem",
       "contentHash": "2011afef161e6a74135db5c990327c506d6f123fd848658a455af278b8ea4053"
+    },
+    {
+      "id": "file:eval/tasks/task-10/dep-graph.js",
+      "type": "file",
+      "label": "eval/tasks/task-10/dep-graph.js",
+      "path": "eval/tasks/task-10/dep-graph.js",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "e13af9a2aee64b2233698df2c70506546c6bdd8665de471a4c60daf41d423c35"
+    },
+    {
+      "id": "file:eval/tasks/task-10/test.js",
+      "type": "file",
+      "label": "eval/tasks/task-10/test.js",
+      "path": "eval/tasks/task-10/test.js",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "425a8e4f744024b2acfcd8b1b786cfa5981a89f373b1c95a5fb1852463229303"
+    },
+    {
+      "id": "file:eval/tasks/task-11/emitter.js",
+      "type": "file",
+      "label": "eval/tasks/task-11/emitter.js",
+      "path": "eval/tasks/task-11/emitter.js",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "0d48fe63ee1e8afccfc020f3507ede77342307c70bace865c755c959093d85c7"
+    },
+    {
+      "id": "file:eval/tasks/task-11/test.js",
+      "type": "file",
+      "label": "eval/tasks/task-11/test.js",
+      "path": "eval/tasks/task-11/test.js",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "6eb94b2c09c2400c616ffaa84c3f29547709ac38809483fa11817e91ba92c49e"
+    },
+    {
+      "id": "file:eval/tasks/task-12/test.js",
+      "type": "file",
+      "label": "eval/tasks/task-12/test.js",
+      "path": "eval/tasks/task-12/test.js",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "2e0e346172aaef0f952e6753d2d4a11cbf8e9343fd416469583aed0cd68bf5b8"
+    },
+    {
+      "id": "file:eval/tasks/task-12/validator.js",
+      "type": "file",
+      "label": "eval/tasks/task-12/validator.js",
+      "path": "eval/tasks/task-12/validator.js",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "df5155fd90ca36c0a542600a484149edf29b0e21ae968d17d6ca38f77b5bf206"
     },
     {
       "id": "file:eval/tasks/task-2/slugify.js",
@@ -130,6 +190,86 @@
       "contentHash": "c3e67601d41a87f251cab3a9a04f21ef134086673a251db3f2829ad1606733f0"
     },
     {
+      "id": "file:eval/tasks/task-6/config.js",
+      "type": "file",
+      "label": "eval/tasks/task-6/config.js",
+      "path": "eval/tasks/task-6/config.js",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "2b4d7e491fd340005e131e706c5bf6a1b14b50152b6fb3143adb7991eae01926"
+    },
+    {
+      "id": "file:eval/tasks/task-6/test.js",
+      "type": "file",
+      "label": "eval/tasks/task-6/test.js",
+      "path": "eval/tasks/task-6/test.js",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "b25120ff2cdafa85f1b8cbda0bf806f2bc0f15ea7644ddeabd17ea3f94779da0"
+    },
+    {
+      "id": "file:eval/tasks/task-7/parser.js",
+      "type": "file",
+      "label": "eval/tasks/task-7/parser.js",
+      "path": "eval/tasks/task-7/parser.js",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "d40f6628d76ef7a0aa72fd9b9a1567b6990ce8fb37f488658e43fea2bf06a420"
+    },
+    {
+      "id": "file:eval/tasks/task-7/test.js",
+      "type": "file",
+      "label": "eval/tasks/task-7/test.js",
+      "path": "eval/tasks/task-7/test.js",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "0de6c95f89bea7204641e6b3bd647351a820a268248495bc8b4ee8243ce42bbc"
+    },
+    {
+      "id": "file:eval/tasks/task-8/cache.js",
+      "type": "file",
+      "label": "eval/tasks/task-8/cache.js",
+      "path": "eval/tasks/task-8/cache.js",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "fec921f549a91474595252c77d22f33313aa51265515881121f24f3509660ef2"
+    },
+    {
+      "id": "file:eval/tasks/task-8/test.js",
+      "type": "file",
+      "label": "eval/tasks/task-8/test.js",
+      "path": "eval/tasks/task-8/test.js",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "87c699cbd4ac10ec3c2d559cce9f28900afaef2094beaa06bbd277d2bd6f45b7"
+    },
+    {
+      "id": "file:eval/tasks/task-9/test.js",
+      "type": "file",
+      "label": "eval/tasks/task-9/test.js",
+      "path": "eval/tasks/task-9/test.js",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "0cf790b30d281b6650b543fb2762c9c96f80a2c1fdd7255b04674409e94e6e77"
+    },
+    {
+      "id": "file:eval/tasks/task-9/tokenizer.js",
+      "type": "file",
+      "label": "eval/tasks/task-9/tokenizer.js",
+      "path": "eval/tasks/task-9/tokenizer.js",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "28f471d5ed2dc0e22465c410744eaf678d3e9842449c04f11eff0bc18801f26f"
+    },
+    {
       "id": "file:examples/demo.ts",
       "type": "file",
       "label": "examples/demo.ts",
@@ -147,7 +287,7 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "ce676db09444d043f8b210d83a0951463f0fde45a2e0d7f8fb07f0f97d44c644"
+      "contentHash": "2c1812bc1d4c31b11720743351b36afb1f986724600bb3f53029e3b029860032"
     },
     {
       "id": "file:src/agent/state.ts",
@@ -157,7 +297,7 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "939dc0d8bd0b2f64bd44505192691d580280ba2faee30d5ea5dbf4fbe923709e"
+      "contentHash": "d7f6732f21ee8b5917ba611b00f2673018ab1130d40765e557fef2bf05a45107"
     },
     {
       "id": "file:src/cli/main.ts",
@@ -167,7 +307,7 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "a9a69d908e34a8daa08c16f5de2ef36f1e25e515507cbe10ad1eb6cda3a2aedf"
+      "contentHash": "06d02547a57326c6229b510f83459ed76d050f4f519f8b7044aedbfc9d3fb656"
     },
     {
       "id": "file:src/cli/runner.ts",
@@ -177,7 +317,47 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "adc348e9f1048c43712b1a153241f2e1788bee4b76a71472e3e45d113e4fc6f6"
+      "contentHash": "5f2869c1afe1b5c26ccf8acdf8edc0fa2dd9e29a163dc511f3bacf514bbe77b0"
+    },
+    {
+      "id": "file:src/context/compactor.ts",
+      "type": "file",
+      "label": "src/context/compactor.ts",
+      "path": "src/context/compactor.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "041f974725d2dc43dca3b4409d1b54587c8070e5cc45321c4c1c64d458cbed02"
+    },
+    {
+      "id": "file:src/context/context-builder.ts",
+      "type": "file",
+      "label": "src/context/context-builder.ts",
+      "path": "src/context/context-builder.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "b3f3317bc8e98e17127e9e52e58310781fe1f0e8e15497464119b654c0a66bef"
+    },
+    {
+      "id": "file:src/context/context-manager.ts",
+      "type": "file",
+      "label": "src/context/context-manager.ts",
+      "path": "src/context/context-manager.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "ec9e5398ea95c14ebe7cb3e4db9cf92f86597c32f3d685c7748d3f6ebdf12a9d"
+    },
+    {
+      "id": "file:src/context/context-metrics.ts",
+      "type": "file",
+      "label": "src/context/context-metrics.ts",
+      "path": "src/context/context-metrics.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "45e0e4edb5eadb9c4a21761215b7abf5521d61e47c33773f6a85c196bf26f0b4"
     },
     {
       "id": "file:src/context/context.ts",
@@ -187,7 +367,47 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "fbd07f97cba24c4f0bbe4f744cf059475ef85d614f56ce645543d70b4f02effd"
+      "contentHash": "006fb047eb3497e8e40e4385e909a25132ae03e98b121deeace30e59d115da3d"
+    },
+    {
+      "id": "file:src/context/policies.ts",
+      "type": "file",
+      "label": "src/context/policies.ts",
+      "path": "src/context/policies.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "1ebd776ee524b87e1f43f115e8a550b5543faa3f625ff03037c878d90569d58a"
+    },
+    {
+      "id": "file:src/context/token-estimator.ts",
+      "type": "file",
+      "label": "src/context/token-estimator.ts",
+      "path": "src/context/token-estimator.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "1ae3a6c00051a46ac43850daa8bf5924f42f987e8d91fab69646cac47b52f239"
+    },
+    {
+      "id": "file:src/context/truncator.ts",
+      "type": "file",
+      "label": "src/context/truncator.ts",
+      "path": "src/context/truncator.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "930438569278696f40c49d2a3dbbcdb68bea1c238a46c6b774f72f0cc8e75b66"
+    },
+    {
+      "id": "file:src/context/types.ts",
+      "type": "file",
+      "label": "src/context/types.ts",
+      "path": "src/context/types.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "f3e99608364289e36d1cdd854e0c7d30930f58bdc7d7e910b42474f6335f6940"
     },
     {
       "id": "file:src/llm/gemini.ts",
@@ -227,7 +447,7 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "ca98cd8558fb6427c1415dfe0188bec6994ab18eb0e343c1430ee0196181fc7a"
+      "contentHash": "e44b6d0613fde95c2a9b130fd6e450e5986888418477307f605987cfa8ddfeb5"
     },
     {
       "id": "file:src/safety/policy.ts",
@@ -330,6 +550,16 @@
       "contentHash": "345088c91fd2c7bc34947d3a5afdd12174374d9aeda0c5e1549bedcaa99a09dd"
     },
     {
+      "id": "file:tests/integration/context-management.test.ts",
+      "type": "file",
+      "label": "tests/integration/context-management.test.ts",
+      "path": "tests/integration/context-management.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "252ab23674056b2abddb299629e882731eb71aef9f8317e3f1cbf79bb20671be"
+    },
+    {
       "id": "file:tests/integration/eval-runner.test.ts",
       "type": "file",
       "label": "tests/integration/eval-runner.test.ts",
@@ -337,7 +567,7 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "eacb7a25c78ef69f924db8ddaa809f4e2bad7832a38013a6d296d452e1377ac8"
+      "contentHash": "bfa3ebd852daceb0f7f91de5130b1d4e6b083ece83c32f29f42a6707310ffdc7"
     },
     {
       "id": "file:tests/unit/agent-loop.test.ts",
@@ -357,7 +587,7 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "b11d7bb9a5eb263ae6fc77c64c52add31e21f4b419108a6a71b6634781539429"
+      "contentHash": "aa22b61688d5a846e593c35cfde113819cee3c8b37e7ee11036c0f00bf902bb0"
     },
     {
       "id": "file:tests/unit/context.test.ts",
@@ -367,7 +597,97 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "4f1e0bf48ddf098e3d2c1d2e775dd48ee66d35b9770b29b8ece104340b5a4f7d"
+      "contentHash": "f736d64fa5cdaff5f4510942d05184f2ccddebb7a99267ae8696e410980c67c6"
+    },
+    {
+      "id": "file:tests/unit/context/compactor.test.ts",
+      "type": "file",
+      "label": "tests/unit/context/compactor.test.ts",
+      "path": "tests/unit/context/compactor.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "3827d732126e5eef1a79efe4422d7df8deefe82acbbf54f90456411491e15940"
+    },
+    {
+      "id": "file:tests/unit/context/context-builder.test.ts",
+      "type": "file",
+      "label": "tests/unit/context/context-builder.test.ts",
+      "path": "tests/unit/context/context-builder.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "c608763915715eeca5c568d1fc4e4b9d61e9e9b5af72625fb7b7d15d91790d18"
+    },
+    {
+      "id": "file:tests/unit/context/context-manager.test.ts",
+      "type": "file",
+      "label": "tests/unit/context/context-manager.test.ts",
+      "path": "tests/unit/context/context-manager.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "e9a86196a6007a2ba5507c25fe015d5f88ac3a373ce6578bf6af140c17835c13"
+    },
+    {
+      "id": "file:tests/unit/context/context-metrics.test.ts",
+      "type": "file",
+      "label": "tests/unit/context/context-metrics.test.ts",
+      "path": "tests/unit/context/context-metrics.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "d80ea4dd5470df47d784971f819c33ede6c0270233564f7c03ed8846a072b00d"
+    },
+    {
+      "id": "file:tests/unit/context/policies.test.ts",
+      "type": "file",
+      "label": "tests/unit/context/policies.test.ts",
+      "path": "tests/unit/context/policies.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "037604fe9005d9342c23ef5d45622d41f86793b909d18b1e2b1147c7b33139c0"
+    },
+    {
+      "id": "file:tests/unit/context/stress.test.ts",
+      "type": "file",
+      "label": "tests/unit/context/stress.test.ts",
+      "path": "tests/unit/context/stress.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "bb6fbd0959f330535aaad46bdfbb47f35b691085937f2af39a868cff86f9b92b"
+    },
+    {
+      "id": "file:tests/unit/context/token-estimator.test.ts",
+      "type": "file",
+      "label": "tests/unit/context/token-estimator.test.ts",
+      "path": "tests/unit/context/token-estimator.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "d79ea14a069e9f85bf1ab9ec12aa4d4770b785cc17e9211bb8c74a2f9bed91a6"
+    },
+    {
+      "id": "file:tests/unit/context/truncator.test.ts",
+      "type": "file",
+      "label": "tests/unit/context/truncator.test.ts",
+      "path": "tests/unit/context/truncator.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "f8d7e7ce67ce497b91c8133d967c1c304b7f36336351f7a0af614e30a6de3fbb"
+    },
+    {
+      "id": "file:tests/unit/context/types.test.ts",
+      "type": "file",
+      "label": "tests/unit/context/types.test.ts",
+      "path": "tests/unit/context/types.test.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "922d7e2868ba66073e196fa2018a5575e538353a4df2594e3f9ab5bd42c88a2f"
     },
     {
       "id": "file:tests/unit/edit-file.test.ts",
@@ -407,7 +727,7 @@
       "language": "javascript",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "e34a6b4e2160be127c22385199f5d309c1dcc0320ac5fa5443893d723b7317e0"
+      "contentHash": "a51133e79ddb8cfd95fc6c9897615305f56629391bd7bd107974ae7f20c7d72c"
     },
     {
       "id": "file:tests/unit/read-file.test.ts",
@@ -505,6 +825,15 @@
       "contentHash": "6e1742450f7f56b80f1004a8a04675b38781504a842956d2dc868e1ff82f444c"
     },
     {
+      "id": "runtime:javascript:crypto",
+      "type": "runtime",
+      "label": "crypto",
+      "language": "javascript",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "bcebf8b78c52065d0c690b02c10bae42e93eaedd83cf0ff84ab2e88c5b696ee8"
+    },
+    {
       "id": "runtime:javascript:fs",
       "type": "runtime",
       "label": "fs",
@@ -532,13 +861,22 @@
       "contentHash": "8e9e99a892940fe6824c66f1743a5359c95f727c8518cd02475056bed12dbba5"
     },
     {
+      "id": "runtime:javascript:url",
+      "type": "runtime",
+      "label": "url",
+      "language": "javascript",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "9bdfc951f6a3e0da297fef7f4afa15303ef30783c01058103248b470fd2d7207"
+    },
+    {
       "id": "symbol:eval/run.mjs#variable:args",
       "type": "symbol",
       "kind": "variable",
       "name": "args",
       "label": "args",
       "path": "eval/run.mjs",
-      "line": 8,
+      "line": 10,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "bbd41eddff3d582ea1e123e49338fc4804e7c8592e132d8de7fb22c563a20df7"
@@ -550,10 +888,34 @@
       "name": "result",
       "label": "result",
       "path": "eval/run.mjs",
-      "line": 10,
+      "line": 13,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "6c6d6b872af472caa520b3e0b31e70f8b866aadbbecbeeb84bee291751f2e123"
+    },
+    {
+      "id": "symbol:eval/run.mjs#variable:tsxCli",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "tsxCli",
+      "label": "tsxCli",
+      "path": "eval/run.mjs",
+      "line": 11,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "e3137170452f9c90edfb4eabaa369297eae7068ee75ee3a254d6f23a6ca3e861"
+    },
+    {
+      "id": "symbol:eval/runner.ts#function:generateBaselineComparison",
+      "type": "symbol",
+      "kind": "function",
+      "name": "generateBaselineComparison",
+      "label": "generateBaselineComparison",
+      "path": "eval/runner.ts",
+      "line": 800,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "44d769945f4b0dded66131244304e068ba9eb760aa92e27740e74bcefedf40be"
     },
     {
       "id": "symbol:eval/runner.ts#function:main",
@@ -562,7 +924,7 @@
       "name": "main",
       "label": "main",
       "path": "eval/runner.ts",
-      "line": 270,
+      "line": 875,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "f583c61a40c09d3bfca9b3e6ef3e28a4f4dfaced58f9b895d0d76c0d77a8dd4c"
@@ -574,10 +936,34 @@
       "name": "runTask",
       "label": "runTask",
       "path": "eval/runner.ts",
-      "line": 196,
+      "line": 652,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "5e2261164c73ba0864f62343e75e71d35ce2a3e50595b312aaef2af11b946d36"
+    },
+    {
+      "id": "symbol:eval/runner.ts#interface:TaskResult",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "TaskResult",
+      "label": "TaskResult",
+      "path": "eval/runner.ts",
+      "line": 31,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "4665ff6f61f766a5239ae1e437c0a568a42f5b7cb766f1c92d78aa9bfc356b68"
+    },
+    {
+      "id": "symbol:eval/runner.ts#type:FailureTaxonomy",
+      "type": "symbol",
+      "kind": "type",
+      "name": "FailureTaxonomy",
+      "label": "FailureTaxonomy",
+      "path": "eval/runner.ts",
+      "line": 21,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "cf1132b57e7c7b074b6106ab3ce85f4ad4eddfb0f3fa87c4057e85d59f9afe84"
     },
     {
       "id": "symbol:eval/runner.ts#variable:TASK_ACTIONS",
@@ -586,7 +972,7 @@
       "name": "TASK_ACTIONS",
       "label": "TASK_ACTIONS",
       "path": "eval/runner.ts",
-      "line": 20,
+      "line": 49,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "524ccf5a6ef81cfbbb291403353f9ecb50598d27ced8cc2dc7691e3b72d64ee9"
@@ -626,6 +1012,138 @@
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "027bc4a8853ce2a29c57e446f9f797146a22a5a46cb729466f3435861b8b446a"
+    },
+    {
+      "id": "symbol:eval/tasks/task-10/dep-graph.js#function:resolveDependencies",
+      "type": "symbol",
+      "kind": "function",
+      "name": "resolveDependencies",
+      "label": "resolveDependencies",
+      "path": "eval/tasks/task-10/dep-graph.js",
+      "line": 1,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "3bc4e86aff1a6763d5470271df70a052344bed213f15db63e999b66749e3cb8e"
+    },
+    {
+      "id": "symbol:eval/tasks/task-10/test.js#variable:cyclicGraph",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "cyclicGraph",
+      "label": "cyclicGraph",
+      "path": "eval/tasks/task-10/test.js",
+      "line": 17,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "f17b54eb61403e34c71405bc941d66daed7c4de91741278653e737d61002ee76"
+    },
+    {
+      "id": "symbol:eval/tasks/task-10/test.js#variable:order",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "order",
+      "label": "order",
+      "path": "eval/tasks/task-10/test.js",
+      "line": 11,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "55b5dcd2ed69654c137664384318386e1565d6dc16cf04252125afa7b1d7b3d8"
+    },
+    {
+      "id": "symbol:eval/tasks/task-10/test.js#variable:validGraph",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "validGraph",
+      "label": "validGraph",
+      "path": "eval/tasks/task-10/test.js",
+      "line": 4,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "4542de258bb36f023768cdddae4384f8c0babfa6e0a778ab6dc17c905716506a"
+    },
+    {
+      "id": "symbol:eval/tasks/task-11/emitter.js#class:EventEmitter",
+      "type": "symbol",
+      "kind": "class",
+      "name": "EventEmitter",
+      "label": "EventEmitter",
+      "path": "eval/tasks/task-11/emitter.js",
+      "line": 1,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "4d23edf7ef1cf7fb1fe8174be61776bce3e4a2c4ab0731b4f6da00c68013a39a"
+    },
+    {
+      "id": "symbol:eval/tasks/task-11/test.js#variable:calls",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "calls",
+      "label": "calls",
+      "path": "eval/tasks/task-11/test.js",
+      "line": 5,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "d839a802da7726ca93e01c3611bbf6f75344b19f60f0d2d5995d4921da557b29"
+    },
+    {
+      "id": "symbol:eval/tasks/task-11/test.js#variable:emitter",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "emitter",
+      "label": "emitter",
+      "path": "eval/tasks/task-11/test.js",
+      "line": 4,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "fdda71c078e55392f9a8242b843fdbc78544e96e1a57a77abae0aafc97f69e88"
+    },
+    {
+      "id": "symbol:eval/tasks/task-12/test.js#variable:errors",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "errors",
+      "label": "errors",
+      "path": "eval/tasks/task-12/test.js",
+      "line": 31,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "160cf7a5808749cdfc565ed0ebbc5cf34b034dfed69249f338c51aa01b035590"
+    },
+    {
+      "id": "symbol:eval/tasks/task-12/test.js#variable:invalidData",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "invalidData",
+      "label": "invalidData",
+      "path": "eval/tasks/task-12/test.js",
+      "line": 21,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "5b316f433c623e993c17c2cdd4332f69fb6045e4a4b1e24b3ca3faa70bced04c"
+    },
+    {
+      "id": "symbol:eval/tasks/task-12/test.js#variable:schema",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "schema",
+      "label": "schema",
+      "path": "eval/tasks/task-12/test.js",
+      "line": 4,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "ac27e98ab55b54502ff3a4292fce630aa28f8c69aeef889dd144ae9e92c3cd35"
+    },
+    {
+      "id": "symbol:eval/tasks/task-12/validator.js#function:validateSchema",
+      "type": "symbol",
+      "kind": "function",
+      "name": "validateSchema",
+      "label": "validateSchema",
+      "path": "eval/tasks/task-12/validator.js",
+      "line": 1,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "b008e016521e42ff010f49d3ae07b9ed01eb5814b1ed995995c118c79c9ce156"
     },
     {
       "id": "symbol:eval/tasks/task-2/slugify.js#function:slugify",
@@ -712,6 +1230,150 @@
       "contentHash": "724e10f3b96137f6a92d667f91a2c582cea3de8939d55474e2e3804711ff42c7"
     },
     {
+      "id": "symbol:eval/tasks/task-6/config.js#function:mergeConfig",
+      "type": "symbol",
+      "kind": "function",
+      "name": "mergeConfig",
+      "label": "mergeConfig",
+      "path": "eval/tasks/task-6/config.js",
+      "line": 1,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "cb20316ce469d77986db92b5309d48a46ee60f6912c9d3ab2fc0cb99f6f2e905"
+    },
+    {
+      "id": "symbol:eval/tasks/task-6/test.js#variable:defaults",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "defaults",
+      "label": "defaults",
+      "path": "eval/tasks/task-6/test.js",
+      "line": 4,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "ab1442091de9a46c881be95fa3812845a812b4049f61d50c45374e4e2cb618e2"
+    },
+    {
+      "id": "symbol:eval/tasks/task-6/test.js#variable:merged",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "merged",
+      "label": "merged",
+      "path": "eval/tasks/task-6/test.js",
+      "line": 21,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "44fef53f442e0867f196f2e7ceeaa32947a0c3c839df0dcc2d436e60564bb3b1"
+    },
+    {
+      "id": "symbol:eval/tasks/task-6/test.js#variable:user",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "user",
+      "label": "user",
+      "path": "eval/tasks/task-6/test.js",
+      "line": 14,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "aefab16eab597f7ade97698763aa8764534d9e7dc3f6a7832d98bb2ad7c97bf4"
+    },
+    {
+      "id": "symbol:eval/tasks/task-7/parser.js#function:parseErrors",
+      "type": "symbol",
+      "kind": "function",
+      "name": "parseErrors",
+      "label": "parseErrors",
+      "path": "eval/tasks/task-7/parser.js",
+      "line": 1,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "2b3766d0e1b06b517f4b1d88d9385cc99a7a12c4470885b5f79be2fff41a50a0"
+    },
+    {
+      "id": "symbol:eval/tasks/task-7/test.js#variable:errors",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "errors",
+      "label": "errors",
+      "path": "eval/tasks/task-7/test.js",
+      "line": 14,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "160cf7a5808749cdfc565ed0ebbc5cf34b034dfed69249f338c51aa01b035590"
+    },
+    {
+      "id": "symbol:eval/tasks/task-7/test.js#variable:sampleLog",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "sampleLog",
+      "label": "sampleLog",
+      "path": "eval/tasks/task-7/test.js",
+      "line": 4,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "c31b0c1a5b4a6a79df8e44dd626783deffb3054bbd093f5337ccea2a21b413d4"
+    },
+    {
+      "id": "symbol:eval/tasks/task-8/cache.js#class:TTLCache",
+      "type": "symbol",
+      "kind": "class",
+      "name": "TTLCache",
+      "label": "TTLCache",
+      "path": "eval/tasks/task-8/cache.js",
+      "line": 1,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "251466cfcb793265e96ff63c24a48230c4fe364aef09c14f416b233834c1e9ec"
+    },
+    {
+      "id": "symbol:eval/tasks/task-8/test.js#variable:cache",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "cache",
+      "label": "cache",
+      "path": "eval/tasks/task-8/test.js",
+      "line": 4,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "0c85be4940f61ec4026ad8f7b8177c59bed2426a1fea1ff6d9b61e98edf0182d"
+    },
+    {
+      "id": "symbol:eval/tasks/task-9/test.js#variable:expr",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "expr",
+      "label": "expr",
+      "path": "eval/tasks/task-9/test.js",
+      "line": 4,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "47731222dc1f9989223e4c6ac9318c13b74fa3f634fb1696933011659651b894"
+    },
+    {
+      "id": "symbol:eval/tasks/task-9/test.js#variable:tokens",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "tokens",
+      "label": "tokens",
+      "path": "eval/tasks/task-9/test.js",
+      "line": 5,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "953e590c769a0c1951e1a18f5ffabb36bae91306354f5e8f8cab37c0767870a5"
+    },
+    {
+      "id": "symbol:eval/tasks/task-9/tokenizer.js#function:tokenizeExpression",
+      "type": "symbol",
+      "kind": "function",
+      "name": "tokenizeExpression",
+      "label": "tokenizeExpression",
+      "path": "eval/tasks/task-9/tokenizer.js",
+      "line": 1,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "fa6f8c921f094bb8c32bb5bc9d1a523dc4c686beb08517a12794eb6fba494d8b"
+    },
+    {
       "id": "symbol:examples/demo.ts#function:runCodingAgent",
       "type": "symbol",
       "kind": "function",
@@ -730,10 +1392,22 @@
       "name": "AgentLoop",
       "label": "AgentLoop",
       "path": "src/agent/loop.ts",
-      "line": 48,
+      "line": 77,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "cec7923e4ed541901c1bfc1ff57adf7af0e1bd1284ef608418cf2e370b697341"
+    },
+    {
+      "id": "symbol:src/agent/loop.ts#function:getItemSummary",
+      "type": "symbol",
+      "kind": "function",
+      "name": "getItemSummary",
+      "label": "getItemSummary",
+      "path": "src/agent/loop.ts",
+      "line": 40,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "22363c78441459438c727907ba9e61fdeb66d2f62de1159c097f88dc6f95e2f7"
     },
     {
       "id": "symbol:src/agent/loop.ts#interface:AgentEvent",
@@ -742,7 +1416,7 @@
       "name": "AgentEvent",
       "label": "AgentEvent",
       "path": "src/agent/loop.ts",
-      "line": 29,
+      "line": 57,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "8c3d8db3ea0ccfc2a39c6e848320873edb0d738987c993ca034732ecfd6de86f"
@@ -754,7 +1428,7 @@
       "name": "AgentLoopOptions",
       "label": "AgentLoopOptions",
       "path": "src/agent/loop.ts",
-      "line": 36,
+      "line": 64,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "c0787cd33485902aaa197425337671779e26e1e69de2cba5b4eabcce7ed3036f"
@@ -766,7 +1440,7 @@
       "name": "AgentEventType",
       "label": "AgentEventType",
       "path": "src/agent/loop.ts",
-      "line": 18,
+      "line": 23,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "dc1c722c4f752641c2071cee9a6974a1bde18f5758d245eb2b94453789ecd235"
@@ -778,7 +1452,7 @@
       "name": "DEFAULT_MAX_CONSECUTIVE_FAILURES",
       "label": "DEFAULT_MAX_CONSECUTIVE_FAILURES",
       "path": "src/agent/loop.ts",
-      "line": 16,
+      "line": 21,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "4304c6b2ae70c0d0a3ab7d9eab5221542e4356ce41bea255d3b45aaa61f5daae"
@@ -790,7 +1464,7 @@
       "name": "DEFAULT_MAX_ITERATIONS",
       "label": "DEFAULT_MAX_ITERATIONS",
       "path": "src/agent/loop.ts",
-      "line": 15,
+      "line": 20,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "bcb6fef026b7316114df364769fa9f567b87dda1371278a5f873bebe29cf4f10"
@@ -802,7 +1476,7 @@
       "name": "TaskState",
       "label": "TaskState",
       "path": "src/agent/state.ts",
-      "line": 26,
+      "line": 28,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "b28b3b72d409d4897dc2b5f52979280d9ff6bdee0af5bfdb697e6b6b88fadd3d"
@@ -814,7 +1488,7 @@
       "name": "ExecutedCommandRecord",
       "label": "ExecutedCommandRecord",
       "path": "src/agent/state.ts",
-      "line": 19,
+      "line": 21,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "f69ec7431d5fb3d4c1a872a8ce50b8054ae022246669362c496e2d43438f0956"
@@ -826,7 +1500,7 @@
       "name": "TaskFailureReason",
       "label": "TaskFailureReason",
       "path": "src/agent/state.ts",
-      "line": 11,
+      "line": 13,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "a9ca6d68867a0f6137080634c3c9b5f1c04f909212c37aa4a512fefc77d70199"
@@ -838,7 +1512,7 @@
       "name": "TaskStatus",
       "label": "TaskStatus",
       "path": "src/agent/state.ts",
-      "line": 9,
+      "line": 11,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "affb5712e6eaadc2d55c83085b2b51f07ede895a9db0d1ad009b4e70a5961675"
@@ -850,10 +1524,22 @@
       "name": "main",
       "label": "main",
       "path": "src/cli/main.ts",
-      "line": 10,
+      "line": 12,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "f583c61a40c09d3bfca9b3e6ef3e28a4f4dfaced58f9b895d0d76c0d77a8dd4c"
+    },
+    {
+      "id": "symbol:src/cli/runner.ts#function:formatContextDebug",
+      "type": "symbol",
+      "kind": "function",
+      "name": "formatContextDebug",
+      "label": "formatContextDebug",
+      "path": "src/cli/runner.ts",
+      "line": 74,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6a498fd2b40e8098164f77654f1287d28f311c5e927db45c1ebf143cd9769ba1"
     },
     {
       "id": "symbol:src/cli/runner.ts#function:formatEventMessage",
@@ -862,7 +1548,7 @@
       "name": "formatEventMessage",
       "label": "formatEventMessage",
       "path": "src/cli/runner.ts",
-      "line": 57,
+      "line": 130,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "aafe9e5ae0419f89ef08608383119e377cc7a2ecc27aee87aaa34e03b7e74c50"
@@ -874,10 +1560,22 @@
       "name": "parseCliArgs",
       "label": "parseCliArgs",
       "path": "src/cli/runner.ts",
-      "line": 25,
+      "line": 26,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "84f5c365e084bf29ce2b89aed23b3f164aa5dfb641490f11118ce53dd7db8958"
+    },
+    {
+      "id": "symbol:src/cli/runner.ts#function:redactDebugOutput",
+      "type": "symbol",
+      "kind": "function",
+      "name": "redactDebugOutput",
+      "label": "redactDebugOutput",
+      "path": "src/cli/runner.ts",
+      "line": 62,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "18cf1344fb766215723b48de37a99196fbac6402ce4041f8f1babd7340cf86f6"
     },
     {
       "id": "symbol:src/cli/runner.ts#function:runCli",
@@ -886,7 +1584,7 @@
       "name": "runCli",
       "label": "runCli",
       "path": "src/cli/runner.ts",
-      "line": 84,
+      "line": 169,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "c05d7aaee38122c63eded3ba925b66da5695f544b06f6b6377fd908cab029da3"
@@ -904,13 +1602,157 @@
       "contentHash": "0d71093c148bc869e6ecb88838ea843ae00369eda4d3f4018d635af419fb593c"
     },
     {
+      "id": "symbol:src/context/compactor.ts#class:DeterministicCompactor",
+      "type": "symbol",
+      "kind": "class",
+      "name": "DeterministicCompactor",
+      "label": "DeterministicCompactor",
+      "path": "src/context/compactor.ts",
+      "line": 25,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "50c00e2505ee7102c55188a82e3e55a4618268750a5c1be36ca0b2eb700801f4"
+    },
+    {
+      "id": "symbol:src/context/compactor.ts#interface:CompactorOptions",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "CompactorOptions",
+      "label": "CompactorOptions",
+      "path": "src/context/compactor.ts",
+      "line": 20,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "58581e3f4c41603f926fd8278d30f9b126cd0a2b3d7731e50877dbeff44bcc04"
+    },
+    {
+      "id": "symbol:src/context/compactor.ts#variable:defaultCompactor",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "defaultCompactor",
+      "label": "defaultCompactor",
+      "path": "src/context/compactor.ts",
+      "line": 254,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "801b51f3ec4b2205a01f108a8c7f187ad727a0d4256ba01c44a429ada76008bb"
+    },
+    {
+      "id": "symbol:src/context/context-builder.ts#class:StandardContextBuilder",
+      "type": "symbol",
+      "kind": "class",
+      "name": "StandardContextBuilder",
+      "label": "StandardContextBuilder",
+      "path": "src/context/context-builder.ts",
+      "line": 33,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "29296b3305132e6743d91e26f3bd73c590943f23f1249eae71c00be711339c14"
+    },
+    {
+      "id": "symbol:src/context/context-builder.ts#interface:ContextBuilderOptions",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "ContextBuilderOptions",
+      "label": "ContextBuilderOptions",
+      "path": "src/context/context-builder.ts",
+      "line": 25,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "b8134382420fc1953ed8907c7ff2a20efc892941ea291c4e75bdc81b72eaede5"
+    },
+    {
+      "id": "symbol:src/context/context-builder.ts#variable:defaultContextBuilder",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "defaultContextBuilder",
+      "label": "defaultContextBuilder",
+      "path": "src/context/context-builder.ts",
+      "line": 345,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "bf269694ca1764437c8aa1575dc110a134ba18743278fc9811503f9001669dc0"
+    },
+    {
+      "id": "symbol:src/context/context-manager.ts#class:ManagedContextManager",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ManagedContextManager",
+      "label": "ManagedContextManager",
+      "path": "src/context/context-manager.ts",
+      "line": 52,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "00f92aafa19072f05296f966f458a19cc4dc0d11b367a097690b2f613bf9b2e5"
+    },
+    {
+      "id": "symbol:src/context/context-manager.ts#interface:ManagedContextOptions",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "ManagedContextOptions",
+      "label": "ManagedContextOptions",
+      "path": "src/context/context-manager.ts",
+      "line": 33,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "ab73ec4f82feb0596266ee48a35c08cddf0f8f3b9f0271f3b15b6c114ce75631"
+    },
+    {
+      "id": "symbol:src/context/context-manager.ts#interface:TaskStateLike",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "TaskStateLike",
+      "label": "TaskStateLike",
+      "path": "src/context/context-manager.ts",
+      "line": 44,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6dc117bb71c17a5697bcb353cae8ea5f2fd16f07e9bb0dc3a59622454d69345f"
+    },
+    {
+      "id": "symbol:src/context/context-metrics.ts#class:ContextMetricsAggregator",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ContextMetricsAggregator",
+      "label": "ContextMetricsAggregator",
+      "path": "src/context/context-metrics.ts",
+      "line": 22,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "b10387660c5ca6a939ab28720143f2a03050fcb72b6e24fc24e7cf685870b458"
+    },
+    {
+      "id": "symbol:src/context/context-metrics.ts#interface:AggregatedContextMetrics",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "AggregatedContextMetrics",
+      "label": "AggregatedContextMetrics",
+      "path": "src/context/context-metrics.ts",
+      "line": 11,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "d56fdf36e8e3043e266a91db5182405d0ef810540040c80967e3471215011842"
+    },
+    {
+      "id": "symbol:src/context/context-metrics.ts#variable:defaultMetricsAggregator",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "defaultMetricsAggregator",
+      "label": "defaultMetricsAggregator",
+      "path": "src/context/context-metrics.ts",
+      "line": 117,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "8f82f7b96cfa9a11317d86cf1095a24ff7ba830333d6584cd09b1812aef4557f"
+    },
+    {
       "id": "symbol:src/context/context.ts#class:ContextManager",
       "type": "symbol",
       "kind": "class",
       "name": "ContextManager",
       "label": "ContextManager",
       "path": "src/context/context.ts",
-      "line": 26,
+      "line": 34,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "c913c46facde7c7910363532ca4636721516b3d1d7e9f75435bb76991cfd2d0e"
@@ -922,7 +1764,7 @@
       "name": "ContextManagerOptions",
       "label": "ContextManagerOptions",
       "path": "src/context/context.ts",
-      "line": 21,
+      "line": 25,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "1acc0f0c58e9c9105db89203c087aed5ecd3abe788e0364aac63c9b6f4f5c3e6"
@@ -934,7 +1776,7 @@
       "name": "DEFAULT_SYSTEM_PROMPT",
       "label": "DEFAULT_SYSTEM_PROMPT",
       "path": "src/context/context.ts",
-      "line": 9,
+      "line": 13,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "3f173f560acee482cbe29f7aecbdfe8f7890c9ebe8e3aaf871e90e065bd9fed9"
@@ -946,10 +1788,382 @@
       "name": "MAX_MESSAGE_CONTENT_BYTES",
       "label": "MAX_MESSAGE_CONTENT_BYTES",
       "path": "src/context/context.ts",
-      "line": 19,
+      "line": 23,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "c0ab83c94e711f980c72848eccdac4ddc1076c38fd38622528942a5f413c7225"
+    },
+    {
+      "id": "symbol:src/context/policies.ts#class:ContextSelectionPolicy",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ContextSelectionPolicy",
+      "label": "ContextSelectionPolicy",
+      "path": "src/context/policies.ts",
+      "line": 125,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "821bc7bda4ffe9845cfa3f8b38d09d6fbd9df0d2d822067d4e2ce73a7db9ed52"
+    },
+    {
+      "id": "symbol:src/context/policies.ts#function:comparePriorityAndRecency",
+      "type": "symbol",
+      "kind": "function",
+      "name": "comparePriorityAndRecency",
+      "label": "comparePriorityAndRecency",
+      "path": "src/context/policies.ts",
+      "line": 85,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "9e862ea47169a1db774f4ffc31d7a2ff60bd80026fa64f14be9a22048fa86624"
+    },
+    {
+      "id": "symbol:src/context/policies.ts#function:computeContentHash",
+      "type": "symbol",
+      "kind": "function",
+      "name": "computeContentHash",
+      "label": "computeContentHash",
+      "path": "src/context/policies.ts",
+      "line": 104,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "23ca5208e597d409829a5f36cc6cb296d761a9a915f4d5f4daf8cb1ca66c697f"
+    },
+    {
+      "id": "symbol:src/context/policies.ts#function:loadContextBudgetFromEnv",
+      "type": "symbol",
+      "kind": "function",
+      "name": "loadContextBudgetFromEnv",
+      "label": "loadContextBudgetFromEnv",
+      "path": "src/context/policies.ts",
+      "line": 25,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "90c91bbbfba4507cdcba409ca47d6d4255f8b5367e1807d6aa7b0981485987f7"
+    },
+    {
+      "id": "symbol:src/context/policies.ts#interface:SelectionOptions",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "SelectionOptions",
+      "label": "SelectionOptions",
+      "path": "src/context/policies.ts",
+      "line": 120,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "366421523e3fffeab3793d4ca99901b5fa9cbfb95999b3d1da90a87d04db615d"
+    },
+    {
+      "id": "symbol:src/context/policies.ts#interface:SelectionResult",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "SelectionResult",
+      "label": "SelectionResult",
+      "path": "src/context/policies.ts",
+      "line": 113,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "e33035257ae2272a39bfe2f0c462d99a0a49a8c3805f350d5cac10385e902434"
+    },
+    {
+      "id": "symbol:src/context/policies.ts#variable:defaultSelectionPolicy",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "defaultSelectionPolicy",
+      "label": "defaultSelectionPolicy",
+      "path": "src/context/policies.ts",
+      "line": 265,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "b088bdf0a8ac116c6ab591948c1fcc05bbd4a1f7bb9d6851ba37cd1d43238ddd"
+    },
+    {
+      "id": "symbol:src/context/policies.ts#variable:PRIORITY_WEIGHTS",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "PRIORITY_WEIGHTS",
+      "label": "PRIORITY_WEIGHTS",
+      "path": "src/context/policies.ts",
+      "line": 73,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "18bdad0d601205649210c05d8739d3309fde9c15cf19c0f48727054c9ff6beb8"
+    },
+    {
+      "id": "symbol:src/context/token-estimator.ts#class:SimpleTokenEstimator",
+      "type": "symbol",
+      "kind": "class",
+      "name": "SimpleTokenEstimator",
+      "label": "SimpleTokenEstimator",
+      "path": "src/context/token-estimator.ts",
+      "line": 11,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "3b11a79b7fe1dab1ba713ac4fc7b9e5d7197306829dd2f3a0e3136a07fde2441"
+    },
+    {
+      "id": "symbol:src/context/token-estimator.ts#variable:defaultTokenEstimator",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "defaultTokenEstimator",
+      "label": "defaultTokenEstimator",
+      "path": "src/context/token-estimator.ts",
+      "line": 68,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "934d5c69de198088ba2e1e8bb721c7722de4d5fb39f3c5abb0c74daa9758d1d9"
+    },
+    {
+      "id": "symbol:src/context/truncator.ts#class:TypeAwareTruncator",
+      "type": "symbol",
+      "kind": "class",
+      "name": "TypeAwareTruncator",
+      "label": "TypeAwareTruncator",
+      "path": "src/context/truncator.ts",
+      "line": 14,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "9bb8686516c36c268d62d5fc2fb3f466767a7a0d3a4f6efc809c3f9b5fa1fec5"
+    },
+    {
+      "id": "symbol:src/context/truncator.ts#variable:defaultTruncator",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "defaultTruncator",
+      "label": "defaultTruncator",
+      "path": "src/context/truncator.ts",
+      "line": 169,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "ca5bd2c71a699f5f984f9aae6d502a72cfc8530997a82e503c155615c2eae9c5"
+    },
+    {
+      "id": "symbol:src/context/truncator.ts#variable:TRUNCATION_MARKER",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "TRUNCATION_MARKER",
+      "label": "TRUNCATION_MARKER",
+      "path": "src/context/truncator.ts",
+      "line": 12,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "1130f5eff4ae762acb7855291a6fcf4fd97d4cccf45f6a51b97e9933de2303cb"
+    },
+    {
+      "id": "symbol:src/context/types.ts#interface:BuildContextInput",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "BuildContextInput",
+      "label": "BuildContextInput",
+      "path": "src/context/types.ts",
+      "line": 143,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "76a68e3178a10730609d68395252559de339032a0b40ebb0f4d7d602b4778d15"
+    },
+    {
+      "id": "symbol:src/context/types.ts#interface:BuildContextResult",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "BuildContextResult",
+      "label": "BuildContextResult",
+      "path": "src/context/types.ts",
+      "line": 151,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "99542d525d4c4fcf773bd6eab9272bbbd672e51a76dd3c4ffcba7e920b8d9846"
+    },
+    {
+      "id": "symbol:src/context/types.ts#interface:CompactionEvent",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "CompactionEvent",
+      "label": "CompactionEvent",
+      "path": "src/context/types.ts",
+      "line": 127,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "b716c5fa600aa1d997524a1da25a5e8cbad0a4ec8176d1b50c280d42b57905d7"
+    },
+    {
+      "id": "symbol:src/context/types.ts#interface:Compactor",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "Compactor",
+      "label": "Compactor",
+      "path": "src/context/types.ts",
+      "line": 176,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "5b4bb795b1a58ba26986bff1c32fb6cfc7818294cb7ba9bd4bbf8f515f6b28b2"
+    },
+    {
+      "id": "symbol:src/context/types.ts#interface:ContextBudget",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "ContextBudget",
+      "label": "ContextBudget",
+      "path": "src/context/types.ts",
+      "line": 64,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6070f17e04692696790eb99cc0cb019fd4425e90f83615ec63b415a88710ecb8"
+    },
+    {
+      "id": "symbol:src/context/types.ts#interface:ContextBuilder",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "ContextBuilder",
+      "label": "ContextBuilder",
+      "path": "src/context/types.ts",
+      "line": 183,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "c7ed53f550f6d11ecf25bc28b35365cfd28bc8f57830dfd52eb774ad91b7eade"
+    },
+    {
+      "id": "symbol:src/context/types.ts#interface:ContextItem",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "ContextItem",
+      "label": "ContextItem",
+      "path": "src/context/types.ts",
+      "line": 33,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "facbce181721cfdedce101cb0ddc4a1eb9cc6edda346141b5dcafb72ae5e4c79"
+    },
+    {
+      "id": "symbol:src/context/types.ts#interface:ContextItemSource",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "ContextItemSource",
+      "label": "ContextItemSource",
+      "path": "src/context/types.ts",
+      "line": 27,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "dd2f3c6acb534a5f2e68b5e32c8e7aad3ae052d58d45b86d907fc1e9342e12b1"
+    },
+    {
+      "id": "symbol:src/context/types.ts#interface:ContextMetrics",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "ContextMetrics",
+      "label": "ContextMetrics",
+      "path": "src/context/types.ts",
+      "line": 88,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "aa709e8d8e5d2e62fa5ca0bd8c75b4834ceeb5103ba7a25756699e2c5147b487"
+    },
+    {
+      "id": "symbol:src/context/types.ts#interface:ContextState",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "ContextState",
+      "label": "ContextState",
+      "path": "src/context/types.ts",
+      "line": 51,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "a07b186a3facf3dc1d477f5fd57b92753de0dc605e305ab4530b47110d985600"
+    },
+    {
+      "id": "symbol:src/context/types.ts#interface:ContextStats",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "ContextStats",
+      "label": "ContextStats",
+      "path": "src/context/types.ts",
+      "line": 100,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "54f569d565e4673259439f279ea92175fa24d2fe1b9e6afe6e40c83ed901249c"
+    },
+    {
+      "id": "symbol:src/context/types.ts#interface:ImportantFact",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "ImportantFact",
+      "label": "ImportantFact",
+      "path": "src/context/types.ts",
+      "line": 115,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "8388d0115dd71291e2bebf8245aace8af14dd70cb05d97c816deb63b13b2124b"
+    },
+    {
+      "id": "symbol:src/context/types.ts#interface:TokenEstimator",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "TokenEstimator",
+      "label": "TokenEstimator",
+      "path": "src/context/types.ts",
+      "line": 168,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "7e0f09ce7e82c831c90e0ba544e184de76ee763780aef49efbe10dba8bf3cb5f"
+    },
+    {
+      "id": "symbol:src/context/types.ts#interface:Truncator",
+      "type": "symbol",
+      "kind": "interface",
+      "name": "Truncator",
+      "label": "Truncator",
+      "path": "src/context/types.ts",
+      "line": 172,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "5ef51703673d257e2dba833735bc4c62675cd87be45e9df2856f454f550b83f8"
+    },
+    {
+      "id": "symbol:src/context/types.ts#type:ContextImportance",
+      "type": "symbol",
+      "kind": "type",
+      "name": "ContextImportance",
+      "label": "ContextImportance",
+      "path": "src/context/types.ts",
+      "line": 25,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "5b1b85b10bcb2dbbdbe71c3062dbfe7f87cf9b2ccea2e0a2362e1e53ab549e70"
+    },
+    {
+      "id": "symbol:src/context/types.ts#type:ContextItemType",
+      "type": "symbol",
+      "kind": "type",
+      "name": "ContextItemType",
+      "label": "ContextItemType",
+      "path": "src/context/types.ts",
+      "line": 15,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "1b09a97a5bdbbedc569c5505090fa2f121e4763d41fd7ff4ad5ee3a1e4a7e278"
+    },
+    {
+      "id": "symbol:src/context/types.ts#type:FactImportance",
+      "type": "symbol",
+      "kind": "type",
+      "name": "FactImportance",
+      "label": "FactImportance",
+      "path": "src/context/types.ts",
+      "line": 113,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6d91e06adcec8fc20a25b7926d6c2cf2b445990bba98aa7e52a8a4c8cd8ac2a2"
+    },
+    {
+      "id": "symbol:src/context/types.ts#variable:DEFAULT_CONTEXT_BUDGET",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "DEFAULT_CONTEXT_BUDGET",
+      "label": "DEFAULT_CONTEXT_BUDGET",
+      "path": "src/context/types.ts",
+      "line": 74,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "68582247a96b9e08253d09fb71b311445197ba78de11095e845603bf63d0b14f"
     },
     {
       "id": "symbol:src/llm/gemini.ts#class:GeminiProvider",
@@ -1150,7 +2364,7 @@
       "name": "StructuredLogger",
       "label": "StructuredLogger",
       "path": "src/logging/logger.ts",
-      "line": 40,
+      "line": 46,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "f93ef0bb2df6e225083640134b7a8733360f8ca3c76534fe1951d6eca1742851"
@@ -1162,7 +2376,7 @@
       "name": "LogEvent",
       "label": "LogEvent",
       "path": "src/logging/logger.ts",
-      "line": 24,
+      "line": 30,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "370ac8d216f686d3d281700cb800c69a30e3a320ec899ac1804f51e6bc19d7c8"
@@ -1174,7 +2388,7 @@
       "name": "LoggerOptions",
       "label": "LoggerOptions",
       "path": "src/logging/logger.ts",
-      "line": 31,
+      "line": 37,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "7d71f1937abba7a827f9c0c923ae3616b47bc548e77e75f0dcbd7faf93e2913b"
@@ -1478,9 +2692,210 @@
       "confidence": 0.8,
       "extractor": "conservative-js-symbols",
       "contentHash": "63f0298f86e569b7eb4e017fb5c21aa44e524ddb05cae61c1b44b476b9fa04f9"
+    },
+    {
+      "id": "symbol:tests/unit/context/compactor.test.ts#variable:__dirname",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__dirname",
+      "label": "__dirname",
+      "path": "tests/unit/context/compactor.test.ts",
+      "line": 18,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6c6bf3795eaa8f4adab68ba3b6baf373459916d0ba4544d47acb8861287098d3"
+    },
+    {
+      "id": "symbol:tests/unit/context/compactor.test.ts#variable:__filename",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__filename",
+      "label": "__filename",
+      "path": "tests/unit/context/compactor.test.ts",
+      "line": 17,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "51de6807341b8108043fff136a8a2a3e12ccb8a7e8ec18d2ec956ff683fbb134"
+    },
+    {
+      "id": "symbol:tests/unit/context/context-builder.test.ts#variable:__dirname",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__dirname",
+      "label": "__dirname",
+      "path": "tests/unit/context/context-builder.test.ts",
+      "line": 19,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6c6bf3795eaa8f4adab68ba3b6baf373459916d0ba4544d47acb8861287098d3"
+    },
+    {
+      "id": "symbol:tests/unit/context/context-builder.test.ts#variable:__filename",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__filename",
+      "label": "__filename",
+      "path": "tests/unit/context/context-builder.test.ts",
+      "line": 18,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "51de6807341b8108043fff136a8a2a3e12ccb8a7e8ec18d2ec956ff683fbb134"
+    },
+    {
+      "id": "symbol:tests/unit/context/context-manager.test.ts#variable:__dirname",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__dirname",
+      "label": "__dirname",
+      "path": "tests/unit/context/context-manager.test.ts",
+      "line": 12,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6c6bf3795eaa8f4adab68ba3b6baf373459916d0ba4544d47acb8861287098d3"
+    },
+    {
+      "id": "symbol:tests/unit/context/context-manager.test.ts#variable:__filename",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__filename",
+      "label": "__filename",
+      "path": "tests/unit/context/context-manager.test.ts",
+      "line": 11,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "51de6807341b8108043fff136a8a2a3e12ccb8a7e8ec18d2ec956ff683fbb134"
+    },
+    {
+      "id": "symbol:tests/unit/context/context-metrics.test.ts#variable:__dirname",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__dirname",
+      "label": "__dirname",
+      "path": "tests/unit/context/context-metrics.test.ts",
+      "line": 9,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6c6bf3795eaa8f4adab68ba3b6baf373459916d0ba4544d47acb8861287098d3"
+    },
+    {
+      "id": "symbol:tests/unit/context/context-metrics.test.ts#variable:__filename",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__filename",
+      "label": "__filename",
+      "path": "tests/unit/context/context-metrics.test.ts",
+      "line": 8,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "51de6807341b8108043fff136a8a2a3e12ccb8a7e8ec18d2ec956ff683fbb134"
+    },
+    {
+      "id": "symbol:tests/unit/context/policies.test.ts#variable:__dirname",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__dirname",
+      "label": "__dirname",
+      "path": "tests/unit/context/policies.test.ts",
+      "line": 16,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6c6bf3795eaa8f4adab68ba3b6baf373459916d0ba4544d47acb8861287098d3"
+    },
+    {
+      "id": "symbol:tests/unit/context/policies.test.ts#variable:__filename",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__filename",
+      "label": "__filename",
+      "path": "tests/unit/context/policies.test.ts",
+      "line": 15,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "51de6807341b8108043fff136a8a2a3e12ccb8a7e8ec18d2ec956ff683fbb134"
+    },
+    {
+      "id": "symbol:tests/unit/context/token-estimator.test.ts#variable:__dirname",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__dirname",
+      "label": "__dirname",
+      "path": "tests/unit/context/token-estimator.test.ts",
+      "line": 12,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6c6bf3795eaa8f4adab68ba3b6baf373459916d0ba4544d47acb8861287098d3"
+    },
+    {
+      "id": "symbol:tests/unit/context/token-estimator.test.ts#variable:__filename",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__filename",
+      "label": "__filename",
+      "path": "tests/unit/context/token-estimator.test.ts",
+      "line": 11,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "51de6807341b8108043fff136a8a2a3e12ccb8a7e8ec18d2ec956ff683fbb134"
+    },
+    {
+      "id": "symbol:tests/unit/context/truncator.test.ts#variable:__dirname",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__dirname",
+      "label": "__dirname",
+      "path": "tests/unit/context/truncator.test.ts",
+      "line": 13,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6c6bf3795eaa8f4adab68ba3b6baf373459916d0ba4544d47acb8861287098d3"
+    },
+    {
+      "id": "symbol:tests/unit/context/truncator.test.ts#variable:__filename",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__filename",
+      "label": "__filename",
+      "path": "tests/unit/context/truncator.test.ts",
+      "line": 12,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "51de6807341b8108043fff136a8a2a3e12ccb8a7e8ec18d2ec956ff683fbb134"
+    },
+    {
+      "id": "symbol:tests/unit/context/types.test.ts#variable:__dirname",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__dirname",
+      "label": "__dirname",
+      "path": "tests/unit/context/types.test.ts",
+      "line": 25,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "6c6bf3795eaa8f4adab68ba3b6baf373459916d0ba4544d47acb8861287098d3"
+    },
+    {
+      "id": "symbol:tests/unit/context/types.test.ts#variable:__filename",
+      "type": "symbol",
+      "kind": "variable",
+      "name": "__filename",
+      "label": "__filename",
+      "path": "tests/unit/context/types.test.ts",
+      "line": 24,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols",
+      "contentHash": "51de6807341b8108043fff136a8a2a3e12ccb8a7e8ec18d2ec956ff683fbb134"
     }
   ],
   "edges": [
+    {
+      "type": "calls",
+      "source": "symbol:eval/runner.ts#function:main",
+      "target": "symbol:eval/runner.ts#function:generateBaselineComparison",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
     {
       "type": "calls",
       "source": "symbol:eval/runner.ts#function:main",
@@ -1547,6 +2962,30 @@
     {
       "type": "calls",
       "source": "symbol:eval/runner.ts#variable:TASK_ACTIONS",
+      "target": "symbol:eval/tasks/task-10/dep-graph.js#function:resolveDependencies",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:eval/tasks/task-10/dep-graph.js#function:resolveDependencies"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:eval/runner.ts#variable:TASK_ACTIONS",
+      "target": "symbol:eval/tasks/task-12/validator.js#function:validateSchema",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:eval/tasks/task-12/validator.js#function:validateSchema"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:eval/runner.ts#variable:TASK_ACTIONS",
       "target": "symbol:eval/tasks/task-3/truncate.js#function:truncate",
       "tier": "ambiguous",
       "candidates": [
@@ -1570,8 +3009,80 @@
     },
     {
       "type": "calls",
+      "source": "symbol:eval/runner.ts#variable:TASK_ACTIONS",
+      "target": "symbol:eval/tasks/task-6/config.js#function:mergeConfig",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:eval/tasks/task-6/config.js#function:mergeConfig"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:eval/runner.ts#variable:TASK_ACTIONS",
+      "target": "symbol:eval/tasks/task-7/parser.js#function:parseErrors",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:eval/tasks/task-7/parser.js#function:parseErrors"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:eval/runner.ts#variable:TASK_ACTIONS",
+      "target": "symbol:eval/tasks/task-9/tokenizer.js#function:tokenizeExpression",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:eval/tasks/task-9/tokenizer.js#function:tokenizeExpression"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
       "source": "symbol:eval/tasks/task-1/test.js#variable:page1",
       "target": "symbol:eval/tasks/task-1/paginate.js#function:paginate",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:eval/tasks/task-10/test.js#variable:cyclicGraph",
+      "target": "symbol:eval/tasks/task-10/dep-graph.js#function:resolveDependencies",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:eval/tasks/task-10/test.js#variable:order",
+      "target": "symbol:eval/tasks/task-10/dep-graph.js#function:resolveDependencies",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:eval/tasks/task-11/test.js#variable:emitter",
+      "target": "symbol:eval/tasks/task-11/emitter.js#class:EventEmitter",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:eval/tasks/task-12/test.js#variable:errors",
+      "target": "symbol:eval/tasks/task-12/validator.js#function:validateSchema",
       "tier": "proven",
       "resolved": true,
       "confidence": 0.7,
@@ -1590,6 +3101,42 @@
       "type": "calls",
       "source": "symbol:eval/tasks/task-5/test.js#variable:sorted",
       "target": "symbol:eval/tasks/task-5/sort.js#function:sortNumbers",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:eval/tasks/task-6/test.js#variable:merged",
+      "target": "symbol:eval/tasks/task-6/config.js#function:mergeConfig",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:eval/tasks/task-7/test.js#variable:errors",
+      "target": "symbol:eval/tasks/task-7/parser.js#function:parseErrors",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:eval/tasks/task-8/test.js#variable:cache",
+      "target": "symbol:eval/tasks/task-8/cache.js#class:TTLCache",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:eval/tasks/task-9/test.js#variable:tokens",
+      "target": "symbol:eval/tasks/task-9/tokenizer.js#function:tokenizeExpression",
       "tier": "proven",
       "resolved": true,
       "confidence": 0.7,
@@ -1661,6 +3208,15 @@
     {
       "type": "calls",
       "source": "symbol:src/agent/loop.ts#class:AgentLoop",
+      "target": "symbol:src/agent/loop.ts#function:getItemSummary",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/agent/loop.ts#class:AgentLoop",
       "target": "symbol:src/agent/state.ts#class:TaskState",
       "tier": "proven",
       "resolved": true,
@@ -1670,10 +3226,31 @@
     {
       "type": "calls",
       "source": "symbol:src/agent/loop.ts#class:AgentLoop",
-      "target": "symbol:src/context/context.ts#class:ContextManager",
+      "target": "symbol:src/context/context-manager.ts#class:ManagedContextManager",
       "tier": "proven",
       "resolved": true,
       "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/agent/loop.ts#class:AgentLoop",
+      "target": "symbol:src/context/policies.ts#function:loadContextBudgetFromEnv",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/agent/loop.ts#function:getItemSummary",
+      "target": "symbol:eval/run.mjs#variable:result",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:eval/run.mjs#variable:result"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
       "extractor": "conservative-js-calls"
     },
     {
@@ -1687,11 +3264,41 @@
     },
     {
       "type": "calls",
+      "source": "symbol:src/cli/runner.ts#function:formatContextDebug",
+      "target": "symbol:src/cli/runner.ts#function:redactDebugOutput",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/cli/runner.ts#function:formatEventMessage",
+      "target": "symbol:eval/tasks/task-9/test.js#variable:tokens",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:eval/tasks/task-9/test.js#variable:tokens"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
       "source": "symbol:src/cli/runner.ts#function:runCli",
       "target": "symbol:src/agent/loop.ts#class:AgentLoop",
       "tier": "proven",
       "resolved": true,
       "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/cli/runner.ts#function:runCli",
+      "target": "symbol:src/cli/runner.ts#function:formatContextDebug",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
       "extractor": "conservative-js-calls"
     },
     {
@@ -1764,6 +3371,123 @@
       "tier": "proven",
       "resolved": true,
       "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/context/compactor.ts#variable:defaultCompactor",
+      "target": "symbol:src/context/compactor.ts#class:DeterministicCompactor",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/context/context-builder.ts#class:StandardContextBuilder",
+      "target": "symbol:src/context/types.ts#interface:ContextState",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/context/types.ts#interface:ContextState"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/context/context-builder.ts#variable:defaultContextBuilder",
+      "target": "symbol:src/context/context-builder.ts#class:StandardContextBuilder",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/context/context-manager.ts#class:ManagedContextManager",
+      "target": "symbol:src/context/policies.ts#function:loadContextBudgetFromEnv",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/context/context-metrics.ts#variable:defaultMetricsAggregator",
+      "target": "symbol:src/context/context-metrics.ts#class:ContextMetricsAggregator",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/context/context.ts#class:ContextManager",
+      "target": "symbol:src/context/context-manager.ts#class:ManagedContextManager",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/context/policies.ts#class:ContextSelectionPolicy",
+      "target": "symbol:src/context/policies.ts#function:computeContentHash",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/context/policies.ts#variable:defaultSelectionPolicy",
+      "target": "symbol:src/context/policies.ts#class:ContextSelectionPolicy",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/context/token-estimator.ts#variable:defaultTokenEstimator",
+      "target": "symbol:src/context/token-estimator.ts#class:SimpleTokenEstimator",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/context/truncator.ts#class:TypeAwareTruncator",
+      "target": "symbol:eval/tasks/task-3/truncate.js#function:truncate",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:eval/tasks/task-3/truncate.js#function:truncate"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/context/truncator.ts#variable:defaultTruncator",
+      "target": "symbol:src/context/truncator.ts#class:TypeAwareTruncator",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.75,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/context/types.ts#interface:Truncator",
+      "target": "symbol:eval/tasks/task-3/truncate.js#function:truncate",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:eval/tasks/task-3/truncate.js#function:truncate"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
       "extractor": "conservative-js-calls"
     },
     {
@@ -1875,10 +3599,217 @@
       "extractor": "conservative-js-calls"
     },
     {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/compactor.test.ts#variable:__dirname",
+      "target": "symbol:src/context/compactor.ts#class:DeterministicCompactor",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/compactor.test.ts#variable:__dirname",
+      "target": "symbol:src/context/types.ts#interface:Compactor",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/context/types.ts#interface:Compactor"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/compactor.test.ts#variable:__dirname",
+      "target": "symbol:tests/fixtures/test-project/calculator.js#function:multiply",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:tests/fixtures/test-project/calculator.js#function:multiply"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/context-builder.test.ts#variable:__dirname",
+      "target": "symbol:tests/fixtures/test-project/calculator.js#function:multiply",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:tests/fixtures/test-project/calculator.js#function:multiply"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/context-manager.test.ts#variable:__dirname",
+      "target": "symbol:eval/tasks/task-9/test.js#variable:tokens",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:eval/tasks/task-9/test.js#variable:tokens"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/context-manager.test.ts#variable:__dirname",
+      "target": "symbol:src/context/context-manager.ts#class:ManagedContextManager",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/context-manager.test.ts#variable:__dirname",
+      "target": "symbol:src/context/context.ts#class:ContextManager",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/context-manager.test.ts#variable:__dirname",
+      "target": "symbol:tests/fixtures/test-project/calculator.js#function:multiply",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:tests/fixtures/test-project/calculator.js#function:multiply"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/context-metrics.test.ts#variable:__dirname",
+      "target": "symbol:src/context/context-metrics.ts#class:ContextMetricsAggregator",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/policies.test.ts#variable:__dirname",
+      "target": "symbol:eval/tasks/task-9/test.js#variable:tokens",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:eval/tasks/task-9/test.js#variable:tokens"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/policies.test.ts#variable:__dirname",
+      "target": "symbol:src/context/policies.ts#function:computeContentHash",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/policies.test.ts#variable:__dirname",
+      "target": "symbol:src/context/policies.ts#function:loadContextBudgetFromEnv",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/token-estimator.test.ts#variable:__dirname",
+      "target": "symbol:src/context/token-estimator.ts#class:SimpleTokenEstimator",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/truncator.test.ts#variable:__dirname",
+      "target": "symbol:src/context/truncator.ts#class:TypeAwareTruncator",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/types.test.ts#variable:__dirname",
+      "target": "symbol:src/context/types.ts#interface:BuildContextResult",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/types.test.ts#variable:__dirname",
+      "target": "symbol:src/context/types.ts#interface:CompactionEvent",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/types.test.ts#variable:__dirname",
+      "target": "symbol:src/context/types.ts#interface:ContextBudget",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/types.test.ts#variable:__dirname",
+      "target": "symbol:src/context/types.ts#interface:ContextItem",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/types.test.ts#variable:__dirname",
+      "target": "symbol:src/context/types.ts#interface:ContextState",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/types.test.ts#variable:__dirname",
+      "target": "symbol:src/context/types.ts#interface:ContextStats",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/unit/context/types.test.ts#variable:__dirname",
+      "target": "symbol:src/context/types.ts#interface:ImportantFact",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "conservative-js-calls"
+    },
+    {
       "type": "defines",
       "source": "file:eval/run.mjs",
       "target": "symbol:eval/run.mjs#variable:args",
-      "line": 8,
+      "line": 10,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -1887,7 +3818,25 @@
       "type": "defines",
       "source": "file:eval/run.mjs",
       "target": "symbol:eval/run.mjs#variable:result",
-      "line": 10,
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/run.mjs",
+      "target": "symbol:eval/run.mjs#variable:tsxCli",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/runner.ts",
+      "target": "symbol:eval/runner.ts#function:generateBaselineComparison",
+      "line": 800,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -1896,7 +3845,7 @@
       "type": "defines",
       "source": "file:eval/runner.ts",
       "target": "symbol:eval/runner.ts#function:main",
-      "line": 270,
+      "line": 875,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -1905,7 +3854,25 @@
       "type": "defines",
       "source": "file:eval/runner.ts",
       "target": "symbol:eval/runner.ts#function:runTask",
-      "line": 196,
+      "line": 652,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/runner.ts",
+      "target": "symbol:eval/runner.ts#interface:TaskResult",
+      "line": 31,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/runner.ts",
+      "target": "symbol:eval/runner.ts#type:FailureTaxonomy",
+      "line": 21,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -1914,7 +3881,7 @@
       "type": "defines",
       "source": "file:eval/runner.ts",
       "target": "symbol:eval/runner.ts#variable:TASK_ACTIONS",
-      "line": 20,
+      "line": 49,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -1942,6 +3909,105 @@
       "source": "file:eval/tasks/task-1/test.js",
       "target": "symbol:eval/tasks/task-1/test.js#variable:page1",
       "line": 5,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-10/dep-graph.js",
+      "target": "symbol:eval/tasks/task-10/dep-graph.js#function:resolveDependencies",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-10/test.js",
+      "target": "symbol:eval/tasks/task-10/test.js#variable:cyclicGraph",
+      "line": 17,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-10/test.js",
+      "target": "symbol:eval/tasks/task-10/test.js#variable:order",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-10/test.js",
+      "target": "symbol:eval/tasks/task-10/test.js#variable:validGraph",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-11/emitter.js",
+      "target": "symbol:eval/tasks/task-11/emitter.js#class:EventEmitter",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-11/test.js",
+      "target": "symbol:eval/tasks/task-11/test.js#variable:calls",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-11/test.js",
+      "target": "symbol:eval/tasks/task-11/test.js#variable:emitter",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-12/test.js",
+      "target": "symbol:eval/tasks/task-12/test.js#variable:errors",
+      "line": 31,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-12/test.js",
+      "target": "symbol:eval/tasks/task-12/test.js#variable:invalidData",
+      "line": 21,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-12/test.js",
+      "target": "symbol:eval/tasks/task-12/test.js#variable:schema",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-12/validator.js",
+      "target": "symbol:eval/tasks/task-12/validator.js#function:validateSchema",
+      "line": 1,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2011,6 +4077,114 @@
     },
     {
       "type": "defines",
+      "source": "file:eval/tasks/task-6/config.js",
+      "target": "symbol:eval/tasks/task-6/config.js#function:mergeConfig",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-6/test.js",
+      "target": "symbol:eval/tasks/task-6/test.js#variable:defaults",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-6/test.js",
+      "target": "symbol:eval/tasks/task-6/test.js#variable:merged",
+      "line": 21,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-6/test.js",
+      "target": "symbol:eval/tasks/task-6/test.js#variable:user",
+      "line": 14,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-7/parser.js",
+      "target": "symbol:eval/tasks/task-7/parser.js#function:parseErrors",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-7/test.js",
+      "target": "symbol:eval/tasks/task-7/test.js#variable:errors",
+      "line": 14,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-7/test.js",
+      "target": "symbol:eval/tasks/task-7/test.js#variable:sampleLog",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-8/cache.js",
+      "target": "symbol:eval/tasks/task-8/cache.js#class:TTLCache",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-8/test.js",
+      "target": "symbol:eval/tasks/task-8/test.js#variable:cache",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-9/test.js",
+      "target": "symbol:eval/tasks/task-9/test.js#variable:expr",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-9/test.js",
+      "target": "symbol:eval/tasks/task-9/test.js#variable:tokens",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:eval/tasks/task-9/tokenizer.js",
+      "target": "symbol:eval/tasks/task-9/tokenizer.js#function:tokenizeExpression",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
       "source": "file:examples/demo.ts",
       "target": "symbol:examples/demo.ts#function:runCodingAgent",
       "line": 20,
@@ -2022,7 +4196,16 @@
       "type": "defines",
       "source": "file:src/agent/loop.ts",
       "target": "symbol:src/agent/loop.ts#class:AgentLoop",
-      "line": 48,
+      "line": 77,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/agent/loop.ts",
+      "target": "symbol:src/agent/loop.ts#function:getItemSummary",
+      "line": 40,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2031,7 +4214,7 @@
       "type": "defines",
       "source": "file:src/agent/loop.ts",
       "target": "symbol:src/agent/loop.ts#interface:AgentEvent",
-      "line": 29,
+      "line": 57,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2040,7 +4223,7 @@
       "type": "defines",
       "source": "file:src/agent/loop.ts",
       "target": "symbol:src/agent/loop.ts#interface:AgentLoopOptions",
-      "line": 36,
+      "line": 64,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2049,7 +4232,7 @@
       "type": "defines",
       "source": "file:src/agent/loop.ts",
       "target": "symbol:src/agent/loop.ts#type:AgentEventType",
-      "line": 18,
+      "line": 23,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2058,7 +4241,7 @@
       "type": "defines",
       "source": "file:src/agent/loop.ts",
       "target": "symbol:src/agent/loop.ts#variable:DEFAULT_MAX_CONSECUTIVE_FAILURES",
-      "line": 16,
+      "line": 21,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2067,7 +4250,7 @@
       "type": "defines",
       "source": "file:src/agent/loop.ts",
       "target": "symbol:src/agent/loop.ts#variable:DEFAULT_MAX_ITERATIONS",
-      "line": 15,
+      "line": 20,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2076,7 +4259,7 @@
       "type": "defines",
       "source": "file:src/agent/state.ts",
       "target": "symbol:src/agent/state.ts#class:TaskState",
-      "line": 26,
+      "line": 28,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2085,7 +4268,7 @@
       "type": "defines",
       "source": "file:src/agent/state.ts",
       "target": "symbol:src/agent/state.ts#interface:ExecutedCommandRecord",
-      "line": 19,
+      "line": 21,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2094,7 +4277,7 @@
       "type": "defines",
       "source": "file:src/agent/state.ts",
       "target": "symbol:src/agent/state.ts#type:TaskFailureReason",
-      "line": 11,
+      "line": 13,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2103,7 +4286,7 @@
       "type": "defines",
       "source": "file:src/agent/state.ts",
       "target": "symbol:src/agent/state.ts#type:TaskStatus",
-      "line": 9,
+      "line": 11,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2112,7 +4295,16 @@
       "type": "defines",
       "source": "file:src/cli/main.ts",
       "target": "symbol:src/cli/main.ts#function:main",
-      "line": 10,
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/cli/runner.ts",
+      "target": "symbol:src/cli/runner.ts#function:formatContextDebug",
+      "line": 74,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2121,7 +4313,7 @@
       "type": "defines",
       "source": "file:src/cli/runner.ts",
       "target": "symbol:src/cli/runner.ts#function:formatEventMessage",
-      "line": 57,
+      "line": 130,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2130,7 +4322,16 @@
       "type": "defines",
       "source": "file:src/cli/runner.ts",
       "target": "symbol:src/cli/runner.ts#function:parseCliArgs",
-      "line": 25,
+      "line": 26,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/cli/runner.ts",
+      "target": "symbol:src/cli/runner.ts#function:redactDebugOutput",
+      "line": 62,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2139,7 +4340,7 @@
       "type": "defines",
       "source": "file:src/cli/runner.ts",
       "target": "symbol:src/cli/runner.ts#function:runCli",
-      "line": 84,
+      "line": 169,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2155,9 +4356,117 @@
     },
     {
       "type": "defines",
+      "source": "file:src/context/compactor.ts",
+      "target": "symbol:src/context/compactor.ts#class:DeterministicCompactor",
+      "line": 25,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/compactor.ts",
+      "target": "symbol:src/context/compactor.ts#interface:CompactorOptions",
+      "line": 20,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/compactor.ts",
+      "target": "symbol:src/context/compactor.ts#variable:defaultCompactor",
+      "line": 254,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/context-builder.ts",
+      "target": "symbol:src/context/context-builder.ts#class:StandardContextBuilder",
+      "line": 33,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/context-builder.ts",
+      "target": "symbol:src/context/context-builder.ts#interface:ContextBuilderOptions",
+      "line": 25,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/context-builder.ts",
+      "target": "symbol:src/context/context-builder.ts#variable:defaultContextBuilder",
+      "line": 345,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/context-manager.ts",
+      "target": "symbol:src/context/context-manager.ts#class:ManagedContextManager",
+      "line": 52,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/context-manager.ts",
+      "target": "symbol:src/context/context-manager.ts#interface:ManagedContextOptions",
+      "line": 33,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/context-manager.ts",
+      "target": "symbol:src/context/context-manager.ts#interface:TaskStateLike",
+      "line": 44,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/context-metrics.ts",
+      "target": "symbol:src/context/context-metrics.ts#class:ContextMetricsAggregator",
+      "line": 22,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/context-metrics.ts",
+      "target": "symbol:src/context/context-metrics.ts#interface:AggregatedContextMetrics",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/context-metrics.ts",
+      "target": "symbol:src/context/context-metrics.ts#variable:defaultMetricsAggregator",
+      "line": 117,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
       "source": "file:src/context/context.ts",
       "target": "symbol:src/context/context.ts#class:ContextManager",
-      "line": 26,
+      "line": 34,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2166,7 +4475,7 @@
       "type": "defines",
       "source": "file:src/context/context.ts",
       "target": "symbol:src/context/context.ts#interface:ContextManagerOptions",
-      "line": 21,
+      "line": 25,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2175,7 +4484,7 @@
       "type": "defines",
       "source": "file:src/context/context.ts",
       "target": "symbol:src/context/context.ts#variable:DEFAULT_SYSTEM_PROMPT",
-      "line": 9,
+      "line": 13,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2184,7 +4493,286 @@
       "type": "defines",
       "source": "file:src/context/context.ts",
       "target": "symbol:src/context/context.ts#variable:MAX_MESSAGE_CONTENT_BYTES",
-      "line": 19,
+      "line": 23,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/policies.ts",
+      "target": "symbol:src/context/policies.ts#class:ContextSelectionPolicy",
+      "line": 125,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/policies.ts",
+      "target": "symbol:src/context/policies.ts#function:comparePriorityAndRecency",
+      "line": 85,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/policies.ts",
+      "target": "symbol:src/context/policies.ts#function:computeContentHash",
+      "line": 104,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/policies.ts",
+      "target": "symbol:src/context/policies.ts#function:loadContextBudgetFromEnv",
+      "line": 25,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/policies.ts",
+      "target": "symbol:src/context/policies.ts#interface:SelectionOptions",
+      "line": 120,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/policies.ts",
+      "target": "symbol:src/context/policies.ts#interface:SelectionResult",
+      "line": 113,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/policies.ts",
+      "target": "symbol:src/context/policies.ts#variable:defaultSelectionPolicy",
+      "line": 265,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/policies.ts",
+      "target": "symbol:src/context/policies.ts#variable:PRIORITY_WEIGHTS",
+      "line": 73,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/token-estimator.ts",
+      "target": "symbol:src/context/token-estimator.ts#class:SimpleTokenEstimator",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/token-estimator.ts",
+      "target": "symbol:src/context/token-estimator.ts#variable:defaultTokenEstimator",
+      "line": 68,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/truncator.ts",
+      "target": "symbol:src/context/truncator.ts#class:TypeAwareTruncator",
+      "line": 14,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/truncator.ts",
+      "target": "symbol:src/context/truncator.ts#variable:defaultTruncator",
+      "line": 169,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/truncator.ts",
+      "target": "symbol:src/context/truncator.ts#variable:TRUNCATION_MARKER",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#interface:BuildContextInput",
+      "line": 143,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#interface:BuildContextResult",
+      "line": 151,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#interface:CompactionEvent",
+      "line": 127,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#interface:Compactor",
+      "line": 176,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#interface:ContextBudget",
+      "line": 64,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#interface:ContextBuilder",
+      "line": 183,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#interface:ContextItem",
+      "line": 33,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#interface:ContextItemSource",
+      "line": 27,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#interface:ContextMetrics",
+      "line": 88,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#interface:ContextState",
+      "line": 51,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#interface:ContextStats",
+      "line": 100,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#interface:ImportantFact",
+      "line": 115,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#interface:TokenEstimator",
+      "line": 168,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#interface:Truncator",
+      "line": 172,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#type:ContextImportance",
+      "line": 25,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#type:ContextItemType",
+      "line": 15,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#type:FactImportance",
+      "line": 113,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/context/types.ts",
+      "target": "symbol:src/context/types.ts#variable:DEFAULT_CONTEXT_BUDGET",
+      "line": 74,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2337,7 +4925,7 @@
       "type": "defines",
       "source": "file:src/logging/logger.ts",
       "target": "symbol:src/logging/logger.ts#class:StructuredLogger",
-      "line": 40,
+      "line": 46,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2346,7 +4934,7 @@
       "type": "defines",
       "source": "file:src/logging/logger.ts",
       "target": "symbol:src/logging/logger.ts#interface:LogEvent",
-      "line": 24,
+      "line": 30,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2355,7 +4943,7 @@
       "type": "defines",
       "source": "file:src/logging/logger.ts",
       "target": "symbol:src/logging/logger.ts#interface:LoggerOptions",
-      "line": 31,
+      "line": 37,
       "resolved": true,
       "confidence": 0.8,
       "extractor": "conservative-js-symbols"
@@ -2586,6 +5174,150 @@
       "extractor": "conservative-js-symbols"
     },
     {
+      "type": "defines",
+      "source": "file:tests/unit/context/compactor.test.ts",
+      "target": "symbol:tests/unit/context/compactor.test.ts#variable:__dirname",
+      "line": 18,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/compactor.test.ts",
+      "target": "symbol:tests/unit/context/compactor.test.ts#variable:__filename",
+      "line": 17,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/context-builder.test.ts",
+      "target": "symbol:tests/unit/context/context-builder.test.ts#variable:__dirname",
+      "line": 19,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/context-builder.test.ts",
+      "target": "symbol:tests/unit/context/context-builder.test.ts#variable:__filename",
+      "line": 18,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/context-manager.test.ts",
+      "target": "symbol:tests/unit/context/context-manager.test.ts#variable:__dirname",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/context-manager.test.ts",
+      "target": "symbol:tests/unit/context/context-manager.test.ts#variable:__filename",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/context-metrics.test.ts",
+      "target": "symbol:tests/unit/context/context-metrics.test.ts#variable:__dirname",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/context-metrics.test.ts",
+      "target": "symbol:tests/unit/context/context-metrics.test.ts#variable:__filename",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/policies.test.ts",
+      "target": "symbol:tests/unit/context/policies.test.ts#variable:__dirname",
+      "line": 16,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/policies.test.ts",
+      "target": "symbol:tests/unit/context/policies.test.ts#variable:__filename",
+      "line": 15,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/token-estimator.test.ts",
+      "target": "symbol:tests/unit/context/token-estimator.test.ts#variable:__dirname",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/token-estimator.test.ts",
+      "target": "symbol:tests/unit/context/token-estimator.test.ts#variable:__filename",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/truncator.test.ts",
+      "target": "symbol:tests/unit/context/truncator.test.ts#variable:__dirname",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/truncator.test.ts",
+      "target": "symbol:tests/unit/context/truncator.test.ts#variable:__filename",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/types.test.ts",
+      "target": "symbol:tests/unit/context/types.test.ts#variable:__dirname",
+      "line": 25,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/unit/context/types.test.ts",
+      "target": "symbol:tests/unit/context/types.test.ts#variable:__filename",
+      "line": 24,
+      "resolved": true,
+      "confidence": 0.8,
+      "extractor": "conservative-js-symbols"
+    },
+    {
       "type": "imports",
       "source": "file:eval/run.mjs",
       "target": "runtime:javascript:child_process",
@@ -2597,10 +5329,30 @@
     },
     {
       "type": "imports",
+      "source": "file:eval/run.mjs",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/run.mjs",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
       "source": "file:eval/runner.ts",
       "target": "file:src/agent/loop.ts",
       "specifier": "../src/agent/loop.js",
-      "line": 11,
+      "line": 12,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2610,7 +5362,7 @@
       "source": "file:eval/runner.ts",
       "target": "file:src/llm/provider.ts",
       "specifier": "../src/llm/provider.js",
-      "line": 18,
+      "line": 19,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2620,7 +5372,7 @@
       "source": "file:eval/runner.ts",
       "target": "file:src/llm/types.ts",
       "specifier": "../src/llm/types.js",
-      "line": 17,
+      "line": 18,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2630,7 +5382,7 @@
       "source": "file:eval/runner.ts",
       "target": "file:src/tools/edit-file.ts",
       "specifier": "../src/tools/edit-file.js",
-      "line": 15,
+      "line": 16,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2640,7 +5392,7 @@
       "source": "file:eval/runner.ts",
       "target": "file:src/tools/read-file.ts",
       "specifier": "../src/tools/read-file.js",
-      "line": 13,
+      "line": 14,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2650,7 +5402,7 @@
       "source": "file:eval/runner.ts",
       "target": "file:src/tools/registry.ts",
       "specifier": "../src/tools/registry.js",
-      "line": 12,
+      "line": 13,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2660,7 +5412,7 @@
       "source": "file:eval/runner.ts",
       "target": "file:src/tools/run-command.ts",
       "specifier": "../src/tools/run-command.js",
-      "line": 16,
+      "line": 17,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2670,7 +5422,7 @@
       "source": "file:eval/runner.ts",
       "target": "file:src/tools/search.ts",
       "specifier": "../src/tools/search.js",
-      "line": 14,
+      "line": 15,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2680,7 +5432,7 @@
       "source": "file:eval/runner.ts",
       "target": "runtime:javascript:child_process",
       "specifier": "child_process",
-      "line": 10,
+      "line": 11,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2690,7 +5442,7 @@
       "source": "file:eval/runner.ts",
       "target": "runtime:javascript:fs",
       "specifier": "fs/promises",
-      "line": 6,
+      "line": 7,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2700,7 +5452,7 @@
       "source": "file:eval/runner.ts",
       "target": "runtime:javascript:os",
       "specifier": "os",
-      "line": 9,
+      "line": 10,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2710,7 +5462,7 @@
       "source": "file:eval/runner.ts",
       "target": "runtime:javascript:path",
       "specifier": "path",
-      "line": 8,
+      "line": 9,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2728,6 +5480,66 @@
     {
       "type": "imports",
       "source": "file:eval/tasks/task-1/test.js",
+      "target": "runtime:javascript:assert",
+      "specifier": "assert",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/tasks/task-10/test.js",
+      "target": "file:eval/tasks/task-10/dep-graph.js",
+      "specifier": "./dep-graph.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/tasks/task-10/test.js",
+      "target": "runtime:javascript:assert",
+      "specifier": "assert",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/tasks/task-11/test.js",
+      "target": "file:eval/tasks/task-11/emitter.js",
+      "specifier": "./emitter.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/tasks/task-11/test.js",
+      "target": "runtime:javascript:assert",
+      "specifier": "assert",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/tasks/task-12/test.js",
+      "target": "file:eval/tasks/task-12/validator.js",
+      "specifier": "./validator.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/tasks/task-12/test.js",
       "target": "runtime:javascript:assert",
       "specifier": "assert",
       "line": 1,
@@ -2808,6 +5620,86 @@
     {
       "type": "imports",
       "source": "file:eval/tasks/task-5/test.js",
+      "target": "runtime:javascript:assert",
+      "specifier": "assert",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/tasks/task-6/test.js",
+      "target": "file:eval/tasks/task-6/config.js",
+      "specifier": "./config.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/tasks/task-6/test.js",
+      "target": "runtime:javascript:assert",
+      "specifier": "assert",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/tasks/task-7/test.js",
+      "target": "file:eval/tasks/task-7/parser.js",
+      "specifier": "./parser.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/tasks/task-7/test.js",
+      "target": "runtime:javascript:assert",
+      "specifier": "assert",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/tasks/task-8/test.js",
+      "target": "file:eval/tasks/task-8/cache.js",
+      "specifier": "./cache.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/tasks/task-8/test.js",
+      "target": "runtime:javascript:assert",
+      "specifier": "assert",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/tasks/task-9/test.js",
+      "target": "file:eval/tasks/task-9/tokenizer.js",
+      "specifier": "./tokenizer.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:eval/tasks/task-9/test.js",
       "target": "runtime:javascript:assert",
       "specifier": "assert",
       "line": 1,
@@ -2900,7 +5792,17 @@
       "source": "file:src/agent/loop.ts",
       "target": "file:src/agent/state.ts",
       "specifier": "./state.js",
-      "line": 13,
+      "line": 18,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/agent/loop.ts",
+      "target": "file:src/context/context-manager.ts",
+      "specifier": "../context/context-manager.js",
+      "line": 15,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2910,7 +5812,27 @@
       "source": "file:src/agent/loop.ts",
       "target": "file:src/context/context.ts",
       "specifier": "../context/context.js",
-      "line": 12,
+      "line": 14,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/agent/loop.ts",
+      "target": "file:src/context/policies.ts",
+      "specifier": "../context/policies.js",
+      "line": 17,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/agent/loop.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "../context/types.js",
+      "line": 16,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2920,7 +5842,7 @@
       "source": "file:src/agent/loop.ts",
       "target": "file:src/llm/provider.ts",
       "specifier": "../llm/provider.js",
-      "line": 8,
+      "line": 10,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2930,7 +5852,7 @@
       "source": "file:src/agent/loop.ts",
       "target": "file:src/tools/registry.ts",
       "specifier": "../tools/registry.js",
-      "line": 10,
+      "line": 12,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2940,7 +5862,17 @@
       "source": "file:src/agent/loop.ts",
       "target": "file:src/tools/types.ts",
       "specifier": "../tools/types.js",
-      "line": 11,
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/agent/state.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "../context/types.js",
+      "line": 9,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -2950,7 +5882,7 @@
       "source": "file:src/agent/state.ts",
       "target": "file:src/llm/types.ts",
       "specifier": "../llm/types.js",
-      "line": 6,
+      "line": 7,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -3057,10 +5989,340 @@
     },
     {
       "type": "imports",
+      "source": "file:src/context/compactor.ts",
+      "target": "file:src/context/token-estimator.ts",
+      "specifier": "./token-estimator.js",
+      "line": 18,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/compactor.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "./types.js",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-builder.ts",
+      "target": "file:src/context/context.ts",
+      "specifier": "./context.js",
+      "line": 20,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-builder.ts",
+      "target": "file:src/context/policies.ts",
+      "specifier": "./policies.js",
+      "line": 23,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-builder.ts",
+      "target": "file:src/context/token-estimator.ts",
+      "specifier": "./token-estimator.js",
+      "line": 21,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-builder.ts",
+      "target": "file:src/context/truncator.ts",
+      "specifier": "./truncator.js",
+      "line": 22,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-builder.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "./types.js",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-builder.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../llm/types.js",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-manager.ts",
+      "target": "file:src/context/compactor.ts",
+      "specifier": "./compactor.js",
+      "line": 26,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-manager.ts",
+      "target": "file:src/context/context-builder.ts",
+      "specifier": "./context-builder.js",
+      "line": 27,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-manager.ts",
+      "target": "file:src/context/context-metrics.ts",
+      "specifier": "./context-metrics.js",
+      "line": 28,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-manager.ts",
+      "target": "file:src/context/policies.ts",
+      "specifier": "./policies.js",
+      "line": 21,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-manager.ts",
+      "target": "file:src/context/token-estimator.ts",
+      "specifier": "./token-estimator.js",
+      "line": 19,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-manager.ts",
+      "target": "file:src/context/truncator.ts",
+      "specifier": "./truncator.js",
+      "line": 20,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-manager.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "./types.js",
+      "line": 18,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-manager.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../llm/types.js",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context-metrics.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "./types.js",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context.ts",
+      "target": "file:src/context/compactor.ts",
+      "specifier": "./compactor.js",
+      "line": 142,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context.ts",
+      "target": "file:src/context/context-builder.ts",
+      "specifier": "./context-builder.js",
+      "line": 143,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context.ts",
+      "target": "file:src/context/context-manager.ts",
+      "specifier": "./context-manager.js",
+      "line": 145,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context.ts",
+      "target": "file:src/context/context-metrics.ts",
+      "specifier": "./context-metrics.js",
+      "line": 144,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context.ts",
+      "target": "file:src/context/policies.ts",
+      "specifier": "./policies.js",
+      "line": 141,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context.ts",
+      "target": "file:src/context/token-estimator.ts",
+      "specifier": "./token-estimator.js",
+      "line": 139,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context.ts",
+      "target": "file:src/context/truncator.ts",
+      "specifier": "./truncator.js",
+      "line": 140,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/context.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "./types.js",
+      "line": 138,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
       "source": "file:src/context/context.ts",
       "target": "file:src/llm/types.ts",
       "specifier": "../llm/types.js",
-      "line": 6,
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/policies.ts",
+      "target": "file:src/context/token-estimator.ts",
+      "specifier": "./token-estimator.js",
+      "line": 16,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/policies.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "./types.js",
+      "line": 15,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/policies.ts",
+      "target": "runtime:javascript:crypto",
+      "specifier": "node:crypto",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/token-estimator.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "./types.js",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/token-estimator.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../llm/types.js",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/truncator.ts",
+      "target": "file:src/context/token-estimator.ts",
+      "specifier": "./token-estimator.js",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/truncator.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "./types.js",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/context/types.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../llm/types.js",
+      "line": 8,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -3547,6 +6809,146 @@
     },
     {
       "type": "imports",
+      "source": "file:tests/integration/context-management.test.ts",
+      "target": "file:src/agent/loop.ts",
+      "specifier": "../../src/agent/loop.js",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/integration/context-management.test.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "../../src/context/types.js",
+      "line": 14,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/integration/context-management.test.ts",
+      "target": "file:src/llm/provider.ts",
+      "specifier": "../../src/llm/provider.js",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/integration/context-management.test.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../../src/llm/types.js",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/integration/context-management.test.ts",
+      "target": "file:src/tools/edit-file.ts",
+      "specifier": "../../src/tools/edit-file.js",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/integration/context-management.test.ts",
+      "target": "file:src/tools/read-file.ts",
+      "specifier": "../../src/tools/read-file.js",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/integration/context-management.test.ts",
+      "target": "file:src/tools/registry.ts",
+      "specifier": "../../src/tools/registry.js",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/integration/context-management.test.ts",
+      "target": "file:src/tools/run-command.ts",
+      "specifier": "../../src/tools/run-command.js",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/integration/context-management.test.ts",
+      "target": "file:src/tools/search.ts",
+      "specifier": "../../src/tools/search.js",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/integration/context-management.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/integration/context-management.test.ts",
+      "target": "runtime:javascript:child_process",
+      "specifier": "child_process",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/integration/context-management.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs/promises",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/integration/context-management.test.ts",
+      "target": "runtime:javascript:os",
+      "specifier": "os",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/integration/context-management.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
       "source": "file:tests/integration/eval-runner.test.ts",
       "target": "file:src/agent/loop.ts",
       "specifier": "../../src/agent/loop.js",
@@ -3770,7 +7172,7 @@
       "source": "file:tests/unit/cli.test.ts",
       "target": "runtime:javascript:path",
       "specifier": "path",
-      "line": 3,
+      "line": 9,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "javascript-imports"
@@ -3813,6 +7215,546 @@
       "line": 1,
       "resolved": false,
       "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/compactor.test.ts",
+      "target": "file:src/context/compactor.ts",
+      "specifier": "../../../src/context/compactor.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/compactor.test.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "../../../src/context/types.js",
+      "line": 15,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/compactor.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/compactor.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/compactor.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/compactor.test.ts",
+      "target": "runtime:javascript:url",
+      "specifier": "url",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-builder.test.ts",
+      "target": "file:src/context/context-builder.ts",
+      "specifier": "../../../src/context/context-builder.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-builder.test.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "../../../src/context/types.js",
+      "line": 16,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-builder.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-builder.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-builder.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-builder.test.ts",
+      "target": "runtime:javascript:url",
+      "specifier": "url",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-manager.test.ts",
+      "target": "file:src/context/context-manager.ts",
+      "specifier": "../../../src/context/context-manager.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-manager.test.ts",
+      "target": "file:src/context/context.ts",
+      "specifier": "../../../src/context/context.js",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-manager.test.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "../../../src/context/types.js",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-manager.test.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../../../src/llm/types.js",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-manager.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-manager.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-manager.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-manager.test.ts",
+      "target": "runtime:javascript:url",
+      "specifier": "url",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-metrics.test.ts",
+      "target": "file:src/context/context-metrics.ts",
+      "specifier": "../../../src/context/context-metrics.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-metrics.test.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "../../../src/context/types.js",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-metrics.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-metrics.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-metrics.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/context-metrics.test.ts",
+      "target": "runtime:javascript:url",
+      "specifier": "url",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/policies.test.ts",
+      "target": "file:src/context/policies.ts",
+      "specifier": "../../../src/context/policies.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/policies.test.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "../../../src/context/types.js",
+      "line": 13,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/policies.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/policies.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/policies.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/policies.test.ts",
+      "target": "runtime:javascript:url",
+      "specifier": "url",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/stress.test.ts",
+      "target": "file:src/agent/state.ts",
+      "specifier": "../../../src/agent/state.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/stress.test.ts",
+      "target": "file:src/context/context-manager.ts",
+      "specifier": "../../../src/context/context-manager.js",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/stress.test.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "../../../src/context/types.js",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/stress.test.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../../../src/llm/types.js",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/stress.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/token-estimator.test.ts",
+      "target": "file:src/context/token-estimator.ts",
+      "specifier": "../../../src/context/token-estimator.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/token-estimator.test.ts",
+      "target": "file:src/llm/types.ts",
+      "specifier": "../../../src/llm/types.js",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/token-estimator.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/token-estimator.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/token-estimator.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/token-estimator.test.ts",
+      "target": "runtime:javascript:url",
+      "specifier": "url",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/truncator.test.ts",
+      "target": "file:src/context/truncator.ts",
+      "specifier": "../../../src/context/truncator.js",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/truncator.test.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "../../../src/context/types.js",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/truncator.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/truncator.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/truncator.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/truncator.test.ts",
+      "target": "runtime:javascript:url",
+      "specifier": "url",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/types.test.ts",
+      "target": "file:src/context/types.ts",
+      "specifier": "../../../src/context/types.js",
+      "line": 22,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/types.test.ts",
+      "target": "package:npm:vitest",
+      "specifier": "vitest",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/types.test.ts",
+      "target": "runtime:javascript:fs",
+      "specifier": "fs",
+      "line": 2,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/types.test.ts",
+      "target": "runtime:javascript:path",
+      "specifier": "path",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "javascript-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/unit/context/types.test.ts",
+      "target": "runtime:javascript:url",
+      "specifier": "url",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
       "extractor": "javascript-imports"
     },
     {
@@ -4268,6 +8210,6 @@
   ],
   "warnings": [],
   "stats": {
-    "unresolvedCalls": 122
+    "unresolvedCalls": 346
   }
 }

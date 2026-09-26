@@ -19,7 +19,13 @@ export type EventType =
   | "verification_started"
   | "verification_completed"
   | "task_completed"
-  | "task_failed";
+  | "task_failed"
+  | "context_build_started"
+  | "context_build_completed"
+  | "context_item_truncated"
+  | "context_item_dropped"
+  | "context_compaction_started"
+  | "context_compaction_completed";
 
 export interface LogEvent {
   type: EventType;
@@ -99,6 +105,8 @@ export class StructuredLogger {
           cleaned = cleaned.replaceAll(token, "[REDACTED]");
         }
       }
+      // Pattern-based API key redaction (e.g. Google Gemini keys: AIzaSy...)
+      cleaned = cleaned.replace(/AIza[0-9A-Za-z-_]{30,50}/g, "[REDACTED]");
       return cleaned;
     }
 
@@ -116,10 +124,19 @@ export class StructuredLogger {
         "password",
         "token",
         "authorization",
+        "auth",
+        "bearer",
+        "gemini_api_key",
       ]);
 
       for (const [key, value] of Object.entries(obj as Record<string, unknown>)) {
-        if (sensitiveKeys.has(key.toLowerCase())) {
+        const lowerKey = key.toLowerCase();
+        if (
+          sensitiveKeys.has(lowerKey) ||
+          lowerKey.endsWith("_key") ||
+          lowerKey.endsWith("_token") ||
+          lowerKey.endsWith("_secret")
+        ) {
           result[key] = "[REDACTED]";
         } else {
           result[key] = this.redactSensitive(value);

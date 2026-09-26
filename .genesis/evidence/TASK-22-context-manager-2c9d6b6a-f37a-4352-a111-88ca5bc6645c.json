@@ -1,0 +1,30 @@
+{
+  "task": "TASK-22",
+  "gate": "context-manager",
+  "kind": "command",
+  "attempt": "2c9d6b6a-f37a-4352-a111-88ca5bc6645c",
+  "command": "npx vitest run tests/unit/context/context-manager.test.ts",
+  "started_at": "2026-09-26T13:17:46.737Z",
+  "observed_at": "2026-09-26T13:18:05.187Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "\n\u001b[1m\u001b[46m RUN \u001b[49m\u001b[22m \u001b[36mv3.2.7 \u001b[39m\u001b[90mC:/Pinkal/Learning/Coding agent/Enterprise Coding agent\u001b[39m\n\n \u001b[32m✓\u001b[39m tests/unit/context/context-manager.test.ts \u001b[2m(\u001b[22m\u001b[2m8 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 16\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m8 passed\u001b[39m\u001b[22m\u001b[90m (8)\u001b[39m\n\u001b[2m   Start at \u001b[22m 18:48:02\n\u001b[2m   Duration \u001b[22m 1.62s\u001b[2m (transform 200ms, setup 0ms, collect 541ms, tests 16ms, environment 0ms, prepare 302ms)\u001b[22m\n\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "7ecad2a28e6850ea12efcdacdcd96faa05ccf950",
+    "dirty": true
+  },
+  "source_hash": "e7c0d57afcee903b4d661f03d08949228686c487fd547fa9d00434a81b32147b",
+  "before_hash": "e7c0d57afcee903b4d661f03d08949228686c487fd547fa9d00434a81b32147b",
+  "config_hash": "43ef58cc2aac4a655fa139743aa8e2b081caea258dc8c9744277c9b63379b68d",
+  "environment": {
+    "node": "v22.23.2",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+    "variables": {}
+  },
+  "hash": "3a8a6647c1abfd3945b8beb7b09534560849232236466b2604a827f914eee791"
+}

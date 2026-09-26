@@ -1,0 +1,1 @@
+Fix parseErrors in parser.js so it correctly extracts all lines beginning with [ERROR] and captures the timestamp and message, ignoring stack traces on subsequent lines. Run node test.js to verify.

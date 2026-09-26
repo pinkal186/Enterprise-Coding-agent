@@ -130,7 +130,7 @@ describe("Evaluation Tasks Runner (TASK-14 / AC-9)", () => {
       timestamp: new Date().toISOString(),
     };
     await fs.writeFile(
-      path.join(taskSourceDir, "result.json"),
+      path.join(tempWorkspace, "result.json"),
       JSON.stringify(result, null, 2),
       "utf-8",
     );
@@ -207,7 +207,7 @@ describe("Evaluation Tasks Runner (TASK-14 / AC-9)", () => {
       timestamp: new Date().toISOString(),
     };
     await fs.writeFile(
-      path.join(taskSourceDir, "result.json"),
+      path.join(tempWorkspace, "result.json"),
       JSON.stringify(result, null, 2),
       "utf-8",
     );
@@ -287,7 +287,7 @@ describe("Evaluation Tasks Runner (TASK-14 / AC-9)", () => {
       timestamp: new Date().toISOString(),
     };
     await fs.writeFile(
-      path.join(taskSourceDir, "result.json"),
+      path.join(tempWorkspace, "result.json"),
       JSON.stringify(result, null, 2),
       "utf-8",
     );
@@ -375,7 +375,7 @@ describe("Evaluation Tasks Runner (TASK-14 / AC-9)", () => {
       timestamp: new Date().toISOString(),
     };
     await fs.writeFile(
-      path.join(taskSourceDir, "result.json"),
+      path.join(tempWorkspace, "result.json"),
       JSON.stringify(result, null, 2),
       "utf-8",
     );
@@ -452,7 +452,7 @@ describe("Evaluation Tasks Runner (TASK-14 / AC-9)", () => {
       timestamp: new Date().toISOString(),
     };
     await fs.writeFile(
-      path.join(taskSourceDir, "result.json"),
+      path.join(tempWorkspace, "result.json"),
       JSON.stringify(result, null, 2),
       "utf-8",
     );

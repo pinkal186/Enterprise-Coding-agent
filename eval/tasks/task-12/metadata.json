@@ -1,0 +1,7 @@
+{
+  "id": "task-12",
+  "name": "schema-validator-paths",
+  "category": "feature_enhancement",
+  "verificationCommand": "node test.js",
+  "successCriteria": "Validates types, required fields, and nested array paths with exit code 0"
+}

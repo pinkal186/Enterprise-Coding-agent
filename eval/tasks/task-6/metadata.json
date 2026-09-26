@@ -1,0 +1,7 @@
+{
+  "id": "task-6",
+  "name": "config-deep-merge",
+  "category": "feature_enhancement",
+  "verificationCommand": "node test.js",
+  "successCriteria": "Deep merge correctly preserves nested default properties when overriding specific keys with exit code 0"
+}

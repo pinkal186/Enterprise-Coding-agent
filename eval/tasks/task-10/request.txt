@@ -1,0 +1,1 @@
+Fix resolveDependencies in dep-graph.js so it returns a topological sort of dependencies and throws an Error("Circular dependency detected") when a cycle is present. Run node test.js to verify.

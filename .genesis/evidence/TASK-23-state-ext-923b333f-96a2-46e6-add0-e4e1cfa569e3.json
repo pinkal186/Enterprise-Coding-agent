@@ -1,0 +1,30 @@
+{
+  "task": "TASK-23",
+  "gate": "state-ext",
+  "kind": "command",
+  "attempt": "923b333f-96a2-46e6-add0-e4e1cfa569e3",
+  "command": "npx vitest run tests/unit/context.test.ts",
+  "started_at": "2026-09-26T13:21:12.947Z",
+  "observed_at": "2026-09-26T13:21:26.642Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "\n\u001b[1m\u001b[46m RUN \u001b[49m\u001b[22m \u001b[36mv3.2.7 \u001b[39m\u001b[90mC:/Pinkal/Learning/Coding agent/Enterprise Coding agent\u001b[39m\n\n \u001b[32m✓\u001b[39m tests/unit/context.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 12\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m6 passed\u001b[39m\u001b[22m\u001b[90m (6)\u001b[39m\n\u001b[2m   Start at \u001b[22m 18:51:21\n\u001b[2m   Duration \u001b[22m 2.02s\u001b[2m (transform 221ms, setup 0ms, collect 578ms, tests 12ms, environment 0ms, prepare 532ms)\u001b[22m\n\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "7ecad2a28e6850ea12efcdacdcd96faa05ccf950",
+    "dirty": true
+  },
+  "source_hash": "181618a83731781b8128c85be2f1ef5275ec6b04646085fcc7e4ade6a82a4ff2",
+  "before_hash": "181618a83731781b8128c85be2f1ef5275ec6b04646085fcc7e4ade6a82a4ff2",
+  "config_hash": "1268d00ef19152b405f107a438f180236a37492b0620eac81960fd705e2df26b",
+  "environment": {
+    "node": "v22.23.2",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+    "variables": {}
+  },
+  "hash": "ca0d8b02967bf383c22b816ea90280499e15a1f8b927c7cafb300d335dd1fa47"
+}

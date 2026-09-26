@@ -110,6 +110,52 @@
 
 ---
 
-## Notes
+# Implementation Progress — Engineering Agent Iteration 2 (Context Management & Token Efficiency)
 
-All 15 tasks of Iteration 1 implemented, tested, and passing with 100% test coverage and zero external agent frameworks.
+## Current Status
+
+- **Overall status**: Complete (Iteration 2 Scope Delivered)
+- **Current step**: TASK-27 — Full test suite pass, documentation, and checkpoint
+- **Last updated**: 2026-09-26
+- **Next action**: TASK-28 — Iteration 2 Evaluation Tasks (tasks 6-12)
+
+---
+
+## Iteration 2 Checklist
+
+### Core Types & Estimation
+- [x] TASK-16: Define internal context types (`src/context/types.ts`) — `ContextItem`, `ContextImportance`, `ContextBudget`, `ContextStats`, `TokenEstimator`, `ContextTruncator`, `ContextBuilder`, `ContextCompactor`, `ContextManager` (FR-14, FR-15, NFR-1)
+- [x] TASK-17: Implement heuristic token estimator (`src/context/token-estimator.ts`) — character-to-token ratio, message framing overhead, tool definition schema estimation (FR-16, NFR-1)
+
+### Truncation, Policies & Selection
+- [x] TASK-18: Implement head/tail truncator (`src/context/truncator.ts`) — error trace preservation, boundary markers, omitted token counts (FR-17)
+- [x] TASK-19: Implement priority & selection policies (`src/context/policies.ts`) — `CRITICAL`, `HIGH`, `NORMAL`, `LOW` hierarchy, recency tiebreakers, deduplication, budget loading from env (FR-18, FR-19, AC-13)
+- [x] TASK-20: Implement standard context builder (`src/context/context-builder.ts`) — assemble items into model-ready Messages within usable token budget (FR-21)
+
+### Compaction & Management Subsystem
+- [x] TASK-21: Implement deterministic structured compactor (`src/context/compactor.ts`) — summarize past iterations, preserve user request, modified files, test results, facts (FR-20, AC-14)
+- [x] TASK-22: Implement managed context manager (`src/context/context-manager.ts`, `src/context/context-metrics.ts`) — unified entry point, metrics tracking, compaction triggers (FR-22, FR-23)
+- [x] TASK-23: Extend agent state (`src/agent/state.ts`) — `importantFacts`, `contextStats`, `addImportantFact()` (FR-25)
+- [x] TASK-24: Refactor agent loop context delegation (`src/agent/loop.ts`) — delegate context preparation completely to `ContextManager` (FR-24, AC-11)
+
+### Observability & CLI
+- [x] TASK-25: Add 6 context event types to structured logger (`src/logging/logger.ts`) and `--debug-context` CLI flag with disposition formatting (`src/cli/main.ts`, `src/cli/runner.ts`) (FR-26, FR-27, AC-12, AC-15)
+
+### Verification & Integration
+- [x] TASK-26: Stress tests (`tests/unit/context/stress.test.ts`) and context lifecycle integration tests (`tests/integration/context-management.test.ts`) (AC-16, AC-17, AC-18, AC-19)
+- [x] TASK-27: Full test suite pass (178 tests, 23 suites), update `README.md` and `IMPLEMENTATION_PROGRESS.md`, verify zero API keys leaked (FR-28, NFR-6, AC-16)
+
+---
+
+## Acceptance Verification (Iteration 2)
+
+- [x] AC-11: Agent loop delegates all context preparation to ContextManager
+- [x] AC-12: Structured logger emits 6 context events and metrics in llm_request payload
+- [x] AC-13: Selection policies enforce priority order, recency, deduplication, and budget headroom
+- [x] AC-14: Deterministic compaction preserves critical state and reduces token utilization
+- [x] AC-15: CLI `--debug-context` outputs per-item priority and disposition (`[INCLUDED]`, `[TRUNCATED]`, `[DROPPED]`)
+- [x] AC-16: Zero test regressions across all 178 unit, stress, and integration tests
+- [x] AC-17: Stress tests verify context stays within budget under 100+ tool outputs and 50+ file reads
+- [x] AC-18: Context lifecycle integration test passes (growth -> threshold -> compaction -> verified completion)
+- [x] AC-19: Iteration 1 integration test passes unchanged
+

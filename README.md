@@ -43,7 +43,98 @@ npm install
    | :--- | :--- | :--- |
    | `--workspace`, `-w` | Target workspace directory path | Current working directory (`.`) |
    | `--model`, `-m` | Gemini model name | `gemini-2.5-flash` |
+   | `--debug-context` | Print detailed context items, token estimates, priorities, and inclusion status to stderr | `false` |
    | `--help`, `-h` | Show usage options | - |
+
+#### Context Debug Mode (`--debug-context`)
+
+Inspect how the context engine prioritizes, truncates, deduplicates, and compacts information before each model call:
+
+```bash
+npx tsx src/cli/main.ts "Fix bug in calculator.js" --workspace ./tests/fixtures/test-project --debug-context
+```
+
+Sample debug output on stderr:
+```text
+[CONTEXT DEBUG] Available: 27,904 / 32,000 tokens (usable budget: 27,904, estimated: 1,420, util: 5.1%)
+  [CRITICAL] [INCLUDED] system_instruction (340 tokens)
+  [CRITICAL] [INCLUDED] user_request (45 tokens)
+  [CRITICAL] [INCLUDED] important_fact:bug-location (28 tokens)
+  [HIGH]     [INCLUDED] recent_tool:read_file:calculator.js (215 tokens)
+  [HIGH]     [INCLUDED] verification_failure:npm test (310 tokens)
+  [NORMAL]   [TRUNCATED] file_content:large-file.ts (2,000 tokens, truncated from 4,800)
+  [LOW]      [DROPPED]  old_search_result:glob (450 tokens)
+```
+
+---
+
+## 🧠 Context Management & Token Efficiency Subsystem (Iteration 2)
+
+The agent incorporates an autonomous, deterministic context management engine designed to keep multi-turn coding sessions strictly within model context limits without losing critical task state.
+
+### Architecture
+
+```
+                 Agent Loop / State
+                         │
+                         ▼
+        ┌─────────────────────────────────┐
+        │     ManagedContextManager       │
+        └─────────────────────────────────┘
+                         │
+         ┌───────────────┴───────────────┐
+         ▼                               ▼
+┌──────────────────┐           ┌──────────────────┐
+│  Token Estimator │           │ Policy Evaluator │
+│  (char/heuristic)│           │ (Priority+Budget)│
+└──────────────────┘           └──────────────────┘
+         │                               │
+         ▼                               ▼
+┌──────────────────┐           ┌──────────────────┐
+│ Head/Tail Trunc  │           │   Compactor      │
+│ (Preserves Trace)│           │ (Deterministic)  │
+└──────────────────┘           └──────────────────┘
+                         │
+                         ▼
+         ┌───────────────────────────────┐
+         │     Selected Context Window   │
+         │     (<= Usable Token Budget)  │
+         └───────────────────────────────┘
+```
+
+### Prioritization Hierarchy (FR-18)
+
+Items are categorized into 4 strict priority levels:
+- **`CRITICAL` (Weight 4)**: User task instructions, system framing, important discovered facts, unverified status. **Never dropped or pruned.**
+- **`HIGH` (Weight 3)**: Recent tool execution results, recent assistant decisions, verification test failures.
+- **`NORMAL` (Weight 2)**: File inspection contents, workspace search results.
+- **`LOW` (Weight 1)**: Older duplicate tool results, stale discovery data. Dropped first when approaching budget headroom.
+
+### Truncation & Compaction (FR-17, FR-20)
+- **Head/Tail Truncation**: When tool outputs exceed specific limits, truncators preserve the opening context and the critical ending (where error traces, stack traces, and exit statuses reside), inserting a clear omitted token count banner.
+- **Deduplication**: Tool results with identical content hashes are deduplicated to eliminate wasteful repeated file reads.
+- **Deterministic Compaction**: When context token utilization exceeds the configurable compaction threshold (default `80%`), deterministic structured summarization compresses older history into concise state summaries (files modified, test outcomes, discovered facts) while preserving the active user task and recent turns.
+
+---
+
+## ⚙️ Environment Variables & Configuration
+
+Configure token limits, model settings, and safety policies via `.env` or system environment variables:
+
+| Variable | Description | Default |
+| :--- | :--- | :--- |
+| `GEMINI_API_KEY` | Google Gemini API key *(required for live LLM execution)* | None |
+| `GEMINI_MODEL` | Default Gemini model identifier | `gemini-2.5-flash` |
+| `MAX_AGENT_ITERATIONS` | Hard iteration cap before autonomous exit | `20` |
+| `MAX_REPEATED_FAILURES` | Consecutive identical failing actions before exit | `3` |
+| `COMMAND_TIMEOUT_MS` | Safe command execution timeout in milliseconds | `30000` |
+| `MODEL_CONTEXT_TOKENS` | Maximum allowable context window tokens | `32000` |
+| `MODEL_OUTPUT_TOKENS` | Tokens reserved exclusively for model completion | `4096` |
+| `CONTEXT_COMPACTION_THRESHOLD`| Context utilization fraction (0.0 - 1.0) triggering compaction | `0.8` (80%) |
+| `MAX_TOOL_OUTPUT_TOKENS` | Generic cap per individual tool result | `2000` |
+| `MAX_FILE_READ_TOKENS` | Maximum tokens retained from a single file read | `2000` |
+| `MAX_SEARCH_RESULT_TOKENS` | Maximum tokens retained from file search output | `1000` |
+| `MAX_COMMAND_OUTPUT_TOKENS` | Maximum tokens retained from command execution stdout/stderr | `1500` |
 
 ---
 
@@ -86,7 +177,7 @@ async function main() {
     defaultModel: "gemini-2.5-flash",
   });
 
-  // 3. Initialize the Autonomous Loop with Guardrails
+  // 3. Initialize the Autonomous Loop with Guardrails & Context Management
   const loop = new AgentLoop({
     provider,
     toolRegistry: registry,
@@ -113,12 +204,24 @@ main();
 
 No API key is required to run the automated test suites:
 
-### 1. Run All Tests (98 tests across 13 test suites)
+### 1. Run All Tests (178 tests across 23 test suites)
 ```bash
 npx vitest run
 ```
 
 ### 2. Run Specific Test Groups
+- **Context Management Subsystem (Iteration 2)**:
+  ```bash
+  npx vitest run tests/unit/context/
+  ```
+- **Context Stress & Token Budgeting (AC-16, AC-17)**:
+  ```bash
+  npx vitest run tests/unit/context/stress.test.ts
+  ```
+- **Context Management Lifecycle Integration (AC-18)**:
+  ```bash
+  npx vitest run tests/integration/context-management.test.ts
+  ```
 - **LLM Types & Provider Isolation (NFR-1)**:
   ```bash
   npx vitest run tests/unit/llm-types.test.ts
@@ -150,7 +253,7 @@ npx vitest run
 
 ## 📊 Run Real Evaluation Suites (AC-9)
 
-Run the 5 standalone coding evaluation tasks:
+Run the standalone coding evaluation tasks:
 
 ```bash
 # Run all 5 tasks sequentially
@@ -176,5 +279,8 @@ Each task automatically saves its verified execution outcome to `eval/tasks/task
    Execution terminates after 20 iterations to prevent infinite thrashing or runaway token costs.
 5. **Repeated Failing Action Loop Breaker (AC-5)**:
    3 consecutive identical failing tool actions automatically stop the agent with a `repeated_failure` error.
-6. **Zero External Frameworks (NFR-3)**:
+6. **Token Budget Headroom Enforcement (NFR-6 / FR-18)**:
+   Context management strictly enforces model budget limits with priority-based selection, preventing context window overflow.
+7. **Zero External Frameworks (NFR-3)**:
    Pure Node.js and TypeScript. No LangChain, CrewAI, or AutoGen abstractions.
+

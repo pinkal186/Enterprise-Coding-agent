@@ -1,0 +1,13 @@
+{
+  "task": "TASK-24",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "30914564-a030-4a64-b349-63b9d4ff91db",
+  "human": "Pinkal",
+  "reason": "AgentLoop refactored to delegate all context building to ContextManager.buildManaged(); no context selection logic in loop; all 3 invariants verified (iteration cap, repeated failure guard, verified completion requirement); unit tests pass without regression",
+  "observed_at": "2026-09-26T13:24:31.508Z",
+  "source_hash": "e7b9269f768903c24086c1687848832452d56411dcc71674148ba88276e0c500",
+  "config_hash": "857782d438dc892e2d12fd9f7f41a5db867487d849aa921f778ba17b95d47e8d",
+  "reviewed_proofs": "84b79195c53ffb04b198b9981d9c2cb1d5deb055d158c2054e22aa55c5333dda",
+  "hash": "0519a4767ffa1aef3cc815d73343833149feefc8bfc4a9f017c3e6aacb42edef"
+}

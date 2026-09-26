@@ -1,0 +1,7 @@
+{
+  "id": "task-10",
+  "name": "topological-dep-sorter",
+  "category": "algorithm",
+  "verificationCommand": "node test.js",
+  "successCriteria": "Resolves dependency order correctly and detects circular dependencies with exit code 0"
+}

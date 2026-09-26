@@ -1,0 +1,7 @@
+{
+  "id": "task-9",
+  "name": "expression-tokenizer",
+  "category": "bug_fix",
+  "verificationCommand": "node test.js",
+  "successCriteria": "Tokenizes arithmetic expressions into number, operator, and parenthesis tokens with exit code 0"
+}

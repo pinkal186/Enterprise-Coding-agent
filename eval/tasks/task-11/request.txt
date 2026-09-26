@@ -1,0 +1,1 @@
+Fix the emit method in emitter.js so that removing once listeners does not skip subsequent listeners being emitted in the same event cycle. Run node test.js to verify.

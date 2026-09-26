@@ -1,0 +1,1 @@
+Fix validateSchema in validator.js so that it correctly validates element types inside array fields and reports full dot-notated error paths for nested object errors. Run node test.js to verify.

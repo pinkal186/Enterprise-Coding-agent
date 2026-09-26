@@ -3,13 +3,18 @@
  *
  * Implements the core mechanical feedback loop:
  * Context Assembly -> LLM Generation -> Tool Dispatch -> Safety Checks -> Observation -> Verification
- * Enforces iteration caps (FR-10), repeated-failure guards (AC-5), and verification requirements (AC-6).
+ * Refactored in Iteration 2 (FR-24 / AC-11 / DECISION-566cf411):
+ * All context preparation is delegated to ContextManager.buildManaged().
+ * Enforces iteration caps (INVARIANT-72ddae88), repeated-failure guards (AC-5), and verification requirements (INVARIANT-cd74c5ed).
  */
 
 import type { LLMProvider, GenerateOptions } from "../llm/provider.js";
 import type { ToolRegistry } from "../tools/registry.js";
 import type { ToolContext } from "../tools/types.js";
 import { ContextManager } from "../context/context.js";
+import { ManagedContextManager } from "../context/context-manager.js";
+import type { ContextBudget } from "../context/types.js";
+import { loadContextBudgetFromEnv } from "../context/policies.js";
 import { TaskState } from "./state.js";
 
 export const DEFAULT_MAX_ITERATIONS = 20;
@@ -24,7 +29,30 @@ export type AgentEventType =
   | "tool_failed"
   | "verification_completed"
   | "task_completed"
-  | "task_failed";
+  | "task_failed"
+  | "context_build_started"
+  | "context_build_completed"
+  | "context_item_truncated"
+  | "context_item_dropped"
+  | "context_compaction_started"
+  | "context_compaction_completed";
+
+function getItemSummary(item: {
+  id?: string;
+  type?: string;
+  content?: string;
+  source?: { filePath?: string; command?: string; toolName?: string };
+}): string {
+  if (item.id === "user-task") return "User task";
+  if (item.id === "system-instruction") return "Current task state";
+  if (item.source?.filePath) return item.source.filePath;
+  if (item.source?.command) return `Latest test result (${item.source.command})`;
+  if (item.source?.toolName) return `${item.source.toolName} result`;
+  if (item.type === "important_fact") return `Fact: ${(item.content || "").slice(0, 40).trim()}`;
+  if (item.type === "summary") return "Compacted summary";
+  if (item.type === "tool_result") return "Tool result";
+  return `${item.type || "item"}: ${(item.content || "").slice(0, 40).trim()}`;
+}
 
 export interface AgentEvent {
   type: AgentEventType;
@@ -37,7 +65,8 @@ export interface AgentLoopOptions {
   provider: LLMProvider;
   toolRegistry: ToolRegistry;
   workspaceRoot: string;
-  contextManager?: ContextManager;
+  contextManager?: ManagedContextManager | ContextManager;
+  budget?: ContextBudget;
   maxIterations?: number;
   maxConsecutiveFailures?: number;
   generateOptions?: GenerateOptions;
@@ -49,7 +78,8 @@ export class AgentLoop {
   private readonly provider: LLMProvider;
   private readonly toolRegistry: ToolRegistry;
   private readonly workspaceRoot: string;
-  private readonly contextManager: ContextManager;
+  private readonly managedContextManager: ManagedContextManager;
+  private readonly budget: ContextBudget;
   private readonly maxIterations: number;
   private readonly maxConsecutiveFailures: number;
   private readonly generateOptions?: GenerateOptions;
@@ -60,7 +90,23 @@ export class AgentLoop {
     this.provider = options.provider;
     this.toolRegistry = options.toolRegistry;
     this.workspaceRoot = options.workspaceRoot;
-    this.contextManager = options.contextManager || new ContextManager();
+    this.budget = options.budget || loadContextBudgetFromEnv();
+
+    // Resolve ManagedContextManager (supporting both modern coordinator and legacy shim)
+    if (options.contextManager instanceof ManagedContextManager) {
+      this.managedContextManager = options.contextManager;
+    } else if (
+      options.contextManager &&
+      "getManagedDelegate" in options.contextManager &&
+      typeof options.contextManager.getManagedDelegate === "function"
+    ) {
+      this.managedContextManager = options.contextManager.getManagedDelegate();
+    } else {
+      this.managedContextManager = new ManagedContextManager({
+        budget: this.budget,
+      });
+    }
+
     this.maxIterations = options.maxIterations || DEFAULT_MAX_ITERATIONS;
     this.maxConsecutiveFailures =
       options.maxConsecutiveFailures || DEFAULT_MAX_CONSECUTIVE_FAILURES;
@@ -106,7 +152,7 @@ export class AgentLoop {
     let unverifiedFinishAttempts = 0;
 
     while (state.status === "running") {
-      // 1. Enforce iteration cap (FR-10 / AC-5)
+      // 1. Enforce iteration cap (INVARIANT-72ddae88 / FR-10 / AC-5)
       if (state.iterationCount >= this.maxIterations) {
         state.fail(
           "iteration_limit",
@@ -121,14 +167,138 @@ export class AgentLoop {
 
       state.iterationCount++;
 
-      // 2. Assemble context
-      const messages = this.contextManager.assemble(state.userRequest, state.messages);
+      // 2. Delegate all context preparation to ContextManager.buildManaged() (DECISION-566cf411 / FR-24)
+      this.emit("context_build_started", state.taskId, {
+        iteration: state.iterationCount,
+      });
+
       const toolDefinitions = this.toolRegistry.getDefinitions();
+      const buildResult = this.managedContextManager.buildManaged(
+        state,
+        toolDefinitions,
+        this.budget
+      );
+      const messages = buildResult.messages;
+
+      // Update state metrics from context build
+      state.updateContextStats({
+        totalItems: buildResult.metrics.totalItems,
+        estimatedTokens: buildResult.estimatedTokens,
+        utilization: buildResult.utilization,
+        truncations: buildResult.metrics.truncatedItemsCount,
+        compactions: buildResult.metrics.compactionsCount,
+        droppedItems: buildResult.metrics.droppedItemsCount,
+      });
+
+      // Emit compaction events if compaction occurred
+      if (buildResult.compactionEvent) {
+        this.emit("context_compaction_started", state.taskId, {
+          iteration: state.iterationCount,
+          itemsBefore: buildResult.compactionEvent.itemsBefore,
+          items_before: buildResult.compactionEvent.itemsBefore,
+          tokensBefore: buildResult.compactionEvent.estimatedTokensBefore,
+          tokens_before: buildResult.compactionEvent.estimatedTokensBefore,
+        });
+        this.emit("context_compaction_completed", state.taskId, {
+          iteration: state.iterationCount,
+          itemsBefore: buildResult.compactionEvent.itemsBefore,
+          itemsAfter: buildResult.compactionEvent.itemsAfter,
+          tokensBefore: buildResult.compactionEvent.estimatedTokensBefore,
+          tokensAfter: buildResult.compactionEvent.estimatedTokensAfter,
+          items_before: buildResult.compactionEvent.itemsBefore,
+          items_after: buildResult.compactionEvent.itemsAfter,
+          tokens_before: buildResult.compactionEvent.estimatedTokensBefore,
+          tokens_after: buildResult.compactionEvent.estimatedTokensAfter,
+        });
+      }
+
+      // Emit for truncated items
+      if (buildResult.truncatedItems && buildResult.truncatedItems.length > 0) {
+        for (const item of buildResult.truncatedItems) {
+          this.emit("context_item_truncated", state.taskId, {
+            iteration: state.iterationCount,
+            itemId: item.id,
+            itemType: item.type,
+            originalTokenEstimate: item.originalTokenEstimate,
+            finalTokenEstimate: item.finalTokenEstimate ?? item.tokenEstimate,
+          });
+        }
+      }
+
+      // Emit for dropped items
+      if (buildResult.droppedItems && buildResult.droppedItems.length > 0) {
+        for (const item of buildResult.droppedItems) {
+          this.emit("context_item_dropped", state.taskId, {
+            iteration: state.iterationCount,
+            itemId: item.id,
+            itemType: item.type,
+            importance: item.importance,
+            tokenEstimate: item.tokenEstimate,
+          });
+        }
+      }
+
+      const usableBudget = Math.max(
+        1,
+        this.budget.maxContextTokens - this.budget.reservedOutputTokens
+      );
+
+      // Context items with descriptions and dispositions for debugging / inspection
+      const contextItemsDebug = [
+        ...(buildResult.selectedItems || []).map((item) => ({
+          id: item.id,
+          type: item.type,
+          importance: item.importance,
+          description: getItemSummary(item),
+          disposition: item.truncated ? "TRUNCATED" : "INCLUDED",
+          tokenEstimate: item.tokenEstimate,
+        })),
+        ...(buildResult.droppedItems || []).map((item) => ({
+          id: item.id,
+          type: item.type,
+          importance: item.importance,
+          description: getItemSummary(item),
+          disposition: "DROPPED",
+          tokenEstimate: item.tokenEstimate,
+        })),
+      ];
+
+      this.emit("context_build_completed", state.taskId, {
+        iteration: state.iterationCount,
+        estimatedTokens: buildResult.estimatedTokens,
+        estimated_input_tokens: buildResult.estimatedTokens,
+        context_budget: usableBudget,
+        contextBudget: usableBudget,
+        utilization: buildResult.utilization,
+        metrics: buildResult.metrics,
+        items: contextItemsDebug,
+        selectedItems: buildResult.selectedItems,
+        droppedItems: buildResult.droppedItems,
+        compaction: buildResult.compactionEvent
+          ? {
+              itemsBefore: buildResult.compactionEvent.itemsBefore,
+              itemsAfter: buildResult.compactionEvent.itemsAfter,
+              tokensBefore: buildResult.compactionEvent.estimatedTokensBefore,
+              tokensAfter: buildResult.compactionEvent.estimatedTokensAfter,
+            }
+          : null,
+      });
 
       this.emit("llm_request", state.taskId, {
         iteration: state.iterationCount,
         messageCount: messages.length,
         toolCount: toolDefinitions.length,
+        estimatedTokens: buildResult.estimatedTokens,
+        estimated_input_tokens: buildResult.estimatedTokens,
+        context_budget: usableBudget,
+        contextBudget: usableBudget,
+        utilization: buildResult.utilization,
+        context_items: buildResult.metrics.totalItems,
+        contextItems: buildResult.metrics.totalItems,
+        truncated_items: buildResult.metrics.truncatedItemsCount,
+        truncatedItems: buildResult.metrics.truncatedItemsCount,
+        compactions: buildResult.metrics.compactionsCount,
+        metrics: buildResult.metrics,
       });
 
       // 3. Call LLM provider
@@ -245,8 +415,11 @@ export class AgentLoop {
         }
 
         // 6. Append Tool Result to State
-        const toolMessage = this.contextManager.createToolResultMessage(toolResult);
-        state.addMessage(toolMessage);
+        state.addMessage({
+          role: "tool",
+          content: toolResult.output,
+          toolResult,
+        });
       } else {
         // Case B: Final text response produced by model
         const finalText = response.text || "";

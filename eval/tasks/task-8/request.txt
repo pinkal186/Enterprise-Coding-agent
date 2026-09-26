@@ -1,0 +1,1 @@
+Fix the TTLCache in cache.js so that get(key) returns null if the entry has expired, and set(key, value) evicts the oldest entry when maxSize is reached. Run node test.js to verify.

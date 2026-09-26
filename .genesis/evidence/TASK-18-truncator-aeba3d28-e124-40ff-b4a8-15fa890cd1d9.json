@@ -1,0 +1,30 @@
+{
+  "task": "TASK-18",
+  "gate": "truncator",
+  "kind": "command",
+  "attempt": "aeba3d28-e124-40ff-b4a8-15fa890cd1d9",
+  "command": "npx vitest run tests/unit/context/truncator.test.ts",
+  "started_at": "2026-09-26T12:57:20.712Z",
+  "observed_at": "2026-09-26T12:57:27.574Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "\n\u001b[1m\u001b[46m RUN \u001b[49m\u001b[22m \u001b[36mv3.2.7 \u001b[39m\u001b[90mC:/Pinkal/Learning/Coding agent/Enterprise Coding agent\u001b[39m\n\n \u001b[32m✓\u001b[39m tests/unit/context/truncator.test.ts \u001b[2m(\u001b[22m\u001b[2m10 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 10\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m10 passed\u001b[39m\u001b[22m\u001b[90m (10)\u001b[39m\n\u001b[2m   Start at \u001b[22m 18:27:25\n\u001b[2m   Duration \u001b[22m 999ms\u001b[2m (transform 81ms, setup 0ms, collect 162ms, tests 10ms, environment 0ms, prepare 240ms)\u001b[22m\n\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "7ecad2a28e6850ea12efcdacdcd96faa05ccf950",
+    "dirty": true
+  },
+  "source_hash": "00dfe66f169d7c6562fa61374870bc35302e5cf1b3235c1008546274541c06ab",
+  "before_hash": "00dfe66f169d7c6562fa61374870bc35302e5cf1b3235c1008546274541c06ab",
+  "config_hash": "4d84f5c04b0d4ab2928d466d96d79ba346b49d2561fb594ed5fb4e540ddffb12",
+  "environment": {
+    "node": "v22.23.2",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+    "variables": {}
+  },
+  "hash": "9bbacfa80409f55e47317dc039c4ecf91502dcdfb9c28b96632cba37a352063f"
+}

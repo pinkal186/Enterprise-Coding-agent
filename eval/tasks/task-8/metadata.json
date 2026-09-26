@@ -1,0 +1,7 @@
+{
+  "id": "task-8",
+  "name": "ttl-cache-eviction",
+  "category": "bug_fix",
+  "verificationCommand": "node test.js",
+  "successCriteria": "TTL cache correctly handles expiration, access refresh, and maxSize eviction with exit code 0"
+}
