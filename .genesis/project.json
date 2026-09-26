@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-09-05T13:13:57.807Z",
-    "updated_at": "2026-09-06T11:59:33.185Z"
+    "updated_at": "2026-09-12T14:57:05.293Z"
   },
   "policy": {
     "ponytail": "full",
@@ -23,23 +23,33 @@
     }
   },
   "lifecycle": {
-    "phase": "verify",
-    "status": "ready",
-    "active_task": null,
+    "phase": "build",
+    "status": "active",
+    "active_task": "TASK-16",
     "blocker": null,
-    "next_action": "Review completed work and choose the next bounded outcome."
+    "next_action": "Run the task pre-flight."
   },
   "commands": {},
   "workflow": {
     "type": "new-product",
     "started_at": "2026-09-05T13:13:57.809Z",
     "spec_check": {
-      "at": "2026-09-05T13:53:23.833Z",
-      "source_hash": "0bc6e72a734db6ad2fc1f740d2218e1fc1346f4b2be7d727af541f2a61d4a7cc",
+      "at": "2026-09-12T14:13:50.122Z",
+      "source_hash": "0d8b9bbb50696782f1ba06a56d10f17ef3214fc7486e5d85600b3868344a4cef",
       "requirements": [
         "AC-1",
         "AC-10",
+        "AC-11",
+        "AC-12",
+        "AC-13",
+        "AC-14",
+        "AC-15",
+        "AC-16",
+        "AC-17",
+        "AC-18",
+        "AC-19",
         "AC-2",
+        "AC-20",
         "AC-3",
         "AC-4",
         "AC-5",
@@ -52,7 +62,22 @@
         "FR-11",
         "FR-12",
         "FR-13",
+        "FR-14",
+        "FR-15",
+        "FR-16",
+        "FR-17",
+        "FR-18",
+        "FR-19",
         "FR-2",
+        "FR-20",
+        "FR-21",
+        "FR-22",
+        "FR-23",
+        "FR-24",
+        "FR-25",
+        "FR-26",
+        "FR-27",
+        "FR-28",
         "FR-3",
         "FR-4",
         "FR-5",
@@ -64,18 +89,19 @@
         "NFR-2",
         "NFR-3",
         "NFR-4",
-        "NFR-5"
+        "NFR-5",
+        "NFR-6"
       ]
     },
     "plan_check": {
-      "at": "2026-09-05T14:00:20.668Z",
-      "source_hash": "e5cd58970699493f48917d99686f073ce12c208b184f107ce3c27ace2bcb3de7"
+      "at": "2026-09-12T14:44:21.667Z",
+      "source_hash": "47d1dbe47dea741b122e63c9a2a662a5fe638ec5017ae2e4fc4a7e582ab6a1c6"
     },
     "plan_approval": {
       "human": "Pinkal",
-      "reason": "Iteration 1 task boundaries and proof reviewed",
-      "at": "2026-09-05T14:17:17.623Z",
-      "source_hash": "e5cd58970699493f48917d99686f073ce12c208b184f107ce3c27ace2bcb3de7"
+      "reason": "Iteration 2 task boundaries and proof gates reviewed",
+      "at": "2026-09-12T14:56:47.723Z",
+      "source_hash": "47d1dbe47dea741b122e63c9a2a662a5fe638ec5017ae2e4fc4a7e582ab6a1c6"
     }
   },
   "artifacts": [
@@ -87,7 +113,17 @@
       "requirements": [
         "AC-1",
         "AC-10",
+        "AC-11",
+        "AC-12",
+        "AC-13",
+        "AC-14",
+        "AC-15",
+        "AC-16",
+        "AC-17",
+        "AC-18",
+        "AC-19",
         "AC-2",
+        "AC-20",
         "AC-3",
         "AC-4",
         "AC-5",
@@ -100,7 +136,22 @@
         "FR-11",
         "FR-12",
         "FR-13",
+        "FR-14",
+        "FR-15",
+        "FR-16",
+        "FR-17",
+        "FR-18",
+        "FR-19",
         "FR-2",
+        "FR-20",
+        "FR-21",
+        "FR-22",
+        "FR-23",
+        "FR-24",
+        "FR-25",
+        "FR-26",
+        "FR-27",
+        "FR-28",
         "FR-3",
         "FR-4",
         "FR-5",
@@ -112,14 +163,15 @@
         "NFR-2",
         "NFR-3",
         "NFR-4",
-        "NFR-5"
+        "NFR-5",
+        "NFR-6"
       ],
-      "source_hash": "0bc6e72a734db6ad2fc1f740d2218e1fc1346f4b2be7d727af541f2a61d4a7cc",
+      "source_hash": "0d8b9bbb50696782f1ba06a56d10f17ef3214fc7486e5d85600b3868344a4cef",
       "approval": {
         "human": "Pinkal",
-        "reason": "Engineering Agent Iteration 1 specification reviewed",
-        "at": "2026-09-05T13:53:38.091Z",
-        "source_hash": "0bc6e72a734db6ad2fc1f740d2218e1fc1346f4b2be7d727af541f2a61d4a7cc"
+        "reason": "Iteration 2 context management requirements reviewed and approved",
+        "at": "2026-09-12T14:35:46.582Z",
+        "source_hash": "0d8b9bbb50696782f1ba06a56d10f17ef3214fc7486e5d85600b3868344a4cef"
       }
     }
   ],
@@ -200,6 +252,36 @@
       "status": "accepted",
       "source": "Discovered during TASK-01 gate execution, 2026-09-05",
       "recorded_at": "2026-09-05T14:30:33.861Z"
+    },
+    {
+      "id": "DECISION-566cf411",
+      "title": "Iteration 2: Context Manager as Single Loop Entry Point",
+      "text": "The Agent Loop (loop.ts) must delegate all context preparation to ContextManager. The loop must not contain context-selection, truncation, or compaction logic. ContextManager.buildManaged(state) replaces the existing assemble() call.",
+      "status": "accepted",
+      "source": "Design Doc/Iteration2.md section 27",
+      "recorded_at": "2026-09-12T14:14:04.519Z",
+      "paths": [],
+      "tags": []
+    },
+    {
+      "id": "DECISION-3ad6a1ad",
+      "title": "Iteration 2: Deterministic-Only Compaction (No LLM Summarization)",
+      "text": "The first compaction implementation must use deterministic structured extraction: user task, modified files, commands, test results, important facts, errors. LLM-based summarization is explicitly deferred to a later iteration to ensure predictable, testable compaction behavior.",
+      "status": "accepted",
+      "source": "Design Doc/Iteration2.md sections 23, 51",
+      "recorded_at": "2026-09-12T14:14:30.647Z",
+      "paths": [],
+      "tags": []
+    },
+    {
+      "id": "DECISION-f2edfb27",
+      "title": "Iteration 2: src/context/context.ts Backward-Compatible Refactor",
+      "text": "The existing ContextManager class in src/context/context.ts must be preserved as a shim or refactored in-place to delegate to the new subsystem. It must not be deleted; existing tests/unit/context.test.ts must continue to pass without modification.",
+      "status": "accepted",
+      "source": "Design Doc/Iteration2.md section 60",
+      "recorded_at": "2026-09-12T14:14:33.892Z",
+      "paths": [],
+      "tags": []
     }
   ],
   "knowledge": [
@@ -210,6 +292,15 @@
       "source": "Engineering Agent — Iteration 1 Technical Implementation Plan §31",
       "tags": [],
       "recorded_at": "2026-09-05T13:14:55.957Z"
+    },
+    {
+      "id": "KNOWLEDGE-4c06e66f",
+      "title": "Iteration 2 Boundary and Non-Goals",
+      "text": "Iteration 2 adds context management only. Not in scope: RAG, embeddings, vector databases, persistent memory, sub-agents, model routing, MCP, automatic model switching, repository indexing, multi-agent communication. LLM-based compaction summarization deferred. Iteration 3 will address repository navigation and information discovery.",
+      "source": "Design Doc/Iteration2.md sections 2, 68",
+      "tags": [],
+      "recorded_at": "2026-09-12T14:14:53.720Z",
+      "paths": []
     }
   ],
   "tasks": [
@@ -232,10 +323,11 @@
           "status": "pass",
           "evidence": {
             "human": "Pinkal",
-            "reason": "Engineering Agent Iteration 1 specification reviewed",
-            "source_hash": "e5287e08e7309edd26c1e5870fe9ee91c65465eede36bedaa8130181e4a55e9c",
-            "observed_at": "2026-09-05T13:53:38.091Z"
-          }
+            "reason": "Iteration 2 context management requirements reviewed and approved",
+            "source_hash": "6b0db654014edd5db81a157b5770166e077360d1c2605a400625b300fef3aa57",
+            "observed_at": "2026-09-12T14:35:46.582Z"
+          },
+          "kind": "review"
         }
       ],
       "next_action": "Interview the human, record durable context, and replace every placeholder in SPEC.md.",
@@ -244,7 +336,7 @@
       "failures": [],
       "limitations": [],
       "created_at": "2026-09-05T13:13:57.809Z",
-      "updated_at": "2026-09-05T13:53:38.091Z"
+      "updated_at": "2026-09-12T14:35:46.582Z"
     },
     {
       "id": "TASK-01",
@@ -270,7 +362,8 @@
             "source_hash": "1d18bbb2784339922091b0b4dfbabaa63824e3ec68cc44a4bae8783ba9b0410f",
             "hash": "41d0db40e5d38459ed9501c83f18226bedf20a9004c30f8c9f0492b77df9cf75",
             "observed_at": "2026-09-05T14:31:09.554Z"
-          }
+          },
+          "kind": "command"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -305,7 +398,8 @@
             "source_hash": "e352146ceeeba353304abd018bcdac70676c2e92312a70a38529d0a8088700fc",
             "hash": "2c148be04474a55e7a7d2089ff729061409ebd1c130bd6a2bbacce99d8eeaa73",
             "observed_at": "2026-09-05T14:41:32.008Z"
-          }
+          },
+          "kind": "command"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -341,7 +435,8 @@
             "source_hash": "02027eb5541ee5c134d46a24091c4931cc9e187f1e42a8af429985228afb89fd",
             "hash": "871e2dc62cd6a03f49ec5ef5e7c87f36e41bd5b143202337b4e93fc458ebae4c",
             "observed_at": "2026-09-05T15:13:04.761Z"
-          }
+          },
+          "kind": "command"
         },
         {
           "id": "independent-review",
@@ -353,7 +448,8 @@
             "reason": "Gemini provider adapter reviewed and tested",
             "source_hash": "02027eb5541ee5c134d46a24091c4931cc9e187f1e42a8af429985228afb89fd",
             "observed_at": "2026-09-05T15:13:47.415Z"
-          }
+          },
+          "kind": "review"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -387,7 +483,8 @@
             "source_hash": "9ce2fe5f91e3b1dbdd6397b272f96879bc74dab369d1d7aa532cb80ece59a10b",
             "hash": "8fd7273c3d55f3ad57ec64f1dc464f41e1f6f3680477734ee09941f1e7926f8c",
             "observed_at": "2026-09-05T15:17:30.558Z"
-          }
+          },
+          "kind": "command"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -422,7 +519,8 @@
             "source_hash": "ce13644a0f5ced55e8a63c176399c24336eff8468378bad65a77031517a6130d",
             "hash": "db42659a2fdb3ebdc1ddd4b11765f79a78219f4551db300633bb1e0e4c2fbcc5",
             "observed_at": "2026-09-05T15:22:00.759Z"
-          }
+          },
+          "kind": "command"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -457,7 +555,8 @@
             "source_hash": "b70e2c9341ba04b2ae0868728600d7960b3129d54501f0ee8d645f31de4b0e56",
             "hash": "d50a82f4ec440c7ba6e5a10f92a9d127e2fb323c1e012d69ea9e9ba667b4010a",
             "observed_at": "2026-09-05T15:23:50.995Z"
-          }
+          },
+          "kind": "command"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -492,7 +591,8 @@
             "source_hash": "61eb37964f5c2b2a32b23f441c6fb64727a17d92e7cb000c31ef36d20ac795b0",
             "hash": "cc1d4bc5ca6e1f3a78221acc95aadb39f92fe2cae05b6ea24159c8e203078391",
             "observed_at": "2026-09-05T16:11:02.235Z"
-          }
+          },
+          "kind": "command"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -527,7 +627,8 @@
             "source_hash": "a5d958b932be5add42d481847b03a12398f3d8d5b04ecf978467a9fad532f218",
             "hash": "70d9e3e4dba26691582757dd8408d4fdc472cbdb3b86e5c089f107fb46b9d922",
             "observed_at": "2026-09-05T16:16:12.140Z"
-          }
+          },
+          "kind": "command"
         },
         {
           "id": "independent-review",
@@ -539,7 +640,8 @@
             "reason": "RunCommandTool and command safety policy reviewed and tested",
             "source_hash": "a5d958b932be5add42d481847b03a12398f3d8d5b04ecf978467a9fad532f218",
             "observed_at": "2026-09-05T16:16:22.162Z"
-          }
+          },
+          "kind": "review"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -573,7 +675,8 @@
             "source_hash": "f13bd7a47776e23eeb0410ae28bb6168928a00c78ce5410eb7a84f6f056c4d71",
             "hash": "1a4bc583abef322b029c5082d451bdd6af7bf9b40b8d5e2843455d1ca856dcb2",
             "observed_at": "2026-09-05T16:35:43.312Z"
-          }
+          },
+          "kind": "command"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -610,7 +713,8 @@
             "source_hash": "014c695dc348f82a751ebcd9d7a04e2fd9253ad2179260150173a2539f86e790",
             "hash": "39e9cf5d8dfebbf678d891741513c0afff2588811bc1a046101841b612b225ab",
             "observed_at": "2026-09-06T09:42:33.330Z"
-          }
+          },
+          "kind": "command"
         },
         {
           "id": "independent-review",
@@ -622,7 +726,8 @@
             "reason": "Agent loop and guardrails reviewed",
             "source_hash": "014c695dc348f82a751ebcd9d7a04e2fd9253ad2179260150173a2539f86e790",
             "observed_at": "2026-09-06T09:42:45.281Z"
-          }
+          },
+          "kind": "review"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -656,7 +761,8 @@
             "source_hash": "ba91ed2e724ab8dfdba6459166b2d5913e20a6f36bba336c6fb053349106faaa",
             "hash": "a59639eee2c4a5e5264faf6e4c8bcbfdc8f1d0a4fa81d38e46c5e96f014b1e8b",
             "observed_at": "2026-09-06T09:44:32.147Z"
-          }
+          },
+          "kind": "command"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -690,7 +796,8 @@
             "source_hash": "ba91ed2e724ab8dfdba6459166b2d5913e20a6f36bba336c6fb053349106faaa",
             "hash": "373c7028afd411c62d3eabb8c26dd2590e16a25e117ca8be99b2076372ec6edf",
             "observed_at": "2026-09-06T09:49:13.485Z"
-          }
+          },
+          "kind": "command"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -724,7 +831,8 @@
             "source_hash": "add8e513273b00d8b6aabb55c7924e9253b51d2a6f5d5ae357ec475181c85f81",
             "hash": "f8ebc7b087ca04246fd071af48ee969b53d1253a6089bc3df355808e239b0ec8",
             "observed_at": "2026-09-06T09:54:20.285Z"
-          }
+          },
+          "kind": "command"
         },
         {
           "id": "independent-review",
@@ -736,7 +844,8 @@
             "reason": "End-to-end integration test and calculator fixture verified",
             "source_hash": "add8e513273b00d8b6aabb55c7924e9253b51d2a6f5d5ae357ec475181c85f81",
             "observed_at": "2026-09-06T09:54:30.863Z"
-          }
+          },
+          "kind": "review"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -770,7 +879,8 @@
             "source_hash": "74682a72ce3cb1ecb18852b75a90126feec3ef56852efab03a8edb6b14a6fcc0",
             "hash": "d4e448fb45ea12419012717cd110f3e7572a342305b774e28b5f73d1b32569ae",
             "observed_at": "2026-09-06T11:31:25.256Z"
-          }
+          },
+          "kind": "command"
         },
         {
           "id": "independent-review",
@@ -782,7 +892,8 @@
             "reason": "Evaluation suite task-1 to task-5 verified",
             "source_hash": "74682a72ce3cb1ecb18852b75a90126feec3ef56852efab03a8edb6b14a6fcc0",
             "observed_at": "2026-09-06T11:41:53.992Z"
-          }
+          },
+          "kind": "review"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -818,7 +929,8 @@
             "source_hash": "5d2a17f6a6d50105452142127f84d833c605d1af5710454cfd8f7e5f60d5b8f4",
             "hash": "13e60fddbecfcfb8c048389075c2724d1238f379629e89bbe57509242068485e",
             "observed_at": "2026-09-06T11:44:18.149Z"
-          }
+          },
+          "kind": "command"
         },
         {
           "id": "checkpoint",
@@ -830,7 +942,8 @@
             "source_hash": "5d2a17f6a6d50105452142127f84d833c605d1af5710454cfd8f7e5f60d5b8f4",
             "hash": "049d65e45f68812abc52fb5b3976ccb6922b0f701f33a4fda88fe692551767fd",
             "observed_at": "2026-09-06T11:44:19.095Z"
-          }
+          },
+          "kind": "command"
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -840,6 +953,622 @@
       "limitations": [],
       "created_at": "2026-09-05T14:00:00.421Z",
       "updated_at": "2026-09-06T11:47:05.898Z"
+    },
+    {
+      "id": "TASK-16",
+      "outcome": "src/context/types.ts defines ContextItem, ContextState, ContextBudget, ContextMetrics, ImportantFact, CompactionEvent, BuildContextInput, BuildContextResult. Unit tests in tests/unit/context/types.test.ts pass.",
+      "state": "active",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-14"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "types-it2",
+          "kind": "command",
+          "command": "npx vitest run tests/unit/context/types.test.ts",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:36:05.750Z",
+      "updated_at": "2026-09-12T14:57:05.292Z",
+      "base_manifest": {
+        ".env.example": "56bd64432df24f0607aece839f91f8f9fe2aeeb389819f87aee5190bbfa5d1c9",
+        ".gitignore": "d711f1f92cafc7f277492dcfbd0df290525800c032df917616b058acde9f48e7",
+        "AGENTS.md": "a900310c97076e294e8d25cf6a460ef2c58a2501f2cee2e71f870a8ef71d09f4",
+        "CLAUDE.md": "a900310c97076e294e8d25cf6a460ef2c58a2501f2cee2e71f870a8ef71d09f4",
+        "Design Doc/Enterprise mini coding agent System design.md": "2cf2daf1acd81f3275d2610c5c57a016b22b406da8254755ab8e246484b266c0",
+        "Design Doc/Enterprise mini coding agent harness Implementation Iteration 1.md": "4e527b7bf2cbf669e24ef69b502618c4a891ab4e3adeca18ba0a1fb773e7ca50",
+        "Design Doc/Iteration2.md": "dcc5d36ab2539cca0f959a50407050b8bc9d31736f165a3bbbe747ac6ded92ce",
+        "Enterprise mini coding agent System design.md": "missing",
+        "Enterprise mini coding agent harness Implementation Iteration 1.md": "missing",
+        "IMPLEMENTATION_PROGRESS.md": "9dcb9379cac3af623d945ae2db1e94f862e485cae1dd6fe665271e9a88b14255",
+        "README.md": "7cef1634c3d9faeb0a231d8b057f18929d22c6d4392f5d7803b51d8abe63afa1",
+        "SPEC-IT2.md": "9ba5130048ea5e24e1c5f5053571a0db0d08c6eec2bf799cfc5ec8ec0b2e8399",
+        "SPEC.md": "f0800318b08eaab4ba81e70235d15a075c83c297444f5d57549ab97c6aca8071",
+        "eval/run.mjs": "e2e1b4113920de3f9b177ba9e3318053071accc58273011f5d4aba5d6145e413",
+        "eval/runner.ts": "db2f3ec8e25bfc1ff7603cca1e9a313ab7c0f631f6c98e3a375fd4eeddd51a41",
+        "eval/tasks/task-1/metadata.json": "f2034c25a4e6a714049968df3b0723d6a446a6b1c61d82488a94e4b4ae135bf4",
+        "eval/tasks/task-1/package.json": "3bced5f5a0fe8e4706c44759b96a842a0e285894d24700efaf6eb1b34a91af11",
+        "eval/tasks/task-1/paginate.js": "c71dc097f2bd6b6583d8406ff0f8d9db569e47fc53e0da4c386c810d47392ecd",
+        "eval/tasks/task-1/request.txt": "33989cf8744a0856404078ef2234ba7163bc8cf8025520b557a683d0a056ba35",
+        "eval/tasks/task-1/result.json": "c20708fe45bfbb264f67d75887a335d70c5fab333ef147d64f6a86f5396f15e0",
+        "eval/tasks/task-1/test.js": "062aade1332a1c9bc9031799e2e98c7b880aaf447fb0a35f4a8c863d9666787b",
+        "eval/tasks/task-2/metadata.json": "c1cc3062d70c5713e98b65c53827b52afb770687ead1d8247cd88136f7dabd6d",
+        "eval/tasks/task-2/package.json": "0b58c1bbc3deaa84281d0bcd7ca3cf42660962ef1795bd218416fd0dbfd6a321",
+        "eval/tasks/task-2/request.txt": "0de90b58d87528a25a2aa4e9240a525832e339592c82216b195ec08c2c2ea7a9",
+        "eval/tasks/task-2/result.json": "1407fd0340e16d0fe8f5791b54d05293f194383166efe57d20919382c938685b",
+        "eval/tasks/task-2/slugify.js": "cd27529c0029febb424f8b4eba42417f4a54514f70ced78ab9100d44d1732003",
+        "eval/tasks/task-2/test.js": "76101ad6d14eb859732fefd0be2f35534b7e7a99764cc1aaaf8a1cecb4d651b4",
+        "eval/tasks/task-3/metadata.json": "4fbbb8c89634fe9612510ff5c2ab1268f7e3d4b19a874a3e2a68a15659722081",
+        "eval/tasks/task-3/package.json": "7c1889fa826a7362f768a0b9e936db0bdfac96de1ff9b6d8875f82ab122cd944",
+        "eval/tasks/task-3/request.txt": "6adb2a4360ed2916348a83d362580146f5316dc2ffcbd166bfee6fbb5d622a82",
+        "eval/tasks/task-3/result.json": "33ea3775e030c0404e2c11f7d600250c1a8cc665d105fa613b0d727aefa129a5",
+        "eval/tasks/task-3/test.js": "baa55cb5c1fe65bdae94f369fb7f7a5368f1643bb094c47d1662d94aa6e1829d",
+        "eval/tasks/task-3/truncate.js": "206e9a559660f3989336820b2c64036662a1b4710ce06c4d332d82736ffe31df",
+        "eval/tasks/task-4/get.js": "79da93f865ee06c7538723264737ca27c8de8f89be5976d103d5caadee1c8dd5",
+        "eval/tasks/task-4/metadata.json": "9a44341a5a3c19415024e389b6a68c18cfcf16446ca9d8dd3337dd9062935d6b",
+        "eval/tasks/task-4/package.json": "74609e07041aedddd888e67e9ad6d9f865064d8c5b9abfa6573e0f843541ecec",
+        "eval/tasks/task-4/request.txt": "432fc5592c1e73a56848791b3ac31eb208b71660156eeca924918615200879db",
+        "eval/tasks/task-4/result.json": "218f35255697bb86a28de882a2053126d72c9dd6c19aef1f80c9934dfca34b16",
+        "eval/tasks/task-4/test.js": "d3a7ef350429129c0cd5f26bf264a7327ed9ae14f4dcf1ea89e959555681aba4",
+        "eval/tasks/task-5/metadata.json": "88bccc98b97d77f469b086c490a2bab70d183c7841a0f20b749e611fab63144f",
+        "eval/tasks/task-5/package.json": "c23e9c2020a638b24b576344dd74e3f04884ce9a216aaed155531b4297d544f3",
+        "eval/tasks/task-5/request.txt": "60baa1a803b19ee8dacc935e5bf5034b9805e32b83cfcd017eee2f0134642c46",
+        "eval/tasks/task-5/result.json": "85448829e2f8d44aaed468b73e292468c7a4baab99133426261486598f3d1119",
+        "eval/tasks/task-5/sort.js": "2388eccf0ad120e4ed87f63b11e94546cb159c7e66f5c5aff90c16b3b4f536fa",
+        "eval/tasks/task-5/test.js": "ce8c8818220d7785ebce04f40800f839ed3ae080cec015eaf6b72281a00bdc36",
+        "examples/demo.ts": "55efdbbb83e5ed51379bbdd37a79e34fd10a47b1e69378806470a9ee585c1d5d",
+        "package-lock.json": "efbc91bc31cc011c2df250c9fc69beaaf7f6a223613bf84dfa77395b100f534b",
+        "package.json": "b656a01f8cd8b96c992428d00e073e0dab6165ecf268eea1eb54673b0c045343",
+        "src/agent/loop.ts": "c3182a9351938c0e9a78c2cd7fc2c9944e9540c371858a38da0c6acbec988ae1",
+        "src/agent/state.ts": "cd0748111703976c7bfc3fb13482201d5af6ca929cff7c9c83cda503d14e0970",
+        "src/cli/main.ts": "319bbdc8f2711167d191f14cb48fe4e0b373c7c3b481ac081b94a667155631c4",
+        "src/cli/runner.ts": "4b9068a28c4e56b87bb8dddb474e590e911e014318b508dd5884790838b5a5fc",
+        "src/context/context.ts": "ec4fb6d116e22814a46f414dcf731e5fb36f5f7f2c854efec5d9e9fb439bee7e",
+        "src/llm/gemini.ts": "4b111cabdecb748252fe8780ba5b348b7e3b198f214c57ba7055921f1eb883ae",
+        "src/llm/provider.ts": "d6d7ee6ef202d3df1b1e23972c5461222e24bda52593c6ec1f18472db2b9c0b7",
+        "src/llm/types.ts": "b5f9d073fc2dcba9e86d16f0c36d1c8e2e20cc4560c444b433d409af7843e69f",
+        "src/logging/logger.ts": "6584f831f203ee06d828be8aa112089ef402920fc4298adba8514bd033e31944",
+        "src/safety/policy.ts": "b118f826f2985e363bc8b5753c4a8b29a9643202ecd7b4c248e59dcb2321ff2c",
+        "src/tools/edit-file.ts": "c690c37a4e64131f5902ff9557fada6c3b0067f0e2d337ccc93b25345ae3b80f",
+        "src/tools/read-file.ts": "fa6d0ce9fc630dc0bf3963e47fba288b027477115ef24a171bee17f7549c4110",
+        "src/tools/registry.ts": "40825cd3d278dea5164e9d30c5d9215db81eddf0cb65db0a92260a7ec41851e1",
+        "src/tools/run-command.ts": "6805bb358c5f4b6c3f0fbe477a6851bbe9b19b90e1afa6359c273ca34979d1aa",
+        "src/tools/search.ts": "d949e9a567689da9328b614f6b8dd3e24c81ea9b6523a6eaa5af3a92fadb60c0",
+        "src/tools/types.ts": "244355826a47b4a0cc30ed31f8c823f23c7267a91d76f23c5180e0584a0e0314",
+        "tests/fixtures/test-project/calculator.js": "5c836775fd2736bc9f4833486c48b7e829149925ccc3157c062a9aeb3d14acdf",
+        "tests/fixtures/test-project/calculator.test.js": "60e7f63e948a78872783c4fae0aaf45f4c3220c32d9d5ec03a5e93161fc857bb",
+        "tests/fixtures/test-project/package.json": "ff7cc9a96e59812e8eff11e99dcc03aba83ad177125fc8de3563491b84457c1a",
+        "tests/integration/agent-integration.test.ts": "4ef0c3c9abd233af38081076e84b2ac23ce635976d37583ccfa082bd9aa0d28b",
+        "tests/integration/eval-runner.test.ts": "cb36d656bdc42aaa7e5a0c7337647d798b54c8d70cc73bdbd937b06706ae0817",
+        "tests/unit/agent-loop.test.ts": "90435f32afca9e0330ab7973fd8c3497b77f852ceeab7069fb0bffca4cba98bb",
+        "tests/unit/cli.test.ts": "3ee2adc06cd6a730f1cf23d1898db679f20f4de504e519ce5b4ead962b8a5058",
+        "tests/unit/context.test.ts": "f7c343054f1aa1014cf5bdab2075673742ebbffa818b7a2e25428389ebed5b31",
+        "tests/unit/edit-file.test.ts": "0ee8131fbb0e58132b6e10059cb6bca9a6fb1e440d83c29d15775b2ba49dc3ac",
+        "tests/unit/gemini-adapter.test.ts": "307d47e88ea91ff714424704f28107108391519838bbfb95ba62c1a23d4d3a7d",
+        "tests/unit/llm-types.test.ts": "283b9d6aea869b3f7ae8b4d821e8cafeeef33c280c824084fc9133116880d8c1",
+        "tests/unit/logger.test.ts": "068d4576bcc7badfe0dad780bbf96058406ba863f023d0885b526e7bca4929f0",
+        "tests/unit/read-file.test.ts": "08093094ffdfa2b6ec0b80cb6862ba6bf6ea83f73cb5b8966731a074d5b2eae0",
+        "tests/unit/run-command.test.ts": "1b6231dc1e044ce61a696c3792ed2d9746c0d043f0779c0ce1c7b2c243bbad99",
+        "tests/unit/search.test.ts": "68de1a7e8a20d5ad0b4a6650aa7d267ce709ec26ed0d1c7615efe0a9035ec0e7",
+        "tests/unit/tool-registry.test.ts": "c889e3753c4e61d03d8767305729bf239f8426c755b47991eb2272d7febac1b7",
+        "tsconfig.json": "d814cbc25010c9344ca6b6e498f4cd9a2aa0b6f1b18306ff18ed29c3ba3998a1",
+        "vitest.config.ts": "3dc2fe11e70a587ace745afb7fe7ac7c3dd1f94be73ea8c80a34d7f3fcb71f87"
+      }
+    },
+    {
+      "id": "TASK-17",
+      "outcome": "src/context/token-estimator.ts implements deterministic TokenEstimator using chars/4 approximation with no provider SDK import. Tests in tests/unit/context/token-estimator.test.ts pass: empty string, short text, long text, deterministic output, monotone increasing.",
+      "state": "queued",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-15"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "token-estimator",
+          "kind": "command",
+          "command": "npx vitest run tests/unit/context/token-estimator.test.ts",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:36:27.406Z",
+      "updated_at": "2026-09-12T14:36:27.407Z"
+    },
+    {
+      "id": "TASK-18",
+      "outcome": "src/context/truncator.ts implements type-aware Truncator with strategies for file content, search results, and command output. Every truncated item carries truncated:true, originalTokenEstimate, finalTokenEstimate. Tests in tests/unit/context/truncator.test.ts pass: below limit unchanged, above limit truncated with marker, metadata preserved.",
+      "state": "queued",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-17"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "truncator",
+          "kind": "command",
+          "command": "npx vitest run tests/unit/context/truncator.test.ts",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:36:44.875Z",
+      "updated_at": "2026-09-12T14:36:44.876Z"
+    },
+    {
+      "id": "TASK-19",
+      "outcome": "src/context/policies.ts implements ContextPolicy config loaded from env vars (MODEL_CONTEXT_TOKENS=32000, MODEL_OUTPUT_TOKENS=4096, CONTEXT_COMPACTION_THRESHOLD=0.80, per-tool caps), deterministic 7-step selection algorithm, content-hash duplicate detection, priority+recency sort. Tests pass: 20 mixed-priority items under small budget keeps critical, drops low first; recency tiebreaker; duplicate removal; CRITICAL beats NORMAL recency.",
+      "state": "queued",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-16",
+        "FR-18",
+        "FR-19"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "policies",
+          "kind": "command",
+          "command": "npx vitest run tests/unit/context/policies.test.ts",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:36:59.917Z",
+      "updated_at": "2026-09-12T14:43:42.559Z"
+    },
+    {
+      "id": "TASK-20",
+      "outcome": "src/context/context-builder.ts implements ContextBuilder.build(input) returning BuildContextResult with LLM-ready messages ordered system->task->facts->recent-tools->recent-interaction->older->summaries, estimatedTokens, utilization, truncated, compacted, metrics. Tests pass: ordering correct, budget enforced, utilization computed, truncated/compacted flags set.",
+      "state": "queued",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-20"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "context-builder",
+          "kind": "command",
+          "command": "npx vitest run tests/unit/context/context-builder.test.ts",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:37:21.610Z",
+      "updated_at": "2026-09-12T14:37:21.611Z"
+    },
+    {
+      "id": "TASK-21",
+      "outcome": "src/context/compactor.ts implements deterministic Compactor: Stage 1 identifies items older than 8 interaction turns as eligible; Stage 2 produces structured summary preserving user task, modified files, commands, test results, important facts, errors. CompactionEvent recorded with itemsBefore, itemsAfter, tokensBefore, tokensAfter. No LLM summarization. Tests pass: compaction reduces tokens, user task and important facts remain, recent 8 turns remain, CompactionEvent recorded.",
+      "state": "queued",
+      "risk": "medium",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-21"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "compactor",
+          "kind": "command",
+          "command": "npx vitest run tests/unit/context/compactor.test.ts",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:37:44.009Z",
+      "updated_at": "2026-09-12T14:43:46.125Z"
+    },
+    {
+      "id": "TASK-22",
+      "outcome": "src/context/context-manager.ts coordinates TokenEstimator, ContextPolicy, Truncator, Compactor, ContextBuilder into single buildManaged(state, tools, budget) entry point maintaining ContextState. src/context/context.ts refactored as backward-compatible shim (assemble() preserved). src/context/context-metrics.ts implements ContextMetrics aggregation. All context-manager and context-metrics unit tests pass.",
+      "state": "queued",
+      "risk": "medium",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-22",
+        "FR-23"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "context-manager",
+          "kind": "command",
+          "command": "npx vitest run tests/unit/context/context-manager.test.ts",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:38:08.557Z",
+      "updated_at": "2026-09-12T14:38:08.558Z"
+    },
+    {
+      "id": "TASK-23",
+      "outcome": "src/agent/state.ts extended with importantFacts: ImportantFact[], contextStats: ContextStats, and addImportantFact() method. All existing Iteration 1 state/context unit tests continue to pass unchanged (tests/unit/context.test.ts).",
+      "state": "queued",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-25"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "state-ext",
+          "kind": "command",
+          "command": "npx vitest run tests/unit/context.test.ts",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:38:22.083Z",
+      "updated_at": "2026-09-12T14:38:22.084Z"
+    },
+    {
+      "id": "TASK-24",
+      "outcome": "src/agent/loop.ts refactored: direct message accumulation replaced by contextManager.buildManaged(state, toolDefinitions, budget). No context-selection logic remains in loop. All three invariants verified: iteration cap (INVARIANT-72ddae88), repeated-failure guard (AC-5), verification required (INVARIANT-cd74c5ed). All Iteration 1 agent-loop unit tests pass unchanged.",
+      "state": "queued",
+      "risk": "medium",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-24",
+        "AC-11"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "agent-loop-it2",
+          "kind": "command",
+          "command": "npx vitest run tests/unit/agent-loop.test.ts",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:39:47.774Z",
+      "updated_at": "2026-09-12T14:39:47.775Z"
+    },
+    {
+      "id": "TASK-25",
+      "outcome": "src/logging/logger.ts extended with 6 new event types (context_build_started, context_build_completed, context_item_truncated, context_item_dropped, context_compaction_started, context_compaction_completed) and context metrics in llm_request payload. src/cli/main.ts adds --debug-context flag showing per-item priority and disposition. Logger unit tests pass. CLI smoke test passes. No API key values in any log or debug output.",
+      "state": "queued",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-26",
+        "FR-27",
+        "AC-12",
+        "AC-15"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "logger-it2",
+          "kind": "command",
+          "command": "npx vitest run tests/unit/logger.test.ts",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:40:05.576Z",
+      "updated_at": "2026-09-12T14:40:05.577Z"
+    },
+    {
+      "id": "TASK-26",
+      "outcome": "tests/unit/context/stress.test.ts passes: 100+ tool results, 50+ file reads, repeated results — context stays within budget, no crash, CRITICAL items preserved, truncation and compaction reported. tests/integration/context-management.test.ts passes: long-running task forces growth -> threshold -> compaction -> correct continued operation. tests/integration/agent-integration.test.ts (Iteration 1 calculator fix) passes without modification.",
+      "state": "queued",
+      "risk": "medium",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "AC-16",
+        "AC-17",
+        "AC-18",
+        "AC-19"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "context-stress",
+          "kind": "command",
+          "command": "npx vitest run tests/unit/context/stress.test.ts",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:41:43.150Z",
+      "updated_at": "2026-09-12T14:41:43.151Z"
+    },
+    {
+      "id": "TASK-27",
+      "outcome": "Full test suite passes (npx vitest run) — all Iteration 1 and Iteration 2 unit tests, stress tests, and integration tests green with zero regressions. README.md updated with Context Management section, --debug-context documentation, and all new env vars. IMPLEMENTATION_PROGRESS.md updated with complete Iteration 2 checklist. No API keys in any committed file or log.",
+      "state": "queued",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-28",
+        "NFR-6",
+        "AC-16"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "all-tests-it2",
+          "kind": "command",
+          "command": "npx vitest run",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:42:49.602Z",
+      "updated_at": "2026-09-12T14:42:49.604Z"
+    },
+    {
+      "id": "TASK-28",
+      "outcome": "eval/tasks/task-6 through task-12 created with fixture repos, request.txt, verification commands, and success criteria. All 7 tasks executed and independently verified. Baseline comparison table (Iteration 1 vs Iteration 2) produced measuring: task success, iterations, tool calls, estimated tokens, context size, compactions, truncations, execution time. All failures classified using taxonomy: CONTEXT_LOSS, CONTEXT_OVERLOAD, TRUNCATION, COMPACTION_LOSS, MODEL_REASONING, CONTEXT_SELECTION, TOKEN_ESTIMATION.",
+      "state": "queued",
+      "risk": "medium",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "AC-20"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "eval-it2",
+          "kind": "command",
+          "command": "node eval/run.mjs --task 6",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:43:20.519Z",
+      "updated_at": "2026-09-12T14:43:20.520Z"
+    },
+    {
+      "id": "TASK-19b",
+      "outcome": "Context selection verification: CRITICAL items are never dropped; LOW items are dropped first when budget is exceeded; duplicate tool results are deduplicated by content hash; recency is used as tiebreaker within equal-priority items. All policies.test.ts assertions for AC-13 pass.",
+      "state": "queued",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "AC-13"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "ac13-selection",
+          "kind": "command",
+          "command": "npx vitest run tests/unit/context/policies.test.ts",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:44:09.987Z",
+      "updated_at": "2026-09-12T14:44:09.988Z"
+    },
+    {
+      "id": "TASK-21b",
+      "outcome": "Compaction verification: deterministic compaction reduces estimated token count when utilization is at or above threshold. After compaction: user task remains, important facts remain, current task state remains, recent context remains. CompactionEvent logged with before/after metrics. Agent continues correctly post-compaction. All compactor.test.ts assertions for AC-14 pass.",
+      "state": "queued",
+      "risk": "low",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "AC-14"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "ac14-compaction",
+          "kind": "command",
+          "command": "npx vitest run tests/unit/context/compactor.test.ts",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-09-12T14:44:13.513Z",
+      "updated_at": "2026-09-12T14:44:13.514Z"
     }
   ],
   "learning_proposals": [],
@@ -893,14 +1622,18 @@
   ],
   "discovery": null,
   "checkpoint": {
-    "at": "2026-09-06T11:59:31.287Z",
+    "at": "2026-09-12T14:44:37.745Z",
     "revision": {
-      "commit": null,
-      "dirty": null,
-      "source_hash": "0f00c4a22b723202af332acf4a5466e3133f943aa6af85bedb95b8a2dd0bc6ab"
+      "commit": "7c70e8a825dd5ebeeff76e2a50bcf1ef816670d5",
+      "dirty": true,
+      "source_hash": "6b0db654014edd5db81a157b5770166e077360d1c2605a400625b300fef3aa57"
     },
     "active_task": null,
-    "next_action": "Review completed work and choose the next bounded outcome."
+    "next_action": "Finish defining requirement-linked tasks, then run genesis plan check."
   },
-  "legacy": null
+  "legacy": null,
+  "attempts": [],
+  "authorizations": [],
+  "experiments": [],
+  "incidents": []
 }
